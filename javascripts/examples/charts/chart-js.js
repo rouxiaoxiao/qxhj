@@ -7,11 +7,11 @@ var pie = document.getElementById("pie-chart");
 var polar = document.getElementById("polar-chart");
 var radar = document.getElementById("radar-chart");
 
-var options ={
+var options = {
     scales: {
         yAxes: [{
             ticks: {
-                beginAtZero:true
+                beginAtZero: true
             }
         }]
     }
@@ -66,10 +66,13 @@ var dataLine = {
         }
     ]
 };
-var lineChart = new Chart(line, {
-    type: 'line',
-    data: dataLine
-});
+if (line != null) {
+    var lineChart = new Chart(line, {
+        type: 'line',
+        data: dataLine
+    });
+}
+
 
 //AREA CHART EXAMPLE
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -108,12 +111,15 @@ var dataArea = {
     }
 };
 
-var areaChart = new Chart(area, {
-    type: 'line',
-    data: dataArea,
-    options: options
+if (area != null) {
+    var areaChart = new Chart(area, {
+        type: 'line',
+        data: dataArea,
+        options: options
 
-});
+    });
+}
+
 
 //BAR CHART EXAMPLE
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -144,12 +150,15 @@ var dataBars = {
     }
 };
 
-var barChar = new Chart(bar, {
-    type: 'bar',
-    data: dataBars,
-    options: options
+if (bar != null) {
+    var barChar = new Chart(bar, {
+        type: 'bar',
+        data: dataBars,
+        options: options
 
-});
+    });
+}
+
 
 //PIE  & POLAR CHART EXAMPLE
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -175,17 +184,23 @@ var dataPie = {
         }]
 };
 
-var pieChar = new Chart(pie, {
-    type: 'pie',
-    data: dataPie
+if (pie != null) {
+    var pieChar = new Chart(pie, {
+        type: 'pie',
+        data: dataPie
 
-});
+    });
+}
 
-var polarChar = new Chart(polar, {
-    type: 'polarArea',
-    data: dataPie
 
-});
+if (polar != null) {
+    var polarChar = new Chart(polar, {
+        type: 'polarArea',
+        data: dataPie
+
+    });
+}
+
 
 //RADAR CHART EXAMPLE
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -215,8 +230,10 @@ var dataRadar = {
     ]
 };
 
-var radarChar = new Chart(radar, {
-    type: 'radar',
-    data: dataRadar
+if (radar != null) {
+    var radarChar = new Chart(radar, {
+        type: 'radar',
+        data: dataRadar
 
-});
+    });
+}
