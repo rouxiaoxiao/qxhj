@@ -6,6 +6,8 @@ var bar = document.getElementById("bar-chart");
 var pie = document.getElementById("pie-chart");
 var polar = document.getElementById("polar-chart");
 var radar = document.getElementById("radar-chart");
+//气象站数据
+var weather = document.getElementById("weather-chart");
 
 var options = {
     scales: {
@@ -124,21 +126,56 @@ if (area != null) {
 //BAR CHART EXAMPLE
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 var dataBars = {
-    labels: ["January", "February", "March", "April", "May"],
+    labels: ["2019-09-15 06:22:00", "2019-09-15 06:22:15", "2019-09-15 06:22:30", "2019-09-15 06:22:45", "2019-09-15 06:23:00", "2019-09-15 06:23:15", "2019-09-15 06:23:30", "2019-09-15 06:23:45", "2019-09-15 06:24:00", "2019-09-15 06:24:15"],
     datasets: [
         {
-            label: "Data 1",
+            label: "O3",
             fill: true,
             backgroundColor: "rgba(55, 209, 119, 0.45)",
             borderColor: "rgba(55, 209, 119, 0.45)",
-            data: [12, 13, 11, 6, 9]
+            data: [0.12, 0.13, 0.11, 0.13, 0.08, 0.09, 0.06, 0.09, 0.03, 0.02]
         },
         {
-            label: "Data 2",
+            label: "NO",
+            fill: true,
+            backgroundColor: "rgba(204,255,204,0.45)",
+            borderColor: "rgba(55, 209, 119, 0.45)",
+            data: [0.02, 0.03, 0.11, 0.06, 0.09, 0.06, 0.09, 0.03, 0.02, 0.09]
+        },
+        {
+            label: "NO2",
+            fill: true,
+            backgroundColor: "rgba(102,153,204, 0.26)",
+            borderColor: "rgba(175, 175, 175, 0.26)",
+            data: [0.14, 0.06, 0.09, 0.13, 0.12, 0.06, 0.009, 0.13, 0.12, 0.09]
+        },
+        {
+            label: "NOX",
             fill: true,
             backgroundColor: "rgba(175, 175, 175, 0.26)",
             borderColor: "rgba(175, 175, 175, 0.26)",
-            data: [14, 6, 9, 13, 12],
+            data: [0.14, 0.06, 0.009, 0.13, 0.12, 0.09, 0.13, 0.12, 0.06, 0.09]
+        },
+        {
+            label: "SO2",
+            fill: true,
+            backgroundColor: "rgba(204,204,255, 0.26)",
+            borderColor: "rgba(175, 175, 175, 0.26)",
+            data: [0.14, 0.06, 0.09, 0.13, 0.12, 0.06, 0.09, 0.13, 0.12, 0.12]
+        },
+        {
+            label: "PM25",
+            fill: true,
+            backgroundColor: "rgba(102,102,153, 0.26)",
+            borderColor: "rgba(175, 175, 175, 0.26)",
+            data: [0.14, 0.06, 0.09, 0.13, 0.12, 0.12, 0.06, 0.09, 0.04, 0.13]
+        },
+        {
+            label: "PM10",
+            fill: true,
+            backgroundColor: "rgba(0,153,153, 0.26)",
+            borderColor: "rgba(175, 175, 175, 0.26)",
+            data: [0.14, 0.06, 0.09, 0.13, 0.12, 0.06, 0.09, 0.04, 0.13, 0.12]
         }
     ],
     options: {
@@ -159,6 +196,69 @@ if (bar != null) {
     });
 }
 
+var dataWeather = {
+    labels: ["2019-09-15 06:22:00", "2019-09-15 06:22:15", "2019-09-15 06:22:30", "2019-09-15 06:22:45", "2019-09-15 06:23:00", "2019-09-15 06:23:15", "2019-09-15 06:23:30", "2019-09-15 06:23:45", "2019-09-15 06:24:00", "2019-09-15 06:24:15"],
+    datasets: [
+        {
+            label: "空气温度",
+            fill: true,
+            backgroundColor: "rgba(55, 209, 119, 0.45)",
+            borderColor: "rgba(55, 209, 119, 0.45)",
+            data: [0.12, 0.13, 0.11, 0.17, 0.08, 0.04, 0.05, 0.13, 0.08, 0.06]
+        },
+        {
+            label: "相对湿度",
+            fill: true,
+            backgroundColor: "rgba(204,255,204,0.45)",
+            borderColor: "rgba(55, 209, 119, 0.45)",
+            data: [0.02, 0.03, 0.11, 0.06, 0.09, 0.04, 0.13, 0.12, 0.09, 0.09]
+        },
+        {
+            label: "降水量",
+            fill: true,
+            backgroundColor: "rgba(102,153,204, 0.26)",
+            borderColor: "rgba(175, 175, 175, 0.26)",
+            data: [0.14, 0.06, 0.09, 0.13, 0.12, 0.06, 0.09, 0.04, 0.13, 0.12]
+        },
+        {
+            label: "总辐射辐照度",
+            fill: true,
+            backgroundColor: "rgba(175, 175, 175, 0.26)",
+            borderColor: "rgba(175, 175, 175, 0.26)",
+            data: [0.14, 0.06, 0.009, 0.13, 0.12, 0.06, 0.09, 0.13, 0.12, 0.06]
+        },
+        {
+            label: "风速",
+            fill: true,
+            backgroundColor: "rgba(204,204,255, 0.26)",
+            borderColor: "rgba(175, 175, 175, 0.26)",
+            data: [0.14, 0.06, 0.09, 0.13, 0.12, 0.09, 0.13, 0.12, 0.13, 0.12]
+        },
+        {
+            label: "本站气压",
+            fill: true,
+            backgroundColor: "rgba(102,102,153, 0.26)",
+            borderColor: "rgba(175, 175, 175, 0.26)",
+            data: [0.14, 0.06, 0.09, 0.13, 0.12, 0.09, 0.13, 0.12, 0.13, 0.12]
+        }
+    ],
+    options: {
+        scales: {
+            yAxes: [{
+                stacked: true
+            }]
+        }
+    }
+};
+
+if (weather != null) {
+    var weatherChar = new Chart(weather, {
+        type: 'bar',
+        data: dataWeather,
+        options: options
+
+    });
+}
 
 //PIE  & POLAR CHART EXAMPLE
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

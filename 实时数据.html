@@ -294,282 +294,100 @@
             </div>
             <div class="row animated fadeInUp">
                 <div class="row">
-                    <div class="col-sm-12 col-md-4">
-                        <div class="panel widgetbox wbox-2 bg-scale-0">
-                            <a href="#">
-                                <div class="panel-content">
-                                    <div class="row">
-                                        <div class="col-xs-4">
-                                            <span class="icon fa fa-thermometer-3 color-darker-1"></span>
-                                        </div>
-                                        <div class="col-xs-8">
-                                            <h4 class="subtitle color-darker-1">温度</h4>
-                                            <h1 class="title color-primary">34℃</h1>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-4">
-                        <div class="panel widgetbox wbox-2 bg-lighter-2 color-light">
-                            <a href="#">
-                                <div class="panel-content">
-                                    <div class="row">
-                                        <div class="col-xs-4">
-                                            <span class="icon fa fa-tint color-darker-2"></span>
-                                        </div>
-                                        <div class="col-xs-8">
-                                            <h4 class="subtitle color-darker-2">湿度</h4>
-                                            <h1 class="title color-w">50％</h1>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-4">
-                        <div class="panel widgetbox wbox-2 bg-darker-2 color-light">
-                            <a href="#">
-                                <div class="panel-content">
-                                    <div class="row">
-                                        <div class="col-xs-4">
-                                            <span class="icon fa fa-tree color-lighter-1"></span>
-                                        </div>
-                                        <div class="col-xs-8">
-                                            <h4 class="subtitle color-lighter-1">AQI</h4>
-                                            <h1 class="title color-light">103</h1>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
+                    <div class="col-sm-12 col-md-12">
+                        <h4 class="section-subtitle"><b>环境站</b> 实时数据</h4>
+                        <div class="panel">
+                            <div class="panel-content">
+                                <canvas id="bar-chart" width="400" height="80"></canvas>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-12 col-md-6">
-                        <div class="tabs mt-none">
-                            <ul class="nav nav-tabs nav-justified">
-                                <li class="active"><a href="#weather" data-toggle="tab">气象数据</a></li>
-                                <li><a href="#air" data-toggle="tab">环境数据</a></li>
-                            </ul>
-                            <div class="tab-content">
-                                <div class="tab-pane fade in active" id="weather">
-                                    <div class="table-responsive">
-                                        <table class="table table-striped table-hover">
-                                            <thead>
-                                            <tr>
-                                                <th>指标名称</th>
-                                                <th>指标数值</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr>
-                                                <td>统计时间</td>
-                                                <td>2019-01-01 01:00:00</td>
-                                            </tr>
-                                            <tr>
-                                                <td>空气温度</td>
-                                                <td>34℃</td>
-                                            </tr>
-                                            <tr>
-                                                <td>相对湿度</td>
-                                                <td>50%</td>
-                                            </tr>
-                                            <tr>
-                                                <td>降水量</td>
-                                                <td>1.0mm</td>
-                                            </tr>
-                                            <tr>
-                                                <td>总辐射辐照度</td>
-                                                <td>368W/m2</td>
-                                            </tr>
-                                            <tr>
-                                                <td>风速</td>
-                                                <td>0.2m/s</td>
-                                            </tr>
-                                            <tr>
-                                                <td>风向</td>
-                                                <td>234°西南风</td>
-                                            </tr>
-                                            <tr>
-                                                <td>本站气压</td>
-                                                <td>1015.0Mpa</td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade " id="air">
-                                    <div class="table-responsive">
-                                        <table class="table table-striped table-hover">
-                                            <thead>
-                                            <tr>
-                                                <th>指标名称</th>
-                                                <th>指标数值</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr>
-                                                <td>统计时间</td>
-                                                <td>2019-01-01 01:00:00</td>
-                                            </tr>
-                                            <tr>
-                                                <td>SO2</td>
-                                                <td>24 mg/m3</td>
-                                            </tr>
-                                            <tr>
-                                                <td>NO</td>
-                                                <td>24mg/m3</td>
-                                            </tr>
-                                            <tr>
-                                                <td>pm2.5</td>
-                                                <td>24 mg/m3</td>
-                                            </tr>
-                                            <tr>
-                                                <td>O3</td>
-                                                <td>24 mg/m3</td>
-                                            </tr>
-                                            <tr>
-                                                <td>NOX</td>
-                                                <td>24 mg/m3</td>
-                                            </tr>
-                                            <tr>
-                                                <td>pm10</td>
-                                                <td>24 mg/m3</td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-12 col-md-6">
+                    <div class="col-sm-12 col-md-12">
+                        <h4 class="section-subtitle"><b>气象站</b> 实时数据</h4>
                         <div class="panel">
-                            <div class="panel-header panel-success">
-                                <h3 class="panel-title">温情提示</h3>
-                                <div class="panel-actions">
-                                    <ul>
-                                        <li class="action toggle-panel panel-expand"><span></span></li>
-                                        <li class="action"><span class="fa fa-bars action"
-                                                                 aria-hidden="true"></span></li>
-                                    </ul>
-                                </div>
-                            </div>
                             <div class="panel-content">
-                                <p>空气轻度污染，适量减少室外活</p>
+                                <canvas id="weather-chart" width="400" height="80"></canvas>
                             </div>
-                        </div>
-                        <div class="panel">
-                            <div class="panel-header  panel-warning">
-                                <h3 class="panel-title">预警信息</h3>
-                                <div class="panel-actions">
-                                    <ul>
-                                        <li class="action toggle-panel panel-expand"><span></span></li>
-                                        <li class="action"><span class="fa fa-bars action"
-                                                                 aria-hidden="true"></span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="panel-content">
-                                <p>明日将有大暴雨，请做好防护准备</p>
-                            </div>
-                        </div>
-                        <div class="panel">
-                            <div class="panel-header  panel-danger">
-                                <h3 class="panel-title">异常数据</h3>
-                                <div class="panel-actions">
-                                    <ul>
-                                        <li class="action toggle-panel panel-expand"><span></span></li>
-                                        <li class="action"><span class="fa fa-bars action" aria-hidden="true"></span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="panel-content">
-                                <p>气象站一小时雨量超过最大限制</p>
-                                <p>环境站一氧化氮超过最大限制</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="right-sidebar">
-                <div class="right-sidebar-toggle" data-toggle-class="right-sidebar-opened" data-target="html">
-                    <i class="fa fa-cog fa-spin" aria-hidden="true"></i>
-                </div>
-                <div id="right-nav" class="nano">
-                    <div class="nano-content">
-                        <div class="template-settings">
-                            <h4 class="text-center">Template Settings</h4>
-                            <ul class="toggle-settings pv-xlg">
-                                <li>
-                                    <h6 class="text">Header fixed</h6>
-                                    <label class="switch">
-                                        <input id="header-fixed" type="checkbox" checked>
-                                        <span class="slider round"></span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <h6 class="text">Left sidebar fixed</h6>
-                                    <label class="switch">
-                                        <input id="left-sidebar-fixed" type="checkbox" checked>
-                                        <span class="slider round"></span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <h6 class="text">Left sidebar collapsed</h6>
-                                    <label class="switch">
-                                        <input id="left-sidebar-collapsed" type="checkbox">
-                                        <span class="slider round"></span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <h6 class="text">Content header fixed</h6>
-                                    <label class="switch">
-                                        <input id="content-header-fixed" type="checkbox" checked>
-                                        <span class="slider round"></span>
-                                    </label>
-                                </li>
-                            </ul>
-                            <h4 class="text-center">Template Colors</h4>
-                            <ul class="toggle-colors">
-                                <li>
-                                    <a href="index.html" class="on-click"> <img alt="Helsinki-green"
-                                                                                src="images/helsinki-green.png"/></a>
-                                </li>
-                                <li>
-                                    <a href="../helsinki-light/index.html" class="on-click"> <img alt="Helsinki-light"
-                                                                                                  src="images/helsinki-light.png"/></a>
-                                </li>
-                                <li>
-                                    <a href="../helsinki-blue/index.html" class="on-click"> <img alt="Helsinki-blue"
-                                                                                                 src="images/helsinki-blue.png"/></a>
-                                </li>
-                                <li>
-                                    <a href="../helsinki-red/index.html" class="on-click"> <img alt="Helsinki-red"
-                                                                                                src="images/helsinki-red.png"/></a>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <a href="#" class="scroll-to-top"><i class="fa fa-angle-double-up"></i></a>
         </div>
+        <div class="right-sidebar">
+            <div class="right-sidebar-toggle" data-toggle-class="right-sidebar-opened" data-target="html">
+                <i class="fa fa-cog fa-spin" aria-hidden="true"></i>
+            </div>
+            <div id="right-nav" class="nano">
+                <div class="nano-content">
+                    <div class="template-settings">
+                        <h4 class="text-center">Template Settings</h4>
+                        <ul class="toggle-settings pv-xlg">
+                            <li>
+                                <h6 class="text">Header fixed</h6>
+                                <label class="switch">
+                                    <input id="header-fixed" type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <h6 class="text">Left sidebar fixed</h6>
+                                <label class="switch">
+                                    <input id="left-sidebar-fixed" type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <h6 class="text">Left sidebar collapsed</h6>
+                                <label class="switch">
+                                    <input id="left-sidebar-collapsed" type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <h6 class="text">Content header fixed</h6>
+                                <label class="switch">
+                                    <input id="content-header-fixed" type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </li>
+                        </ul>
+                        <h4 class="text-center">Template Colors</h4>
+                        <ul class="toggle-colors">
+                            <li>
+                                <a href="index.html" class="on-click"> <img alt="Helsinki-green"
+                                                                            src="images/helsinki-green.png"/></a>
+                            </li>
+                            <li>
+                                <a href="../helsinki-light/index.html" class="on-click"> <img alt="Helsinki-light"
+                                                                                              src="images/helsinki-light.png"/></a>
+                            </li>
+                            <li>
+                                <a href="../helsinki-blue/index.html" class="on-click"> <img alt="Helsinki-blue"
+                                                                                             src="images/helsinki-blue.png"/></a>
+                            </li>
+                            <li>
+                                <a href="../helsinki-red/index.html" class="on-click"> <img alt="Helsinki-red"
+                                                                                            src="images/helsinki-red.png"/></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="scroll-to-top"><i class="fa fa-angle-double-up"></i></a>
     </div>
-    <script src="javascripts/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="vendor/nano-scroller/nano-scroller.js"></script>
-    <script src="javascripts/template-script.min.js"></script>
-    <script src="javascripts/template-init.min.js"></script>
-    <script src="vendor/toastr/toastr.min.js"></script>
-    <script src="vendor/chart-js/chart.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="javascripts/examples/dashboard.js"></script>
+</div>
+<script src="javascripts/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="vendor/nano-scroller/nano-scroller.js"></script>
+<script src="javascripts/template-script.min.js"></script>
+<script src="javascripts/template-init.min.js"></script>
+<script src="vendor/toastr/toastr.min.js"></script>
+<script src="vendor/chart-js/chart.min.js"></script>
+<script src="javascripts/examples/charts/chart-js.js"></script>
+<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
 </body>
 
