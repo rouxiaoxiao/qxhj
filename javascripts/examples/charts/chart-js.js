@@ -2,10 +2,11 @@
 
 var line = document.getElementById("line-chart");
 var area = document.getElementById("area-chart");
-var bar = document.getElementById("bar-chart");
 var pie = document.getElementById("pie-chart");
 var polar = document.getElementById("polar-chart");
 var radar = document.getElementById("radar-chart");
+//环境站数据
+var airBar = document.getElementById("air-chart");
 //气象站数据
 var weather = document.getElementById("weather-chart");
 
@@ -125,7 +126,7 @@ if (area != null) {
 
 //BAR CHART EXAMPLE
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-var dataBars = {
+var dataAir = {
     labels: ["2019-09-15 06:22:00", "2019-09-15 06:22:15", "2019-09-15 06:22:30", "2019-09-15 06:22:45", "2019-09-15 06:23:00", "2019-09-15 06:23:15", "2019-09-15 06:23:30", "2019-09-15 06:23:45", "2019-09-15 06:24:00", "2019-09-15 06:24:15"],
     datasets: [
         {
@@ -187,10 +188,10 @@ var dataBars = {
     }
 };
 
-if (bar != null) {
-    var barChar = new Chart(bar, {
+if (airBar != null) {
+    var barChar = new Chart(airBar, {
         type: 'bar',
-        data: dataBars,
+        data: dataAir,
         options: options
 
     });
