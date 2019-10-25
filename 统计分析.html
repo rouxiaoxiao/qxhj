@@ -282,9 +282,16 @@
                                     <li><a href="异常数据.html">异常数据</a></li>
                                 </ul>
                             </li>
-                            <li class="fa"><a href="系统管理.html"><i class="fa fa-sitemap"
-                                                                  aria-hidden="true"></i><span>系统管理</span></a>
+                            <li class="has-child-item close-item">
+                                <a><i class="fa fa-sitemap" aria-hidden="true"></i><span>系统管理</span></a>
+                                <ul class="nav child-nav level-1">
+                                    <li><a href="报警阈值.html">报警阈值</a></li>
+                                    <li><a href="维护信息.html">维护信息</a></li>
+                                </ul>
                             </li>
+                            <!--<li class="fa"><a href="系统管理.html"><i class="fa fa-sitemap"-->
+                            <!--aria-hidden="true"></i><span>系统管理</span></a>-->
+                            <!--</li>-->
                             <!--<li class="active-item"><a href="index.html"><i class="fa fa-home"-->
                             <!--aria-hidden="true"></i><span>Dashboard</span></a>-->
                             <!--</li>-->
@@ -423,35 +430,87 @@
             <div class="row animated fadeInUp">
                 <div class="row">
                     <div class="form-group">
-                        <label for="select2-example-basic" class="col-sm-1 control-label">站点</label>
+                        <label for="StatisticalItem" class="col-sm-1 control-label">统计项</label>
                         <div class="col-sm-5">
-                            <select name="country" id="select2-example-basic3" class="form-control" style="width: 100%">
-                                <option value="MIN" label="气象站">气象站</option>
-                                <option value="HOUR" label="环境站">环境站</option>
-                            </select>
-                        </div>
-                        <label for="select2-example-basic" class="col-sm-1 control-label">时间间隔</label>
-                        <div class="col-sm-5">
-                            <select name="country" id="select2-example-basic" class="form-control" style="width: 100%">
-                                <option value="MIN" label="每分钟">每分钟</option>
-                                <option value="HOUR" label="每小时">每小时</option>
-                                <option value="DAY" label="每天">每天</option>
-                            </select>
-                        </div>
-                        <label for="select2-example-basic" class="col-sm-1 control-label">数据项</label>
-                        <div class="col-sm-5">
-                            <select name="country" id="select2-example-basic2" class="form-control" style="width: 100%">
-                                <option value="MIN" label="SO2">SO2</option>
-                                <option value="HOUR" label="每小时">NO</option>
-                                <option value="DAY" label="每天">NO2</option>
-                            </select>
-                        </div>
-                        <label for="select2-example-basic" class="col-sm-1 control-label">统计项</label>
-                        <div class="col-sm-5">
-                            <select name="country" id="select2-example-basic4" class="form-control" style="width: 100%">
-                                <option value="MIN" label="SO2">平均值</option>
-                                <option value="HOUR" label="每小时">API</option>
-                                <option value="DAY" label="每天">极大值</option>
+                            <select name="country" id="StatisticalItem" class="form-control" style="width: 100%">
+                                <optgroup label="风速">
+                                    <option value="风速 小时平均" label="风速 小时平均">风速 小时平均</option>
+                                    <option value="风速 日平均" label="风速 日平均">风速 日平均</option>
+                                    <option value="风速 月平均" label="风速 月平均">风速 月平均</option>
+                                    <option value="风速 年平均" label="风速 年平均">风速 年平均</option>
+                                </optgroup>
+                                <optgroup label="温度">
+                                    <option value="温度 小时平均" label="温度 小时平均">温度 小时平均</option>
+                                    <option value="温度 日平均" label="温度 日平均">温度 日平均</option>
+                                    <option value="温度 月平均" label="温度 月平均">温度 月平均</option>
+                                    <option value="温度 年平均" label="温度 年平均">温度 年平均</option>
+                                </optgroup>
+                                <optgroup label="相对湿度">
+                                    <option value="相对湿度 小时平均" label="相对湿度 小时平均">相对湿度 小时平均</option>
+                                    <option value="相对湿度 日平均" label="相对湿度 日平均">相对湿度 日平均</option>
+                                    <option value="相对湿度 月平均" label="相对湿度 月平均">相对湿度 月平均</option>
+                                    <option value="相对湿度 年平均" label="相对湿度 年平均">相对湿度 年平均</option>
+                                </optgroup>
+                                <optgroup label="雨量">
+                                    <option value="雨量 分种累计" label="雨量 分种累计">雨量 分种累计</option>
+                                    <option value="雨量 小时累计" label="雨量 小时累计">雨量 小时累计</option>
+                                    <option value="雨量 日累计" label="雨量 日累计">雨量 日累计</option>
+                                    <option value="雨量 月累计" label="雨量 月累计">雨量 月累计</option>
+                                    <option value="雨量 年累计" label="雨量 年累计">雨量 年累计</option>
+                                </optgroup>
+                                <optgroup label="气压">
+                                    <option value="气压 小时平均" label="气压 小时平均">气压 小时平均</option>
+                                    <option value="气压 日平均" label="气压 日平均">气压 日平均</option>
+                                    <option value="气压 月平均" label="气压 月平均">气压 月平均</option>
+                                    <option value="气压 年平均" label="气压 年平均">气压 年平均</option>
+                                </optgroup>
+                                <optgroup label="总辐射">
+                                    <option value="总辐射 小时平均" label="总辐射 小时平均">总辐射 小时平均</option>
+                                    <option value="总辐射 日平均" label="总辐射 日平均">总辐射 日平均</option>
+                                    <option value="总辐射 月平均" label="总辐射 月平均">总辐射 月平均</option>
+                                    <option value="总辐射 年平均" label="总辐射 年平均">总辐射 年平均</option>
+                                </optgroup>
+                                <optgroup label="SO2">
+                                    <option value="SO2 小时平均" label="SO2 小时平均">SO2 小时平均</option>
+                                    <option value="SO2 日平均" label="SO2 日平均">SO2 日平均</option>
+                                    <option value="SO2 月平均" label="SO2 月平均">SO2 月平均</option>
+                                    <option value="SO2 年平均" label="SO2 年平均">SO2 年平均</option>
+                                    <option value="SO2 IAQI" label="SO2 IAQI">SO2 IAQI</option>
+                                    <option value="SO2 AQI" label="SO2 AQI">SO2 AQI</option>
+                                </optgroup>
+                                <optgroup label="NO2">
+                                    <option value="NO2 小时平均" label="NO2 小时平均">NO2 小时平均</option>
+                                    <option value="NO2 日平均" label="NO2 日平均">NO2 日平均</option>
+                                    <option value="NO2 月平均" label="NO2 月平均">NO2 月平均</option>
+                                    <option value="NO2 年平均" label="NO2 年平均">NO2 年平均</option>
+                                    <option value="NO2 IAQI" label="NO2 IAQI">NO2 IAQI</option>
+                                    <option value="NO2 AQI" label="NO2 AQI">NO2 AQI</option>
+                                </optgroup>
+                                <optgroup label="O3">
+                                    <option value="O3 小时平均" label="O3 小时平均">O3 小时平均</option>
+                                    <option value="O3 日平均" label="O3 日平均">O3 日平均</option>
+                                    <option value="O3 月平均" label="O3 月平均">O3 月平均</option>
+                                    <option value="O3 年平均" label="O3 年平均">O3 年平均</option>
+                                    <option value="O3 8小时滑动平均值" label="O3 8小时滑动平均值">O3 8小时滑动平均值</option>
+                                    <option value="O3 IAQI" label="O3 IAQI">O3 IAQI</option>
+                                    <option value="O3 AQI" label="O3 AQI">O3 AQI</option>
+                                </optgroup>
+                                <optgroup label="PM2.5">
+                                    <option value="PM2.5 小时平均" label="PM2.5 小时平均">PM2.5 小时平均</option>
+                                    <option value="PM2.5 日平均" label="PM2.5 日平均">PM2.5 日平均</option>
+                                    <option value="PM2.5 月平均" label="PM2.5 月平均">PM2.5 月平均</option>
+                                    <option value="PM2.5 年平均" label="PM2.5 年平均">PM2.5 年平均</option>
+                                    <option value="PM2.5 IAQI" label="PM2.5 IAQI">PM2.5 IAQI</option>
+                                    <option value="PM2.5 AQI" label="PM2.5 AQI">PM2.5 AQI</option>
+                                </optgroup>
+                                <optgroup label="PM10">
+                                    <option value="PM10 小时平均" label="PM10 小时平均">PM10 小时平均</option>
+                                    <option value="PM10 日平均" label="PM10 日平均">PM10 日平均</option>
+                                    <option value="PM10 月平均" label="PM10 月平均">PM10 月平均</option>
+                                    <option value="PM10 年平均" label="PM10 年平均">PM10 年平均</option>
+                                    <option value="PM10 IAQI" label="PM10 IAQI">PM10 IAQI</option>
+                                    <option value="PM10 AQI" label="PM10 AQI">PM10 AQI</option>
+                                </optgroup>
                             </select>
                         </div>
                     </div>

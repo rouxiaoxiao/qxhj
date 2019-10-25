@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="vendor/animate.css/animate.css">
     <link rel="stylesheet" href="vendor/data-table/media/css/dataTables.bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/css/style.css">
@@ -275,9 +275,16 @@
                                     <li><a href="异常数据.html">异常数据</a></li>
                                 </ul>
                             </li>
-                            <li class="fa"><a href="系统管理.html"><i class="fa fa-sitemap" aria-hidden="true"></i></i>
-                                <span>系统管理</span></a>
+                            <li class="has-child-item close-item">
+                                <a><i class="fa fa-sitemap" aria-hidden="true"></i><span>系统管理</span></a>
+                                <ul class="nav child-nav level-1">
+                                    <li><a href="报警阈值.html">报警阈值</a></li>
+                                    <li><a href="维护信息.html">维护信息</a></li>
+                                </ul>
                             </li>
+                            <!--<li class="fa"><a href="系统管理.html"><i class="fa fa-sitemap" aria-hidden="true"></i></i>-->
+                                <!--<span>系统管理</span></a>-->
+                            <!--</li>-->
                         </ul>
                     </nav>
                 </div>

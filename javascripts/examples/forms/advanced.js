@@ -23,25 +23,32 @@ $(function(){
     //Set bootstrap theme
     $.fn.select2.defaults.set( "theme", "bootstrap" );
 
+
+    //统计数据页面“统计项”下拉框
+    $("#StatisticalItem").select2({
+        placeholder: "请选择统计项",
+        allowClear: true
+    });
+
     //Select2 basic example
     $("#select2-example-basic").select2({
         placeholder: "Select a country",
         allowClear: true
     });
 
-    //�ڶ���ѡ���
+    //第二个选择框
     $("#select2-example-basic2").select2({
         placeholder: "Select a country",
         allowClear: true
     });
 
-    //�ڶ���ѡ���
+    //第二个选择框
     $("#select2-example-basic3").select2({
         placeholder: "Select a country",
         allowClear: true
     });
 
-    //�ڶ���ѡ���
+    //第二个选择框
     $("#select2-example-basic4").select2({
         placeholder: "Select a country",
         allowClear: true

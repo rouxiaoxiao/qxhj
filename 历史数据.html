@@ -282,9 +282,16 @@
                                     <li><a href="异常数据.html">异常数据</a></li>
                                 </ul>
                             </li>
-                            <li class="fa"><a href="系统管理.html"><i class="fa fa-sitemap" aria-hidden="true"></i></i>
-                                <span>系统管理</span></a>
+                            <li class="has-child-item close-item">
+                                <a><i class="fa fa-sitemap" aria-hidden="true"></i><span>系统管理</span></a>
+                                <ul class="nav child-nav level-1">
+                                    <li><a href="报警阈值.html">报警阈值</a></li>
+                                    <li><a href="维护信息.html">维护信息</a></li>
+                                </ul>
                             </li>
+                            <!--<li class="fa"><a href="系统管理.html"><i class="fa fa-sitemap" aria-hidden="true"></i></i>-->
+                                <!--<span>系统管理</span></a>-->
+                            <!--</li>-->
                             <!--<li class="active-item"><a href="index.html"><i class="fa fa-home"-->
                             <!--aria-hidden="true"></i><span>Dashboard</span></a>-->
                             <!--</li>-->
@@ -470,24 +477,34 @@
                         <!--</div>-->
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 col-md-12">
-                    <h4 class="section-subtitle"><b>环境站</b> 历史数据</h4>
-                    <div class="panel">
-                        <div class="panel-content">
-                            <canvas id="air-chart" width="400" height="180"></canvas>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <h4 class="section-subtitle"><b>环境站</b> 历史数据</h4>
+                        <div class="panel">
+                            <div class="panel-content">
+                                <canvas id="air-chart" width="400" height="180"></canvas>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 col-md-12">
-                    <h4 class="section-subtitle"><b>气象站</b> 实时数据</h4>
-                    <h5 class="section-subtitle">温度</h5>
-                    <div class="panel">
-                        <div class="panel-content">
-                            <canvas id="weather-chart" width="400" height="180"></canvas>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <h4 class="section-subtitle"><b>气象站</b> 实时数据</h4>
+                        <h5 class="section-subtitle">温度</h5>
+                        <div class="panel">
+                            <div class="panel-content">
+                                <canvas id="weather-chart" width="400" height="180"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4 class="section-subtitle">风向玫瑰图</h4>
+                        <div class="panel">
+                            <div class="panel-content">
+                                <canvas id="windDirection" width="400" height="260"></canvas>
+                            </div>
                         </div>
                     </div>
                 </div>

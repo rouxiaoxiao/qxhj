@@ -9,6 +9,8 @@ var radar = document.getElementById("radar-chart");
 var airBar = document.getElementById("air-chart");
 //气象站数据
 var weather = document.getElementById("weather-chart");
+//风向数据
+var windDirection = document.getElementById("windDirection");
 
 var options = {
     scales: {
@@ -314,15 +316,6 @@ if (pie != null) {
 }
 
 
-if (polar != null) {
-    var polarChar = new Chart(polar, {
-        type: 'polarArea',
-        data: dataPie
-
-    });
-}
-
-
 //RADAR CHART EXAMPLE
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 var dataRadar = {
@@ -356,5 +349,31 @@ if (radar != null) {
         type: 'radar',
         data: dataRadar
 
+    });
+}
+
+
+var dataWindDirection = {
+    labels: ["北", "东北", "东", "东南", "南", "西南", "西", "西北"],
+    datasets: [
+        {
+            label: "Data 1",
+            backgroundColor: "rgba(55, 209, 119, 0.45)",
+            borderColor: "rgba(55, 209, 119, 1)",
+            pointBackgroundColor: "rgba(55, 209, 119, 1)",
+            pointBorderColor: "#fff",
+            pointHoverBackgroundColor: "#fff",
+            pointHoverBorderColor: "rgba(55, 209, 119, 1)",
+            data: [65, 59, 90, 81, 56, 55, 40, 30]
+        }
+    ]
+};
+
+if (windDirection != null) {
+    var radarChar = new Chart(windDirection, {
+        type: 'radar',
+        data: dataWindDirection,
+        //不显示图例
+        options: {legend: {display: false}}
     });
 }
