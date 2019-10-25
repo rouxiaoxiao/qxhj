@@ -29,6 +29,24 @@ $(function(){
         allowClear: true
     });
 
+    //第二个选择框
+    $("#select2-example-basic2").select2({
+        placeholder: "Select a country",
+        allowClear: true
+    });
+
+    //第二个选择框
+    $("#select2-example-basic3").select2({
+        placeholder: "Select a country",
+        allowClear: true
+    });
+
+    //第二个选择框
+    $("#select2-example-basic4").select2({
+        placeholder: "Select a country",
+        allowClear: true
+    });
+
     //Select2 multiple options example
     $("#select2-example-multiple").select2({
         placeholder: "Select a country",

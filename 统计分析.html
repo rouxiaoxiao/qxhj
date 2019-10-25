@@ -15,6 +15,12 @@
     <link rel="stylesheet" href="vendor/toastr/toastr.min.css">
     <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="stylesheets/css/style.css">
+    <link rel="stylesheet" href="vendor/select2/css/select2.min.css">
+    <link rel="stylesheet" href="vendor/select2/css/select2-bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap_date-picker/css/bootstrap-datepicker3.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap_time-picker/css/timepicker.css">
+    <link rel="stylesheet" href="vendor/bootstrap_color-picker/css/bootstrap-colorpicker.min.css">
+    <link rel="stylesheet" href="stylesheets/css/style.css">
 </head>
 
 <body>
@@ -415,11 +421,59 @@
                 </div>
             </div>
             <div class="row animated fadeInUp">
-                <div class="col-md-6">
-                    <h4 class="section-subtitle"><b>Bar</b> Chart</h4>
-                    <div class="panel">
-                        <div class="panel-content">
-                            <canvas id="bar-chart" width="400" height="260"></canvas>
+                <div class="row">
+                    <div class="form-group">
+                        <label for="select2-example-basic" class="col-sm-1 control-label">站点</label>
+                        <div class="col-sm-5">
+                            <select name="country" id="select2-example-basic3" class="form-control" style="width: 100%">
+                                <option value="MIN" label="气象站">气象站</option>
+                                <option value="HOUR" label="环境站">环境站</option>
+                            </select>
+                        </div>
+                        <label for="select2-example-basic" class="col-sm-1 control-label">时间间隔</label>
+                        <div class="col-sm-5">
+                            <select name="country" id="select2-example-basic" class="form-control" style="width: 100%">
+                                <option value="MIN" label="每分钟">每分钟</option>
+                                <option value="HOUR" label="每小时">每小时</option>
+                                <option value="DAY" label="每天">每天</option>
+                            </select>
+                        </div>
+                        <label for="select2-example-basic" class="col-sm-1 control-label">数据项</label>
+                        <div class="col-sm-5">
+                            <select name="country" id="select2-example-basic2" class="form-control" style="width: 100%">
+                                <option value="MIN" label="SO2">SO2</option>
+                                <option value="HOUR" label="每小时">NO</option>
+                                <option value="DAY" label="每天">NO2</option>
+                            </select>
+                        </div>
+                        <label for="select2-example-basic" class="col-sm-1 control-label">统计项</label>
+                        <div class="col-sm-5">
+                            <select name="country" id="select2-example-basic4" class="form-control" style="width: 100%">
+                                <option value="MIN" label="SO2">平均值</option>
+                                <option value="HOUR" label="每小时">API</option>
+                                <option value="DAY" label="每天">极大值</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <h4 class="section-subtitle"><b>环境站</b> 历史数据</h4>
+                        <div class="panel">
+                            <div class="panel-content">
+                                <canvas id="air-chart" width="400" height="180"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <h4 class="section-subtitle"><b>气象站</b> 实时数据</h4>
+                        <h5 class="section-subtitle">温度</h5>
+                        <div class="panel">
+                            <div class="panel-content">
+                                <canvas id="weather-chart" width="400" height="180"></canvas>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -498,6 +552,16 @@
 <script src="vendor/chart-js/chart.min.js"></script>
 <!--<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>-->
 <script src="javascripts/examples/charts/chart-js.js"></script>
+<script src="javascripts/examples/charts/chart-js.js"></script>
+<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="vendor/bootstrap_max-lenght/bootstrap-maxlength.js"></script>
+<script src="vendor/select2/js/select2.min.js"></script>
+<script src="vendor/input-masked/inputmask.bundle.min.js"></script>
+<script src="vendor/input-masked/phone-codes/phone.js"></script>
+<script src="vendor/bootstrap_date-picker/js/bootstrap-datepicker.min.js"></script>
+<script src="vendor/bootstrap_time-picker/js/bootstrap-timepicker.js"></script>
+<script src="vendor/bootstrap_color-picker/js/bootstrap-colorpicker.min.js"></script>
+<script src="javascripts/examples/forms/advanced.js"></script>
 
 </body>
 
