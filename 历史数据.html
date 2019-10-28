@@ -283,10 +283,25 @@
                                 </ul>
                             </li>
                             <li class="has-child-item close-item">
-                                <a><i class="fa fa-sitemap" aria-hidden="true"></i><span>系统管理</span></a>
+                                <a><i class="fa fa-book" aria-hidden="true"></i><span>资料管理</span></a>
                                 <ul class="nav child-nav level-1">
-                                    <li><a href="报警阈值.html">报警阈值</a></li>
-                                    <li><a href="维护信息.html">维护信息</a></li>
+                                    <li><a href="检测报告管理.html">检测报告管理</a></li>
+                                    <li><a href="文献资料管理.html">文献资料管理</a></li>
+                                </ul>
+                            </li>
+                            <li class="fa"><a href="报警管理.html"><i class="fa fa-bomb " aria-hidden="true"></i></i>
+                                <span>报警管理</span></a>
+                            </li>
+                            <li class="fa"><a href="工作建议管理.html"><i class="fa fa-heart " aria-hidden="true"></i></i>
+                                <span>工作建议管理</span></a>
+                            </li>
+                            <li class="has-child-item close-item">
+                                <a><i class="fa fa-cog " aria-hidden="true"></i><span>系统管理</span></a>
+                                <ul class="nav child-nav level-1">
+                                    <li><a href="数据正常阈值管理.html">数据正常阈值管理</a></li>
+                                    <li><a href="极端天气阈值管理.html">极端天气阈值管理</a></li>
+                                    <li><a href="系统日志.html">系统日志</a></li>
+                                    <li><a href="级别管理.html">级别管理</a></li>
                                 </ul>
                             </li>
                             <!--<li class="fa"><a href="系统管理.html"><i class="fa fa-sitemap" aria-hidden="true"></i></i>-->
@@ -430,56 +445,41 @@
             <div class="row animated fadeInUp">
                 <div class="row">
                     <div class="form-group">
-                        <label for="select2-example-basic3" class="col-sm-2 control-label">站点</label>
+                        <label for="indicatorItem" class="col-sm-2 control-label">指标项</label>
                         <div class="col-sm-4">
-                            <select name="country" id="select2-example-basic3" class="form-control" style="width: 100%">
-                                <option value="MIN" label="气象站">气象站</option>
-                                <option value="HOUR" label="环境站">环境站</option>
+                            <select name="country" id="indicatorItem" class="form-control" style="width: 100%">
+                                <option value="风速风向" label="风速风向">风速风向</option>
+                                <option value="风向玫瑰图" label="风向玫瑰图">风向玫瑰图</option>
+                                <option value="降水量" label="降水量">降水量</option>
+                                <option value="空气温度" label="空气温度">空气温度</option>
+                                <option value="相对湿度" label="相对湿度">相对湿度</option>
+                                <option value="气压" label="气压">气压</option>
+                                <option value="总辐射" label="总辐射">总辐射</option>
+                                <option value="AQI" label="AQI">AQI</option>
+                                <option value="空气污染物" label="空气污染物">空气污染物</option>
+                                <option value="臭氧8小时" label="臭氧8小时">臭氧8小时</option>
                             </select>
                         </div>
-                        <!--<label for="select2-example-basic" class="col-sm-2 control-label">时间间隔</label>-->
-                        <!--<div class="col-sm-4">-->
-                        <!--<select name="country" id="select2-example-basic" class="form-control" style="width: 100%">-->
-                        <!--<option value="MIN" label="每分钟">每分钟</option>-->
-                        <!--<option value="HOUR" label="每小时">每小时</option>-->
-                        <!--<option value="DAY" label="每天">每天</option>-->
-                        <!--</select>-->
-                        <!--</div>-->
-
-                        <label class="col-sm-2 control-label">Range</label>
+                        <label for="timeline" class="col-sm-2 control-label">统计时间</label>
                         <div class="col-sm-4">
-                            <div class="input-daterange input-group" id="range-datepicker">
-                                <input type="text" class="input-sm form-control" name="start"/>
-                                <span class="input-group-addon x-primary">to</span>
-                                <input type="text" class="input-sm form-control" name="end"/>
-                            </div>
+                            <select name="country" id="timeline" class="form-control" style="width: 100%">
+                                <option value="小时" label="小时">小时</option>
+                                <option value="日" label="日">日</option>
+                                <option value="月" label="月">月</option>
+                                <option value="年" label="年">年</option>
+                            </select>
                         </div>
+
                     </div>
 
                 </div>
                 <div class="row">
-                    <div class="form-group">
-                        <label for="select2-example-basic2" class="col-sm-2 control-label">数据项</label>
-                        <div class="col-sm-4">
-                            <select name="country" id="select2-example-basic2" class="form-control" style="width: 100%">
-                                <option value="MIN" label="SO2">SO2</option>
-                                <option value="HOUR" label="每小时">NO</option>
-                                <option value="DAY" label="每天">NO2</option>
-                            </select>
-                        </div>
-                        <!--<label for="select2-example-basic4" class="col-sm-2 control-label">统计项</label>-->
-                        <!--<div class="col-sm-4">-->
-                            <!--<select name="country" id="select2-example-basic4" class="form-control" style="width: 100%">-->
-                                <!--<option value="MIN" label="SO2">平均值</option>-->
-                                <!--<option value="HOUR" label="每小时">API</option>-->
-                                <!--<option value="DAY" label="每天">极大值</option>-->
-                            <!--</select>-->
-                        <!--</div>-->
-                    </div>
+                    <div class="col-sm-5"></div>
+                    <button class="btn btn-wide btn-darker-1">查询</button>
                 </div>
                 <div class="row">
                     <div class="col-sm-12 col-md-12">
-                        <h4 class="section-subtitle"><b>环境站</b> 历史数据</h4>
+                        <h4 class="section-subtitle"><b>空气污染物</b> 历史数据</h4>
                         <div class="panel">
                             <div class="panel-content">
                                 <canvas id="air-chart" width="400" height="180"></canvas>

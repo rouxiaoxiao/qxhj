@@ -30,6 +30,24 @@ $(function(){
         allowClear: true
     });
 
+    //统计数据页面“统计方式”下拉框
+    $("#StatisticalMethod").select2({
+        placeholder: "请选择统计方式",
+        allowClear: true
+    });
+
+    //统计数据、历史数据页面“指标项”下拉框
+    $("#indicatorItem").select2({
+        placeholder: "请选择指标项",
+        allowClear: true
+    });
+
+    //统计数据页面“时间轴”下拉框
+    $("#timeline").select2({
+        placeholder: "请选择时间轴",
+        allowClear: true
+    });
+
     //Select2 basic example
     $("#select2-example-basic").select2({
         placeholder: "Select a country",

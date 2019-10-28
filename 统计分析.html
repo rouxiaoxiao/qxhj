@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="vendor/bootstrap_date-picker/css/bootstrap-datepicker3.min.css">
     <link rel="stylesheet" href="vendor/bootstrap_time-picker/css/timepicker.css">
     <link rel="stylesheet" href="vendor/bootstrap_color-picker/css/bootstrap-colorpicker.min.css">
-    <link rel="stylesheet" href="stylesheets/css/style.css">
+    <link rel="stylesheet" href="vendor/data-table/media/css/dataTables.bootstrap.min.css">
 </head>
 
 <body>
@@ -283,10 +283,25 @@
                                 </ul>
                             </li>
                             <li class="has-child-item close-item">
-                                <a><i class="fa fa-sitemap" aria-hidden="true"></i><span>系统管理</span></a>
+                                <a><i class="fa fa-book" aria-hidden="true"></i><span>资料管理</span></a>
                                 <ul class="nav child-nav level-1">
-                                    <li><a href="报警阈值.html">报警阈值</a></li>
-                                    <li><a href="维护信息.html">维护信息</a></li>
+                                    <li><a href="检测报告管理.html">检测报告管理</a></li>
+                                    <li><a href="文献资料管理.html">文献资料管理</a></li>
+                                </ul>
+                            </li>
+                            <li class="fa"><a href="报警管理.html"><i class="fa fa-bomb " aria-hidden="true"></i></i>
+                                <span>报警管理</span></a>
+                            </li>
+                            <li class="fa"><a href="工作建议管理.html"><i class="fa fa-heart " aria-hidden="true"></i></i>
+                                <span>工作建议管理</span></a>
+                            </li>
+                            <li class="has-child-item close-item">
+                                <a><i class="fa fa-cog " aria-hidden="true"></i><span>系统管理</span></a>
+                                <ul class="nav child-nav level-1">
+                                    <li><a href="数据正常阈值管理.html">数据正常阈值管理</a></li>
+                                    <li><a href="极端天气阈值管理.html">极端天气阈值管理</a></li>
+                                    <li><a href="系统日志.html">系统日志</a></li>
+                                    <li><a href="级别管理.html">级别管理</a></li>
                                 </ul>
                             </li>
                             <!--<li class="fa"><a href="系统管理.html"><i class="fa fa-sitemap"-->
@@ -428,113 +443,298 @@
                 </div>
             </div>
             <div class="row animated fadeInUp">
+
                 <div class="row">
                     <div class="form-group">
-                        <label for="StatisticalItem" class="col-sm-1 control-label">统计项</label>
+                        <label for="StatisticalMethod" class="col-sm-1 control-label">统计方式</label>
                         <div class="col-sm-5">
-                            <select name="country" id="StatisticalItem" class="form-control" style="width: 100%">
-                                <optgroup label="风速">
-                                    <option value="风速 小时平均" label="风速 小时平均">风速 小时平均</option>
-                                    <option value="风速 日平均" label="风速 日平均">风速 日平均</option>
-                                    <option value="风速 月平均" label="风速 月平均">风速 月平均</option>
-                                    <option value="风速 年平均" label="风速 年平均">风速 年平均</option>
-                                </optgroup>
-                                <optgroup label="温度">
-                                    <option value="温度 小时平均" label="温度 小时平均">温度 小时平均</option>
-                                    <option value="温度 日平均" label="温度 日平均">温度 日平均</option>
-                                    <option value="温度 月平均" label="温度 月平均">温度 月平均</option>
-                                    <option value="温度 年平均" label="温度 年平均">温度 年平均</option>
-                                </optgroup>
-                                <optgroup label="相对湿度">
-                                    <option value="相对湿度 小时平均" label="相对湿度 小时平均">相对湿度 小时平均</option>
-                                    <option value="相对湿度 日平均" label="相对湿度 日平均">相对湿度 日平均</option>
-                                    <option value="相对湿度 月平均" label="相对湿度 月平均">相对湿度 月平均</option>
-                                    <option value="相对湿度 年平均" label="相对湿度 年平均">相对湿度 年平均</option>
-                                </optgroup>
-                                <optgroup label="雨量">
-                                    <option value="雨量 分种累计" label="雨量 分种累计">雨量 分种累计</option>
-                                    <option value="雨量 小时累计" label="雨量 小时累计">雨量 小时累计</option>
-                                    <option value="雨量 日累计" label="雨量 日累计">雨量 日累计</option>
-                                    <option value="雨量 月累计" label="雨量 月累计">雨量 月累计</option>
-                                    <option value="雨量 年累计" label="雨量 年累计">雨量 年累计</option>
-                                </optgroup>
-                                <optgroup label="气压">
-                                    <option value="气压 小时平均" label="气压 小时平均">气压 小时平均</option>
-                                    <option value="气压 日平均" label="气压 日平均">气压 日平均</option>
-                                    <option value="气压 月平均" label="气压 月平均">气压 月平均</option>
-                                    <option value="气压 年平均" label="气压 年平均">气压 年平均</option>
-                                </optgroup>
-                                <optgroup label="总辐射">
-                                    <option value="总辐射 小时平均" label="总辐射 小时平均">总辐射 小时平均</option>
-                                    <option value="总辐射 日平均" label="总辐射 日平均">总辐射 日平均</option>
-                                    <option value="总辐射 月平均" label="总辐射 月平均">总辐射 月平均</option>
-                                    <option value="总辐射 年平均" label="总辐射 年平均">总辐射 年平均</option>
-                                </optgroup>
-                                <optgroup label="SO2">
-                                    <option value="SO2 小时平均" label="SO2 小时平均">SO2 小时平均</option>
-                                    <option value="SO2 日平均" label="SO2 日平均">SO2 日平均</option>
-                                    <option value="SO2 月平均" label="SO2 月平均">SO2 月平均</option>
-                                    <option value="SO2 年平均" label="SO2 年平均">SO2 年平均</option>
-                                    <option value="SO2 IAQI" label="SO2 IAQI">SO2 IAQI</option>
-                                    <option value="SO2 AQI" label="SO2 AQI">SO2 AQI</option>
-                                </optgroup>
-                                <optgroup label="NO2">
-                                    <option value="NO2 小时平均" label="NO2 小时平均">NO2 小时平均</option>
-                                    <option value="NO2 日平均" label="NO2 日平均">NO2 日平均</option>
-                                    <option value="NO2 月平均" label="NO2 月平均">NO2 月平均</option>
-                                    <option value="NO2 年平均" label="NO2 年平均">NO2 年平均</option>
-                                    <option value="NO2 IAQI" label="NO2 IAQI">NO2 IAQI</option>
-                                    <option value="NO2 AQI" label="NO2 AQI">NO2 AQI</option>
-                                </optgroup>
-                                <optgroup label="O3">
-                                    <option value="O3 小时平均" label="O3 小时平均">O3 小时平均</option>
-                                    <option value="O3 日平均" label="O3 日平均">O3 日平均</option>
-                                    <option value="O3 月平均" label="O3 月平均">O3 月平均</option>
-                                    <option value="O3 年平均" label="O3 年平均">O3 年平均</option>
-                                    <option value="O3 8小时滑动平均值" label="O3 8小时滑动平均值">O3 8小时滑动平均值</option>
-                                    <option value="O3 IAQI" label="O3 IAQI">O3 IAQI</option>
-                                    <option value="O3 AQI" label="O3 AQI">O3 AQI</option>
-                                </optgroup>
-                                <optgroup label="PM2.5">
-                                    <option value="PM2.5 小时平均" label="PM2.5 小时平均">PM2.5 小时平均</option>
-                                    <option value="PM2.5 日平均" label="PM2.5 日平均">PM2.5 日平均</option>
-                                    <option value="PM2.5 月平均" label="PM2.5 月平均">PM2.5 月平均</option>
-                                    <option value="PM2.5 年平均" label="PM2.5 年平均">PM2.5 年平均</option>
-                                    <option value="PM2.5 IAQI" label="PM2.5 IAQI">PM2.5 IAQI</option>
-                                    <option value="PM2.5 AQI" label="PM2.5 AQI">PM2.5 AQI</option>
-                                </optgroup>
-                                <optgroup label="PM10">
-                                    <option value="PM10 小时平均" label="PM10 小时平均">PM10 小时平均</option>
-                                    <option value="PM10 日平均" label="PM10 日平均">PM10 日平均</option>
-                                    <option value="PM10 月平均" label="PM10 月平均">PM10 月平均</option>
-                                    <option value="PM10 年平均" label="PM10 年平均">PM10 年平均</option>
-                                    <option value="PM10 IAQI" label="PM10 IAQI">PM10 IAQI</option>
-                                    <option value="PM10 AQI" label="PM10 AQI">PM10 AQI</option>
-                                </optgroup>
+                            <select name="country" id="StatisticalMethod" class="form-control" style="width: 100%">
+                                <option value="平均值" label="平均值">平均值</option>
+                                <option value="极值" label="极值">极值</option>
+                                <option value="累计" label="累计">累计</option>
+                                <option value="臭氧8小时平均" label="臭氧8小时平均">臭氧8小时平均</option>
+                                <option value="AQI" label="AQI">AQI</option>
+                                <option value="IAQI" label="IAQI">IAQI</option>
+                                <option value="风向频率" label="风向频率">风向频率</option>
+                            </select>
+                        </div>
+                        <label for="indicatorItem" class="col-sm-1 control-label">指标项</label>
+                        <div class="col-sm-5">
+                            <select name="country" id="indicatorItem" class="form-control" style="width: 100%">
+                                <option value="风速" label="风速">风速</option>
+                                <option value="相对湿度" label="相对湿度">相对湿度</option>
+                                <option value="温度" label="温度">温度</option>
+                                <option value="SO2" label="SO2">SO2</option>
+                                <option value="NO" label="NO">NO</option>
+                                <option value="NO2" label="NO2">NO2</option>
+                                <option value="O3" label="O3">O3</option>
                             </select>
                         </div>
                     </div>
+
+                    <!--<div class="form-group">-->
+                    <!--<label for="StatisticalItem" class="col-sm-1 control-label">统计项</label>-->
+                    <!--<div class="col-sm-5">-->
+                    <!--<select name="country" id="StatisticalItem" class="form-control" style="width: 100%">-->
+                    <!--<optgroup label="风速">-->
+                    <!--<option value="风速 小时平均" label="风速 小时平均">风速 小时平均</option>-->
+                    <!--<option value="风速 日平均" label="风速 日平均">风速 日平均</option>-->
+                    <!--<option value="风速 月平均" label="风速 月平均">风速 月平均</option>-->
+                    <!--<option value="风速 年平均" label="风速 年平均">风速 年平均</option>-->
+                    <!--</optgroup>-->
+                    <!--<optgroup label="风向">-->
+                    <!--<option value="风向 小时频率" label="风向 小时频率">风速 小时频率</option>-->
+                    <!--<option value="风向 小时频次" label="风向 小时频次">风速 小时频次</option>-->
+                    <!--<option value="风向 日频率" label="风向 日频率">风速 日频率</option>-->
+                    <!--<option value="风向 日频次" label="风向 日频次">风速 日频次</option>-->
+                    <!--<option value="风向 月频率" label="风向 月频率">风速 月频率</option>-->
+                    <!--<option value="风向 月频次" label="风向 月频次">风速 月频次</option>-->
+                    <!--<option value="风向 年频率" label="风向 年频率">风速 年频率</option>-->
+                    <!--<option value="风向 年频次" label="风向 年频次">风速 年频次</option>-->
+                    <!--</optgroup>-->
+                    <!--<optgroup label="温度">-->
+                    <!--<option value="温度 小时平均" label="温度 小时平均">温度 小时平均</option>-->
+                    <!--<option value="温度 日平均" label="温度 日平均">温度 日平均</option>-->
+                    <!--<option value="温度 月平均" label="温度 月平均">温度 月平均</option>-->
+                    <!--<option value="温度 年平均" label="温度 年平均">温度 年平均</option>-->
+                    <!--</optgroup>-->
+                    <!--<optgroup label="相对湿度">-->
+                    <!--<option value="相对湿度 小时平均" label="相对湿度 小时平均">相对湿度 小时平均</option>-->
+                    <!--<option value="相对湿度 日平均" label="相对湿度 日平均">相对湿度 日平均</option>-->
+                    <!--<option value="相对湿度 月平均" label="相对湿度 月平均">相对湿度 月平均</option>-->
+                    <!--<option value="相对湿度 年平均" label="相对湿度 年平均">相对湿度 年平均</option>-->
+                    <!--</optgroup>-->
+                    <!--<optgroup label="雨量">-->
+                    <!--<option value="雨量 分种累计" label="雨量 分种累计">雨量 分种累计</option>-->
+                    <!--<option value="雨量 小时累计" label="雨量 小时累计">雨量 小时累计</option>-->
+                    <!--<option value="雨量 日累计" label="雨量 日累计">雨量 日累计</option>-->
+                    <!--<option value="雨量 8时日累计" label="雨量 8时日累计">雨量 8时日累计</option>-->
+                    <!--<option value="雨量 月累计" label="雨量 月累计">雨量 月累计</option>-->
+                    <!--<option value="雨量 年累计" label="雨量 年累计">雨量 年累计</option>-->
+                    <!--</optgroup>-->
+                    <!--<optgroup label="气压">-->
+                    <!--<option value="气压 小时平均" label="气压 小时平均">气压 小时平均</option>-->
+                    <!--<option value="气压 日平均" label="气压 日平均">气压 日平均</option>-->
+                    <!--<option value="气压 月平均" label="气压 月平均">气压 月平均</option>-->
+                    <!--<option value="气压 年平均" label="气压 年平均">气压 年平均</option>-->
+                    <!--</optgroup>-->
+                    <!--<optgroup label="总辐射">-->
+                    <!--<option value="总辐射 小时平均" label="总辐射 小时平均">总辐射 小时平均</option>-->
+                    <!--<option value="总辐射 日平均" label="总辐射 日平均">总辐射 日平均</option>-->
+                    <!--<option value="总辐射 月平均" label="总辐射 月平均">总辐射 月平均</option>-->
+                    <!--<option value="总辐射 年平均" label="总辐射 年平均">总辐射 年平均</option>-->
+                    <!--</optgroup>-->
+                    <!--<optgroup label="SO2">-->
+                    <!--<option value="SO2 小时平均" label="SO2 小时平均">SO2 小时平均</option>-->
+                    <!--<option value="SO2 日平均" label="SO2 日平均">SO2 日平均</option>-->
+                    <!--<option value="SO2 月平均" label="SO2 月平均">SO2 月平均</option>-->
+                    <!--<option value="SO2 年平均" label="SO2 年平均">SO2 年平均</option>-->
+                    <!--<option value="SO2 IAQI" label="SO2 IAQI">SO2 IAQI</option>-->
+                    <!--<option value="SO2 AQI" label="SO2 AQI">SO2 AQI</option>-->
+                    <!--</optgroup>-->
+                    <!--<optgroup label="NO2">-->
+                    <!--<option value="NO2 小时平均" label="NO2 小时平均">NO2 小时平均</option>-->
+                    <!--<option value="NO2 日平均" label="NO2 日平均">NO2 日平均</option>-->
+                    <!--<option value="NO2 月平均" label="NO2 月平均">NO2 月平均</option>-->
+                    <!--<option value="NO2 年平均" label="NO2 年平均">NO2 年平均</option>-->
+                    <!--<option value="NO2 IAQI" label="NO2 IAQI">NO2 IAQI</option>-->
+                    <!--<option value="NO2 AQI" label="NO2 AQI">NO2 AQI</option>-->
+                    <!--</optgroup>-->
+                    <!--<optgroup label="O3">-->
+                    <!--<option value="O3 小时平均" label="O3 小时平均">O3 小时平均</option>-->
+                    <!--<option value="O3 日平均" label="O3 日平均">O3 日平均</option>-->
+                    <!--<option value="O3 月平均" label="O3 月平均">O3 月平均</option>-->
+                    <!--<option value="O3 年平均" label="O3 年平均">O3 年平均</option>-->
+                    <!--<option value="O3 8小时滑动平均值" label="O3 8小时滑动平均值">O3 8小时滑动平均值</option>-->
+                    <!--<option value="O3 IAQI" label="O3 IAQI">O3 IAQI</option>-->
+                    <!--<option value="O3 AQI" label="O3 AQI">O3 AQI</option>-->
+                    <!--</optgroup>-->
+                    <!--<optgroup label="PM2.5">-->
+                    <!--<option value="PM2.5 小时平均" label="PM2.5 小时平均">PM2.5 小时平均</option>-->
+                    <!--<option value="PM2.5 日平均" label="PM2.5 日平均">PM2.5 日平均</option>-->
+                    <!--<option value="PM2.5 月平均" label="PM2.5 月平均">PM2.5 月平均</option>-->
+                    <!--<option value="PM2.5 年平均" label="PM2.5 年平均">PM2.5 年平均</option>-->
+                    <!--<option value="PM2.5 IAQI" label="PM2.5 IAQI">PM2.5 IAQI</option>-->
+                    <!--<option value="PM2.5 AQI" label="PM2.5 AQI">PM2.5 AQI</option>-->
+                    <!--</optgroup>-->
+                    <!--<optgroup label="PM10">-->
+                    <!--<option value="PM10 小时平均" label="PM10 小时平均">PM10 小时平均</option>-->
+                    <!--<option value="PM10 日平均" label="PM10 日平均">PM10 日平均</option>-->
+                    <!--<option value="PM10 月平均" label="PM10 月平均">PM10 月平均</option>-->
+                    <!--<option value="PM10 年平均" label="PM10 年平均">PM10 年平均</option>-->
+                    <!--<option value="PM10 IAQI" label="PM10 IAQI">PM10 IAQI</option>-->
+                    <!--<option value="PM10 AQI" label="PM10 AQI">PM10 AQI</option>-->
+                    <!--</optgroup>-->
+                    <!--</select>-->
+                    <!--</div>-->
+                    <!--<label class="col-sm-1 control-label">时间段</label>-->
+                    <!--<div class="col-sm-5">-->
+                    <!--<div class="input-daterange input-group" id="range-datepicker">-->
+                    <!--<input type="text" class="input-sm form-control" name="start"/>-->
+                    <!--<span class="input-group-addon x-primary">to</span>-->
+                    <!--<input type="text" class="input-sm form-control" name="end"/>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
                 </div>
                 <div class="row">
-                    <div class="col-sm-12 col-md-12">
-                        <h4 class="section-subtitle"><b>环境站</b> 历史数据</h4>
-                        <div class="panel">
-                            <div class="panel-content">
-                                <canvas id="air-chart" width="400" height="180"></canvas>
+                    <div class="form-group">
+                        <label for="timeline" class="col-sm-1 control-label">时间轴</label>
+                        <div class="col-sm-5">
+                            <select name="country" id="timeline" class="form-control" style="width: 100%">
+                                <option value="小时" label="小时">小时</option>
+                                <option value="日" label="日">日</option>
+                                <option value="月" label="月">月</option>
+                                <option value="年" label="年">年</option>
+                            </select>
+                        </div>
+                        <label class="col-sm-1 control-label">时间段</label>
+                        <div class="col-sm-5">
+                            <div class="input-daterange input-group" id="range-datepicker">
+                                <input type="text" class="input-sm form-control" name="start"/>
+                                <span class="input-group-addon x-primary">to</span>
+                                <input type="text" class="input-sm form-control" name="end"/>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-12 col-md-12">
-                        <h4 class="section-subtitle"><b>气象站</b> 实时数据</h4>
-                        <h5 class="section-subtitle">温度</h5>
+                    <div class="col-sm-5"></div>
+                    <button class="btn btn-wide btn-darker-1">查询</button>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h4 class="section-subtitle">统计数据</h4>
                         <div class="panel">
                             <div class="panel-content">
-                                <canvas id="weather-chart" width="400" height="180"></canvas>
+                                <div class="table-responsive">
+                                    <table id="basic-table" class="data-table table table-striped nowrap table-hover"
+                                           cellspacing="0" width="100%">
+                                        <thead>
+                                        <tr>
+                                            <th>序号</th>
+                                            <th>数据时间</th>
+                                            <th>指标项</th>
+                                            <th>检测值</th>
+                                            <th>区站号</th>
+                                            <th>标记</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>001</td>
+                                            <td>2019-09-15 06:22:00</td>
+                                            <td>SO2</td>
+                                            <td>0.23</td>
+                                            <td>00001</td>
+                                            <td>H</td>
+                                        </tr>
+                                        <tr>
+                                            <td>002</td>
+                                            <td>2019-09-15 06:22:00</td>
+                                            <td>NO</td>
+                                            <td>0.30</td>
+                                            <td>00001</td>
+                                            <td>H</td>
+                                        </tr>
+                                        <tr>
+                                            <td>003</td>
+                                            <td>2019-09-15 06:22:00</td>
+                                            <td>NO</td>
+                                            <td>0.22</td>
+                                            <td>00001</td>
+                                            <td>H</td>
+                                        </tr>
+                                        <tr>
+                                            <td>004</td>
+                                            <td>2019-09-15 06:22:00</td>
+                                            <td>SO2</td>
+                                            <td>0.36</td>
+                                            <td>00001</td>
+                                            <td>H</td>
+                                        </tr>
+                                        <tr>
+                                            <td>005</td>
+                                            <td>2019-09-15 06:22:15</td>
+                                            <td>SO2</td>
+                                            <td>0.43</td>
+                                            <td>00001</td>
+                                            <td>H</td>
+                                        </tr>
+                                        <tr>
+                                            <td>006</td>
+                                            <td>2019-09-15 06:22:00</td>
+                                            <td>NO</td>
+                                            <td>0.19</td>
+                                            <td>00001</td>
+                                            <td>H</td>
+                                        </tr>
+                                        <tr>
+                                            <td>007</td>
+                                            <td>2019-09-15 06:22:15</td>
+                                            <td>SO2</td>
+                                            <td>0.66</td>
+                                            <td>00001</td>
+                                            <td>D</td>
+                                        </tr>
+                                        <tr>
+                                            <td>008</td>
+                                            <td>2019-09-15 06:22:00</td>
+                                            <td>O3</td>
+                                            <td>0.64</td>
+                                            <td>00001</td>
+                                            <td>BB</td>
+                                        </tr>
+                                        <tr>
+                                            <td>009</td>
+                                            <td>2019-09-15 06:22:30</td>
+                                            <td>O3</td>
+                                            <td>0.59</td>
+                                            <td>00001</td>
+                                            <td>H</td>
+                                        </tr>
+                                        <tr>
+                                            <td>010</td>
+                                            <td>2019-09-15 06:22:45</td>
+                                            <td>NO</td>
+                                            <td>0.41</td>
+                                            <td>00001</td>
+                                            <td>BB</td>
+                                        </tr>
+                                        <tr>
+                                            <td>011</td>
+                                            <td>2019-09-15 06:22:00</td>
+                                            <td>O3</td>
+                                            <td>0.35</td>
+                                            <td>00001</td>
+                                            <td>H</td>
+                                        </tr>
+                                        <tr>
+                                            <td>012</td>
+                                            <td>2019-09-15 06:22:00</td>
+                                            <td>O3</td>
+                                            <td>0.30</td>
+                                            <td>00001</td>
+                                            <td>BB</td>
+                                        </tr>
+                                        <tr>
+                                            <td>013</td>
+                                            <td>2019-09-15 06:22:45</td>
+                                            <td>O3</td>
+                                            <td>0.40</td>
+                                            <td>00001</td>
+                                            <td>H</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-9"></div>
+                    <button class="btn btn-wide btn-darker-1">导出Excel文档</button>
                 </div>
             </div>
         </div>
@@ -602,25 +802,20 @@
         <a href="#" class="scroll-to-top"><i class="fa fa-angle-double-up"></i></a>
     </div>
 </div>
+
 <script src="javascripts/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 <script src="vendor/nano-scroller/nano-scroller.js"></script>
 <script src="javascripts/template-script.min.js"></script>
 <script src="javascripts/template-init.min.js"></script>
-<!--<script src="vendor/toastr/toastr.min.js"></script>-->
+<script src="vendor/toastr/toastr.min.js"></script>
 <script src="vendor/chart-js/chart.min.js"></script>
-<!--<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>-->
-<script src="javascripts/examples/charts/chart-js.js"></script>
 <script src="javascripts/examples/charts/chart-js.js"></script>
 <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-<script src="vendor/bootstrap_max-lenght/bootstrap-maxlength.js"></script>
-<script src="vendor/select2/js/select2.min.js"></script>
-<script src="vendor/input-masked/inputmask.bundle.min.js"></script>
-<script src="vendor/input-masked/phone-codes/phone.js"></script>
-<script src="vendor/bootstrap_date-picker/js/bootstrap-datepicker.min.js"></script>
-<script src="vendor/bootstrap_time-picker/js/bootstrap-timepicker.js"></script>
-<script src="vendor/bootstrap_color-picker/js/bootstrap-colorpicker.min.js"></script>
-<script src="javascripts/examples/forms/advanced.js"></script>
+<script src="vendor/data-table/media/js/jquery.dataTables.min.js"></script>
+<script src="vendor/data-table/media/js/dataTables.bootstrap.min.js"></script>
+<script src="javascripts/examples/tables/data-tables.js"></script>
+<script src="javascripts/examples/ui-elements/buttons.js"></script>
 
 </body>
 

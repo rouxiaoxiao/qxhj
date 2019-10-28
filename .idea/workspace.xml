@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66852b44-298a-45d7-85b0-2f747d7b4a24" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/报警阈值.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/检测数值.html" afterPath="$PROJECT_DIR$/维护信息.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/报警阈值.html" afterPath="$PROJECT_DIR$/报警管理.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/维护信息.html" afterPath="$PROJECT_DIR$/设备管理.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/examples/charts/chart-js.js" afterPath="$PROJECT_DIR$/javascripts/examples/charts/chart-js.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/examples/forms/advanced.js" afterPath="$PROJECT_DIR$/javascripts/examples/forms/advanced.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/data-table/media/js/jquery.dataTables.min.js" afterPath="$PROJECT_DIR$/vendor/data-table/media/js/jquery.dataTables.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/历史数据.html" afterPath="$PROJECT_DIR$/历史数据.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/实时数据.html" afterPath="$PROJECT_DIR$/实时数据.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/异常数据.html" afterPath="$PROJECT_DIR$/异常数据.html" />
@@ -27,8 +26,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="499" column="67" lean-forward="false" selection-start-line="499" selection-start-column="67" selection-end-line="499" selection-end-column="67" />
+            <state relative-caret-position="302">
+              <caret line="278" column="0" lean-forward="false" selection-start-line="278" selection-start-column="0" selection-end-line="299" selection-end-column="33" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -37,6 +36,10 @@
                 <element signature="n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#3;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#2;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#a#0;n#li#3;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#a#0;n#li#4;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#5;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#2;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -52,14 +55,20 @@
       <file leaf-file-name="统计分析.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/统计分析.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="439" column="54" lean-forward="false" selection-start-line="439" selection-start-column="54" selection-end-line="439" selection-end-column="54" />
+            <state relative-caret-position="643">
+              <caret line="305" column="33" lean-forward="false" selection-start-line="305" selection-start-column="33" selection-end-line="305" selection-end-column="33" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#2;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#a#0;n#li#3;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#a#0;n#li#4;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#5;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#select#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#3;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <marker date="1572254334545" expanded="false" signature="27454:36819" ph="..." />
               </folding>
             </state>
           </provider>
@@ -68,8 +77,8 @@
       <file leaf-file-name="advanced.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/javascripts/examples/forms/advanced.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+            <state relative-caret-position="241">
+              <caret line="39" column="21" lean-forward="false" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -78,8 +87,8 @@
       <file leaf-file-name="charts_chart-js.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/charts_chart-js.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="442" column="22" lean-forward="true" selection-start-line="435" selection-start-column="16" selection-end-line="442" selection-end-column="22" />
+            <state relative-caret-position="35">
+              <caret line="442" column="22" lean-forward="false" selection-start-line="435" selection-start-column="16" selection-end-line="442" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -88,24 +97,28 @@
       <file leaf-file-name="实时数据.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/实时数据.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="324" column="0" lean-forward="false" selection-start-line="324" selection-start-column="0" selection-end-line="324" selection-end-column="0" />
+            <state relative-caret-position="433">
+              <caret line="300" column="33" lean-forward="false" selection-start-line="300" selection-start-column="33" selection-end-line="300" selection-end-column="33" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#2;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#a#0;n#li#3;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#a#0;n#li#4;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#5;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#select#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#2;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chart-js.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascripts/examples/charts/chart-js.js">
+      <file leaf-file-name="helpers_margin-padding.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/helpers_margin-padding.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2885">
-              <caret line="361" column="24" lean-forward="false" selection-start-line="361" selection-start-column="24" selection-end-line="361" selection-end-column="24" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -114,12 +127,34 @@
       <file leaf-file-name="异常数据.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/异常数据.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="280" column="49" lean-forward="false" selection-start-line="280" selection-start-column="49" selection-end-line="280" selection-end-column="49" />
+            <state relative-caret-position="479">
+              <caret line="298" column="33" lean-forward="false" selection-start-line="298" selection-start-column="33" selection-end-line="298" selection-end-column="33" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#2;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#a#0;n#li#3;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#a#0;n#li#4;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#5;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="报警管理.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/报警管理.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="265">
+              <caret line="444" column="41" lean-forward="false" selection-start-line="444" selection-start-column="41" selection-end-line="444" selection-end-column="41" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#2;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#a#0;n#li#3;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#a#0;n#li#4;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#5;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -128,32 +163,20 @@
       <file leaf-file-name="历史数据.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/历史数据.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="510" column="18" lean-forward="false" selection-start-line="510" selection-start-column="18" selection-end-line="510" selection-end-column="18" />
+            <state relative-caret-position="503">
+              <caret line="305" column="33" lean-forward="false" selection-start-line="305" selection-start-column="33" selection-end-line="305" selection-end-column="33" />
               <folding>
                 <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#2;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#a#0;n#li#3;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#a#0;n#li#4;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#5;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#2;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#select#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#div#3;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#4;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forms_advanced.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forms_advanced.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4446">
-              <caret line="926" column="77" lean-forward="true" selection-start-line="926" selection-start-column="52" selection-end-line="926" selection-end-column="77" />
-              <folding>
-                <element signature="n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -162,8 +185,8 @@
       <file leaf-file-name="系统管理.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/系统管理.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="277" column="33" lean-forward="true" selection-start-line="269" selection-start-column="28" selection-end-line="277" selection-end-column="33" />
+            <state relative-caret-position="491">
+              <caret line="282" column="41" lean-forward="false" selection-start-line="282" selection-start-column="41" selection-end-line="282" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -173,29 +196,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>pie</find>
-      <find>areaChart</find>
-      <find>panel-</find>
-      <find>panel-danger</find>
-      <find>bar</find>
-      <find>bar-cha</find>
-      <find>0.23</find>
-      <find>x</find>
-      <find>xi</find>
-      <find>系统</find>
-      <find>系统管理</find>
-      <find>animated</find>
-      <find>统计分析</find>
-      <find>name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot;</find>
-      <find>实时数据</find>
-      <find>menu</find>
-      <find>select</find>
-      <find>form-group</find>
-      <find>Basic</find>
-      <find>select a</find>
-      <find>Range</find>
-      <find>row animated</find>
-      <find>basic-table</find>
       <find>检测数值</find>
       <find>radar-chart</find>
       <find>R</find>
@@ -203,10 +203,35 @@
       <find>row animated fadeInUp</find>
       <find>select2-example-basic</find>
       <find>Radar</find>
+      <find>form-group</find>
+      <find>Show</find>
+      <find>Show</find>
+      <find>entity</find>
+      <find>entit</find>
+      <find>entries</find>
+      <find>污染物</find>
+      <find>Search</find>
+      <find>Search:</find>
+      <find>Searchh:</find>
+      <find>苏索</find>
+      <find>苏</find>
+      <find>搜索</find>
+      <find>Default</find>
+      <find>StatisticalItem2</find>
+      <find>StatisticalItem</find>
+      <find>magnific-popup</find>
+      <find>Range</find>
+      <find>时间轴</find>
+      <find>查询</find>
+      <find>维护信息</find>
+      <find>报警</find>
+      <find>报警阈值</find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>报警阈值</replace>
+      <replace>设备管理</replace>
+      <replace>报警管理</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -227,13 +252,15 @@
         <option value="$PROJECT_DIR$/javascripts/examples/dashboard.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/维护信息.html" />
-        <option value="$PROJECT_DIR$/异常数据.html" />
         <option value="$PROJECT_DIR$/检测数值.html" />
         <option value="$PROJECT_DIR$/javascripts/examples/charts/chart-js.js" />
-        <option value="$PROJECT_DIR$/实时数据.html" />
-        <option value="$PROJECT_DIR$/历史数据.html" />
-        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/vendor/data-table/media/js/jquery.dataTables.min.js" />
         <option value="$PROJECT_DIR$/javascripts/examples/forms/advanced.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/历史数据.html" />
+        <option value="$PROJECT_DIR$/实时数据.html" />
+        <option value="$PROJECT_DIR$/异常数据.html" />
+        <option value="$PROJECT_DIR$/报警管理.html" />
         <option value="$PROJECT_DIR$/统计分析.html" />
       </list>
     </option>
@@ -269,8 +296,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -285,6 +310,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -734,12 +761,13 @@
       <workItem from="1571711973505" duration="14192000" />
       <workItem from="1571792396028" duration="1904000" />
       <workItem from="1571903642585" duration="6813000" />
-      <workItem from="1571964685884" duration="9913000" />
+      <workItem from="1571964685884" duration="10321000" />
+      <workItem from="1572224681395" duration="12851000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75147000" />
+    <option name="totallyTimeSpent" value="88406000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -756,10 +784,10 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21258907" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17440605" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="BPMNPalette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897863" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -787,27 +815,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/javascripts/examples/ui-elements/notifications-pnotify.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4235">
-          <caret line="11" column="15" lean-forward="false" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascripts/examples/ui-elements/notifications-toastr.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4620">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascripts/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-160295">
@@ -1023,7 +1030,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/维护信息.html">
+    <entry file="file://$PROJECT_DIR$/设备管理.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
           <caret line="492" column="63" lean-forward="false" selection-start-line="492" selection-start-column="44" selection-end-line="492" selection-end-column="63" />
@@ -1037,60 +1044,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/报警阈值.html">
+    <entry file="file://$PROJECT_DIR$/forms_advanced.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="670">
-          <caret line="282" column="49" lean-forward="false" selection-start-line="282" selection-start-column="49" selection-end-line="282" selection-end-column="49" />
+        <state relative-caret-position="26320">
+          <caret line="926" column="77" lean-forward="false" selection-start-line="926" selection-start-column="52" selection-end-line="926" selection-end-column="77" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/data-table/media/js/jquery.dataTables.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4567">
+          <caret line="2768" column="20" lean-forward="true" selection-start-line="2768" selection-start-column="20" selection-end-line="2768" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui-elements_buttons.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="412" column="76" lean-forward="false" selection-start-line="412" selection-start-column="64" selection-end-line="412" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascripts/examples/charts/chart-js.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="361" column="24" lean-forward="false" selection-start-line="361" selection-start-column="24" selection-end-line="361" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascripts/examples/forms/advanced.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="39" column="21" lean-forward="false" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/charts_chart-js.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="442" column="22" lean-forward="false" selection-start-line="435" selection-start-column="16" selection-end-line="442" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/系统管理.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="277" column="33" lean-forward="true" selection-start-line="269" selection-start-column="28" selection-end-line="277" selection-end-column="33" />
+        <state relative-caret-position="491">
+          <caret line="282" column="41" lean-forward="false" selection-start-line="282" selection-start-column="41" selection-end-line="282" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/历史数据.html">
+    <entry file="file://$PROJECT_DIR$/helpers_margin-padding.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="510" column="18" lean-forward="false" selection-start-line="510" selection-start-column="18" selection-end-line="510" selection-end-column="18" />
-          <folding>
-            <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#2;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/异常数据.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="280" column="49" lean-forward="false" selection-start-line="280" selection-start-column="49" selection-end-line="280" selection-end-column="49" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="499" column="67" lean-forward="false" selection-start-line="499" selection-start-column="67" selection-end-line="499" selection-end-column="67" />
+        <state relative-caret-position="302">
+          <caret line="278" column="0" lean-forward="false" selection-start-line="278" selection-start-column="0" selection-end-line="299" selection-end-column="33" />
           <folding>
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -1099,6 +1123,10 @@
             <element signature="n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#2;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#a#0;n#li#3;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#a#0;n#li#4;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#5;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -1110,65 +1138,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/forms_advanced.html">
+    <entry file="file://$PROJECT_DIR$/历史数据.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4446">
-          <caret line="926" column="77" lean-forward="true" selection-start-line="926" selection-start-column="52" selection-end-line="926" selection-end-column="77" />
+        <state relative-caret-position="503">
+          <caret line="305" column="33" lean-forward="false" selection-start-line="305" selection-start-column="33" selection-end-line="305" selection-end-column="33" />
           <folding>
-            <element signature="n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#2;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#a#0;n#li#3;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#a#0;n#li#4;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#5;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#3;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/charts_chart-js.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="442" column="22" lean-forward="true" selection-start-line="435" selection-start-column="16" selection-end-line="442" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/实时数据.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="324" column="0" lean-forward="false" selection-start-line="324" selection-start-column="0" selection-end-line="324" selection-end-column="0" />
+        <state relative-caret-position="433">
+          <caret line="300" column="33" lean-forward="false" selection-start-line="300" selection-start-column="33" selection-end-line="300" selection-end-column="33" />
           <folding>
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#2;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#a#0;n#li#3;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#a#0;n#li#4;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#5;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#select#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascripts/examples/charts/chart-js.js">
+    <entry file="file://$PROJECT_DIR$/异常数据.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2885">
-          <caret line="361" column="24" lean-forward="false" selection-start-line="361" selection-start-column="24" selection-end-line="361" selection-end-column="24" />
-          <folding />
+        <state relative-caret-position="479">
+          <caret line="298" column="33" lean-forward="false" selection-start-line="298" selection-start-column="33" selection-end-line="298" selection-end-column="33" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#2;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#a#0;n#li#3;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#a#0;n#li#4;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#5;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascripts/examples/forms/advanced.js">
+    <entry file="file://$PROJECT_DIR$/报警管理.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-          <folding />
+        <state relative-caret-position="265">
+          <caret line="444" column="41" lean-forward="false" selection-start-line="444" selection-start-column="41" selection-end-line="444" selection-end-column="41" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#2;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#a#0;n#li#3;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#a#0;n#li#4;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#5;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/统计分析.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="439" column="54" lean-forward="false" selection-start-line="439" selection-start-column="54" selection-end-line="439" selection-end-column="54" />
+        <state relative-caret-position="643">
+          <caret line="305" column="33" lean-forward="false" selection-start-line="305" selection-start-column="33" selection-end-line="305" selection-end-column="33" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#2;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#a#0;n#li#3;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#a#0;n#li#4;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#5;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#select#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#3;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1572254334545" expanded="false" signature="27454:36819" ph="..." />
           </folding>
         </state>
       </provider>

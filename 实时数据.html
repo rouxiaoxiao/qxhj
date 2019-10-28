@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="vendor/toastr/toastr.min.css">
     <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="stylesheets/css/style.css">
+    <link rel="stylesheet" href="vendor/data-table/media/css/dataTables.bootstrap.min.css">
 </head>
 
 <body>
@@ -277,15 +278,27 @@
                                 </ul>
                             </li>
                             <li class="has-child-item close-item">
-                                <a><i class="fa fa-sitemap" aria-hidden="true"></i><span>系统管理</span></a>
+                                <a><i class="fa fa-book" aria-hidden="true"></i><span>资料管理</span></a>
                                 <ul class="nav child-nav level-1">
-                                    <li><a href="报警阈值.html">报警阈值</a></li>
-                                    <li><a href="维护信息.html">维护信息</a></li>
+                                    <li><a href="检测报告管理.html">检测报告管理</a></li>
+                                    <li><a href="文献资料管理.html">文献资料管理</a></li>
                                 </ul>
                             </li>
-                            <!--<li class="fa"><a href="系统管理.html"><i class="fa fa-sitemap" aria-hidden="true"></i></i>-->
-                            <!--<span>系统管理</span></a>-->
-                            <!--</li>-->
+                            <li class="fa"><a href="报警管理.html"><i class="fa fa-bomb " aria-hidden="true"></i></i>
+                                <span>报警管理</span></a>
+                            </li>
+                            <li class="fa"><a href="工作建议管理.html"><i class="fa fa-heart " aria-hidden="true"></i></i>
+                                <span>工作建议管理</span></a>
+                            </li>
+                            <li class="has-child-item close-item">
+                                <a><i class="fa fa-cog " aria-hidden="true"></i><span>系统管理</span></a>
+                                <ul class="nav child-nav level-1">
+                                    <li><a href="数据正常阈值管理.html">数据正常阈值管理</a></li>
+                                    <li><a href="极端天气阈值管理.html">极端天气阈值管理</a></li>
+                                    <li><a href="系统日志.html">系统日志</a></li>
+                                    <li><a href="级别管理.html">级别管理</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -302,26 +315,162 @@
             </div>
             <div class="row animated fadeInUp">
                 <div class="row">
-                    <div class="col-sm-12 col-md-12">
-                        <h4 class="section-subtitle"><b>环境站</b> 实时数据</h4>
+                    <label class="col-sm-1 control-label">时间段</label>
+                    <div class="col-sm-5">
+                        <div class="input-daterange input-group" id="range-datepicker">
+                            <input type="text" class="input-sm form-control" name="start"/>
+                            <span class="input-group-addon x-primary">to</span>
+                            <input type="text" class="input-sm form-control" name="end"/>
+                        </div>
+                    </div>
+                    <label for="select2-example-basic2" class="col-sm-1 control-label">指标项</label>
+                    <div class="col-sm-5">
+                        <select name="country" id="select2-example-basic2" class="form-control" style="width: 100%">
+                            <option value="MIN" label="SO2">SO2</option>
+                            <option value="HOUR" label="NO">NO</option>
+                            <option value="DAY" label="NO2">NO2</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5"></div>
+                    <button class="btn btn-wide btn-darker-1">查询</button>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h4 class="section-subtitle">实时数据</h4>
                         <div class="panel">
                             <div class="panel-content">
-                                <canvas id="air-chart" width="400" height="180"></canvas>
+                                <div class="table-responsive">
+                                    <table id="basic-table" class="data-table table table-striped nowrap table-hover"
+                                           cellspacing="0" width="100%">
+                                        <thead>
+                                        <tr>
+                                            <th>序号</th>
+                                            <th>数据时间</th>
+                                            <th>指标项</th>
+                                            <th>检测值</th>
+                                            <th>区站号</th>
+                                            <th>标记</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>001</td>
+                                            <td>2019-09-15 06:22:00</td>
+                                            <td>SO2</td>
+                                            <td>0.23</td>
+                                            <td>00001</td>
+                                            <td>H</td>
+                                        </tr>
+                                        <tr>
+                                            <td>002</td>
+                                            <td>2019-09-15 06:22:00</td>
+                                            <td>NO</td>
+                                            <td>0.30</td>
+                                            <td>00001</td>
+                                            <td>H</td>
+                                        </tr>
+                                        <tr>
+                                            <td>003</td>
+                                            <td>2019-09-15 06:22:00</td>
+                                            <td>NO</td>
+                                            <td>0.22</td>
+                                            <td>00001</td>
+                                            <td>H</td>
+                                        </tr>
+                                        <tr>
+                                            <td>004</td>
+                                            <td>2019-09-15 06:22:00</td>
+                                            <td>SO2</td>
+                                            <td>0.36</td>
+                                            <td>00001</td>
+                                            <td>H</td>
+                                        </tr>
+                                        <tr>
+                                            <td>005</td>
+                                            <td>2019-09-15 06:22:15</td>
+                                            <td>SO2</td>
+                                            <td>0.43</td>
+                                            <td>00001</td>
+                                            <td>H</td>
+                                        </tr>
+                                        <tr>
+                                            <td>006</td>
+                                            <td>2019-09-15 06:22:00</td>
+                                            <td>NO</td>
+                                            <td>0.19</td>
+                                            <td>00001</td>
+                                            <td>H</td>
+                                        </tr>
+                                        <tr>
+                                            <td>007</td>
+                                            <td>2019-09-15 06:22:15</td>
+                                            <td>SO2</td>
+                                            <td>0.66</td>
+                                            <td>00001</td>
+                                            <td>D</td>
+                                        </tr>
+                                        <tr>
+                                            <td>008</td>
+                                            <td>2019-09-15 06:22:00</td>
+                                            <td>O3</td>
+                                            <td>0.64</td>
+                                            <td>00001</td>
+                                            <td>BB</td>
+                                        </tr>
+                                        <tr>
+                                            <td>009</td>
+                                            <td>2019-09-15 06:22:30</td>
+                                            <td>O3</td>
+                                            <td>0.59</td>
+                                            <td>00001</td>
+                                            <td>H</td>
+                                        </tr>
+                                        <tr>
+                                            <td>010</td>
+                                            <td>2019-09-15 06:22:45</td>
+                                            <td>NO</td>
+                                            <td>0.41</td>
+                                            <td>00001</td>
+                                            <td>BB</td>
+                                        </tr>
+                                        <tr>
+                                            <td>011</td>
+                                            <td>2019-09-15 06:22:00</td>
+                                            <td>O3</td>
+                                            <td>0.35</td>
+                                            <td>00001</td>
+                                            <td>H</td>
+                                        </tr>
+                                        <tr>
+                                            <td>012</td>
+                                            <td>2019-09-15 06:22:00</td>
+                                            <td>O3</td>
+                                            <td>0.30</td>
+                                            <td>00001</td>
+                                            <td>BB</td>
+                                        </tr>
+                                        <tr>
+                                            <td>013</td>
+                                            <td>2019-09-15 06:22:45</td>
+                                            <td>O3</td>
+                                            <td>0.40</td>
+                                            <td>00001</td>
+                                            <td>H</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-12 col-md-12">
-                        <h4 class="section-subtitle"><b>气象站</b> 实时数据</h4>
-                        <h5 class="section-subtitle">温度</h5>
-                        <div class="panel">
-                            <div class="panel-content">
-                                <canvas id="weather-chart" width="400" height="180"></canvas>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="col-sm-9"></div>
+                    <button class="btn btn-wide btn-darker-1">导出Excel文档</button>
                 </div>
+
             </div>
         </div>
         <div class="right-sidebar">
@@ -397,6 +546,10 @@
 <script src="vendor/chart-js/chart.min.js"></script>
 <script src="javascripts/examples/charts/chart-js.js"></script>
 <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="vendor/data-table/media/js/jquery.dataTables.min.js"></script>
+<script src="vendor/data-table/media/js/dataTables.bootstrap.min.js"></script>
+<script src="javascripts/examples/tables/data-tables.js"></script>
+<script src="javascripts/examples/ui-elements/buttons.js"></script>
 
 </body>
 
