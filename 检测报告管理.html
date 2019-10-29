@@ -323,30 +323,12 @@
             </div>
             <div class="row animated fadeInUp">
                 <div class="row">
-                    <label class="col-sm-1 control-label">时间段</label>
-                    <div class="col-sm-5">
-                        <div class="input-daterange input-group" id="range-datepicker">
-                            <input type="text" class="input-sm form-control" name="start"/>
-                            <span class="input-group-addon x-primary">to</span>
-                            <input type="text" class="input-sm form-control" name="end"/>
-                        </div>
-                    </div>
-                    <label for="select2-example-basic2" class="col-sm-1 control-label">指标项</label>
-                    <div class="col-sm-5">
-                        <select name="country" id="select2-example-basic2" class="form-control" style="width: 100%">
-                            <option value="MIN" label="SO2">SO2</option>
-                            <option value="HOUR" label="NO">NO</option>
-                            <option value="DAY" label="NO2">NO2</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-5"></div>
-                    <button class="btn btn-wide btn-darker-1">查询</button>
+                    <div class="col-sm-9"></div>
+                    <button class="btn btn-wide btn-darker-1" data-toggle="modal" data-target="#myModal">上传检测报告</button>
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <h4 class="section-subtitle">实时数据</h4>
+                        <h4 class="section-subtitle">检测报告</h4>
                         <div class="panel">
                             <div class="panel-content">
                                 <div class="table-responsive">
@@ -354,118 +336,63 @@
                                            cellspacing="0" width="100%">
                                         <thead>
                                         <tr>
-                                            <th>序号</th>
-                                            <th>数据时间</th>
-                                            <th>指标项</th>
-                                            <th>检测值</th>
-                                            <th>区站号</th>
-                                            <th>标记</th>
+                                            <th>监测类型</th>
+                                            <th>监测项目名称</th>
+                                            <th>监测时间</th>
+                                            <th>监测实施单位</th>
+                                            <th>监测实施人</th>
+                                            <th>项目负责人</th>
+                                            <th>项目简要描述</th>
+                                            <th>关键字</th>
+                                            <th>报告文件</th>
+                                            <th>操作</th>
                                         </tr>
                                         </thead>
                                         <tbody>
                                         <tr>
-                                            <td>001</td>
+                                            <td>降水成分分析</td>
+                                            <td>xxx项目</td>
                                             <td>2019-09-15 06:22:00</td>
-                                            <td>SO2</td>
-                                            <td>0.23</td>
-                                            <td>00001</td>
-                                            <td>H</td>
+                                            <td>xxx单位</td>
+                                            <td>张三</td>
+                                            <td>李四</td>
+                                            <td>该项目以xx为目标，实施了xxxxxxxxxxxx</td>
+                                            <td>降水成分</td>
+                                            <th>降水报告文件.pdf</th>
+                                            <th>
+                                                <button class="btn btn-primary btn-sm">编辑</button>
+                                                <button class="btn btn-danger btn-sm">删除</button>
+                                            </th>
                                         </tr>
                                         <tr>
-                                            <td>002</td>
+                                            <td>大气污染物成分分析</td>
+                                            <td>xxx项目</td>
+                                            <td>2019-09-16 06:22:00</td>
+                                            <td>xxx单位</td>
+                                            <td>张三</td>
+                                            <td>李四</td>
+                                            <td>该项目以xx为目标，实施了xxxxxxxxxxxx</td>
+                                            <td>大气</td>
+                                            <th>大气报告文件.pdf</th>
+                                            <th>
+                                                <button class="btn btn-primary btn-sm">编辑</button>
+                                                <button class="btn btn-danger btn-sm">删除</button>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <td>土壤成分及含水率分析</td>
+                                            <td>xxx项目</td>
                                             <td>2019-09-15 06:22:00</td>
-                                            <td>NO</td>
-                                            <td>0.30</td>
-                                            <td>00001</td>
-                                            <td>H</td>
-                                        </tr>
-                                        <tr>
-                                            <td>003</td>
-                                            <td>2019-09-15 06:22:00</td>
-                                            <td>NO</td>
-                                            <td>0.22</td>
-                                            <td>00001</td>
-                                            <td>H</td>
-                                        </tr>
-                                        <tr>
-                                            <td>004</td>
-                                            <td>2019-09-15 06:22:00</td>
-                                            <td>SO2</td>
-                                            <td>0.36</td>
-                                            <td>00001</td>
-                                            <td>H</td>
-                                        </tr>
-                                        <tr>
-                                            <td>005</td>
-                                            <td>2019-09-15 06:22:15</td>
-                                            <td>SO2</td>
-                                            <td>0.43</td>
-                                            <td>00001</td>
-                                            <td>H</td>
-                                        </tr>
-                                        <tr>
-                                            <td>006</td>
-                                            <td>2019-09-15 06:22:00</td>
-                                            <td>NO</td>
-                                            <td>0.19</td>
-                                            <td>00001</td>
-                                            <td>H</td>
-                                        </tr>
-                                        <tr>
-                                            <td>007</td>
-                                            <td>2019-09-15 06:22:15</td>
-                                            <td>SO2</td>
-                                            <td>0.66</td>
-                                            <td>00001</td>
-                                            <td>D</td>
-                                        </tr>
-                                        <tr>
-                                            <td>008</td>
-                                            <td>2019-09-15 06:22:00</td>
-                                            <td>O3</td>
-                                            <td>0.64</td>
-                                            <td>00001</td>
-                                            <td>BB</td>
-                                        </tr>
-                                        <tr>
-                                            <td>009</td>
-                                            <td>2019-09-15 06:22:30</td>
-                                            <td>O3</td>
-                                            <td>0.59</td>
-                                            <td>00001</td>
-                                            <td>H</td>
-                                        </tr>
-                                        <tr>
-                                            <td>010</td>
-                                            <td>2019-09-15 06:22:45</td>
-                                            <td>NO</td>
-                                            <td>0.41</td>
-                                            <td>00001</td>
-                                            <td>BB</td>
-                                        </tr>
-                                        <tr>
-                                            <td>011</td>
-                                            <td>2019-09-15 06:22:00</td>
-                                            <td>O3</td>
-                                            <td>0.35</td>
-                                            <td>00001</td>
-                                            <td>H</td>
-                                        </tr>
-                                        <tr>
-                                            <td>012</td>
-                                            <td>2019-09-15 06:22:00</td>
-                                            <td>O3</td>
-                                            <td>0.30</td>
-                                            <td>00001</td>
-                                            <td>BB</td>
-                                        </tr>
-                                        <tr>
-                                            <td>013</td>
-                                            <td>2019-09-15 06:22:45</td>
-                                            <td>O3</td>
-                                            <td>0.40</td>
-                                            <td>00001</td>
-                                            <td>H</td>
+                                            <td>xxx单位</td>
+                                            <td>张三</td>
+                                            <td>李四</td>
+                                            <td>该项目以xx为目标，实施了xxxxxxxxxxxx</td>
+                                            <td>土壤成分</td>
+                                            <th>土壤报告文件.pdf</th>
+                                            <th>
+                                                <button class="btn btn-primary btn-sm">编辑</button>
+                                                <button class="btn btn-danger btn-sm">删除</button>
+                                            </th>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -474,10 +401,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-9"></div>
-                    <button class="btn btn-wide btn-darker-1">导出Excel文档</button>
-                </div>
+
 
             </div>
         </div>
@@ -545,6 +469,45 @@
         <a href="#" class="scroll-to-top"><i class="fa fa-angle-double-up"></i></a>
     </div>
 </div>
+
+
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    上传检测报告
+                </h4>
+            </div>
+            <form id="form_data">
+                <div class="modal-body">
+                    监测类型: <input type="text" id="user_id" name="user_id"/><br/>
+                    监测项目名称: <input type="text" id="user_name" name="user_name"/><br/>
+                    监测时间: <input type="text" id="time" name="time"/><br/>
+                    监测实施单位: <input type="text" id="company" name="company"/><br/>
+                    监测实施人: <input type="text" id="implementer" name="implementer"/><br/>
+                    项目负责人: <input type="text" id="principal" name="principal"/><br/>
+                    项目简要描述: <input type="text" id="aspect" name="aspect"/><br/>
+                    关键字: <input type="text" id="keyword" name="keyword"/><br/>
+                    <input type="hidden" id="act" value="add" name="act"/>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                    </button>
+                    <button type="button" onclick="add_info()" class="btn btn-primary">
+                        提交更改
+                    </button>
+                </div>
+            </form>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+
 <script src="javascripts/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 <script src="vendor/nano-scroller/nano-scroller.js"></script>
@@ -558,6 +521,8 @@
 <script src="vendor/data-table/media/js/dataTables.bootstrap.min.js"></script>
 <script src="javascripts/examples/tables/data-tables.js"></script>
 <script src="javascripts/examples/ui-elements/buttons.js"></script>
+<script src="vendor/jquery-validation/jquery.validate.min.js"></script>
+<script src="javascripts/examples/forms/validation.js"></script>
 
 </body>
 
