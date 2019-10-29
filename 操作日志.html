@@ -302,12 +302,12 @@
                             <li class="fa"><a href="工作建议管理.html"><i class="fa fa-heart " aria-hidden="true"></i></i>
                                 <span>工作建议管理</span></a>
                             </li>
-                            <li class="has-child-item close-item">
+                            <li class="has-child-item open-item">
                                 <a><i class="fa fa-cog " aria-hidden="true"></i><span>系统管理</span></a>
                                 <ul class="nav child-nav level-1">
                                     <li><a href="数据正常阈值管理.html">数据正常阈值管理</a></li>
                                     <li><a href="极端天气阈值管理.html">极端天气阈值管理</a></li>
-                                    <li class="has-child-item close-item">
+                                    <li class="has-child-item open-item">
                                         <a>系统日志</a>
                                         <ul class="nav child-nav level-2 ">
                                             <li><a href="操作日志.html">操作日志</a></li>
@@ -328,35 +328,26 @@
                     <ul class="breadcrumbs">
                         <li><i class="fa fa-cog" aria-hidden="true"></i><a href="#">系统管理</a></li>
                         <li><a>系统日志</a></li>
+                        <li><a>操作日志</a></li>
+
                     </ul>
                 </div>
             </div>
             <div class="row animated fadeInUp">
                 <div class="row">
                     <label class="col-sm-1 control-label">时间段</label>
-                    <div class="col-sm-5">
+                    <div class="col-sm-4">
                         <div class="input-daterange input-group" id="range-datepicker">
                             <input type="text" class="input-sm form-control" name="start"/>
                             <span class="input-group-addon x-primary">to</span>
                             <input type="text" class="input-sm form-control" name="end"/>
                         </div>
                     </div>
-                    <label for="select2-example-basic2" class="col-sm-1 control-label">指标项</label>
-                    <div class="col-sm-5">
-                        <select name="country" id="select2-example-basic2" class="form-control" style="width: 100%">
-                            <option value="MIN" label="SO2">SO2</option>
-                            <option value="HOUR" label="NO">NO</option>
-                            <option value="DAY" label="NO2">NO2</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-5"></div>
                     <button class="btn btn-wide btn-darker-1">查询</button>
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <h4 class="section-subtitle">实时数据</h4>
+                        <h4 class="section-subtitle"><b>操作日志</b></h4>
                         <div class="panel">
                             <div class="panel-content">
                                 <div class="table-responsive">
@@ -364,118 +355,39 @@
                                            cellspacing="0" width="100%">
                                         <thead>
                                         <tr>
-                                            <th>序号</th>
-                                            <th>数据时间</th>
-                                            <th>指标项</th>
-                                            <th>检测值</th>
-                                            <th>区站号</th>
-                                            <th>标记</th>
+                                            <th>操作名称</th>
+                                            <th>操作时间</th>
+                                            <th>操作人</th>
+                                            <th>操作</th>
                                         </tr>
                                         </thead>
                                         <tbody>
                                         <tr>
-                                            <td>001</td>
-                                            <td>2019-09-15 06:22:00</td>
-                                            <td>SO2</td>
-                                            <td>0.23</td>
-                                            <td>00001</td>
-                                            <td>H</td>
+                                            <td>人员登录</td>
+                                            <td>2019-10-23 17:30:40</td>
+                                            <td>嘻哈</td>
+                                            <th>
+                                                <button class="btn btn-primary btn-sm">编辑</button>
+                                                <button class="btn btn-danger btn-sm">删除</button>
+                                            </th>
                                         </tr>
                                         <tr>
-                                            <td>002</td>
-                                            <td>2019-09-15 06:22:00</td>
-                                            <td>NO</td>
-                                            <td>0.30</td>
-                                            <td>00001</td>
-                                            <td>H</td>
+                                            <td>数据导出</td>
+                                            <td>2019-10-23 17:30:40</td>
+                                            <td>王五</td>
+                                            <th>
+                                                <button class="btn btn-primary btn-sm">编辑</button>
+                                                <button class="btn btn-danger btn-sm">删除</button>
+                                            </th>
                                         </tr>
                                         <tr>
-                                            <td>003</td>
-                                            <td>2019-09-15 06:22:00</td>
-                                            <td>NO</td>
-                                            <td>0.22</td>
-                                            <td>00001</td>
-                                            <td>H</td>
-                                        </tr>
-                                        <tr>
-                                            <td>004</td>
-                                            <td>2019-09-15 06:22:00</td>
-                                            <td>SO2</td>
-                                            <td>0.36</td>
-                                            <td>00001</td>
-                                            <td>H</td>
-                                        </tr>
-                                        <tr>
-                                            <td>005</td>
-                                            <td>2019-09-15 06:22:15</td>
-                                            <td>SO2</td>
-                                            <td>0.43</td>
-                                            <td>00001</td>
-                                            <td>H</td>
-                                        </tr>
-                                        <tr>
-                                            <td>006</td>
-                                            <td>2019-09-15 06:22:00</td>
-                                            <td>NO</td>
-                                            <td>0.19</td>
-                                            <td>00001</td>
-                                            <td>H</td>
-                                        </tr>
-                                        <tr>
-                                            <td>007</td>
-                                            <td>2019-09-15 06:22:15</td>
-                                            <td>SO2</td>
-                                            <td>0.66</td>
-                                            <td>00001</td>
-                                            <td>D</td>
-                                        </tr>
-                                        <tr>
-                                            <td>008</td>
-                                            <td>2019-09-15 06:22:00</td>
-                                            <td>O3</td>
-                                            <td>0.64</td>
-                                            <td>00001</td>
-                                            <td>BB</td>
-                                        </tr>
-                                        <tr>
-                                            <td>009</td>
-                                            <td>2019-09-15 06:22:30</td>
-                                            <td>O3</td>
-                                            <td>0.59</td>
-                                            <td>00001</td>
-                                            <td>H</td>
-                                        </tr>
-                                        <tr>
-                                            <td>010</td>
-                                            <td>2019-09-15 06:22:45</td>
-                                            <td>NO</td>
-                                            <td>0.41</td>
-                                            <td>00001</td>
-                                            <td>BB</td>
-                                        </tr>
-                                        <tr>
-                                            <td>011</td>
-                                            <td>2019-09-15 06:22:00</td>
-                                            <td>O3</td>
-                                            <td>0.35</td>
-                                            <td>00001</td>
-                                            <td>H</td>
-                                        </tr>
-                                        <tr>
-                                            <td>012</td>
-                                            <td>2019-09-15 06:22:00</td>
-                                            <td>O3</td>
-                                            <td>0.30</td>
-                                            <td>00001</td>
-                                            <td>BB</td>
-                                        </tr>
-                                        <tr>
-                                            <td>013</td>
-                                            <td>2019-09-15 06:22:45</td>
-                                            <td>O3</td>
-                                            <td>0.40</td>
-                                            <td>00001</td>
-                                            <td>H</td>
+                                            <td>资料下载</td>
+                                            <td>2019-10-23 17:30:40</td>
+                                            <td>乐乐</td>
+                                            <th>
+                                                <button class="btn btn-primary btn-sm">编辑</button>
+                                                <button class="btn btn-danger btn-sm">删除</button>
+                                            </th>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -485,9 +397,10 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-9"></div>
+                    <div class="col-sm-6 col-sm-offset-2"></div>
                     <button class="btn btn-wide btn-darker-1">导出Excel文档</button>
                 </div>
+
 
             </div>
         </div>

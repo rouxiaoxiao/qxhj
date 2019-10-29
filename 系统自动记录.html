@@ -16,11 +16,6 @@
     <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="stylesheets/css/style.css">
     <link rel="stylesheet" href="vendor/data-table/media/css/dataTables.bootstrap.min.css">
-    <link rel="stylesheet" href="vendor/select2/css/select2.min.css">
-    <link rel="stylesheet" href="vendor/select2/css/select2-bootstrap.min.css">
-    <link rel="stylesheet" href="vendor/bootstrap_date-picker/css/bootstrap-datepicker3.min.css">
-    <link rel="stylesheet" href="vendor/bootstrap_time-picker/css/timepicker.css">
-    <link rel="stylesheet" href="vendor/bootstrap_color-picker/css/bootstrap-colorpicker.min.css">
 </head>
 
 <body>
@@ -312,7 +307,7 @@
                                 <ul class="nav child-nav level-1">
                                     <li><a href="数据正常阈值管理.html">数据正常阈值管理</a></li>
                                     <li><a href="极端天气阈值管理.html">极端天气阈值管理</a></li>
-                                    <li class="has-child-item close-item">
+                                    <li class="has-child-item open-item">
                                         <a>系统日志</a>
                                         <ul class="nav child-nav level-2 ">
                                             <li><a href="操作日志.html">操作日志</a></li>
@@ -332,25 +327,26 @@
                 <div class="leftside-content-header">
                     <ul class="breadcrumbs">
                         <li><i class="fa fa-cog" aria-hidden="true"></i><a href="#">系统管理</a></li>
-                        <li><a>级别管理</a></li>
+                        <li><a>日志记录</a></li>
+                        <li><a>系统自动记录</a></li>
                     </ul>
                 </div>
             </div>
             <div class="row animated fadeInUp">
                 <div class="row">
-                    <label for="select2-example-basic2" class="col-sm-1 control-label">等级表名称</label>
+                    <label class="col-sm-1 control-label">时间段</label>
                     <div class="col-sm-4">
-                        <select name="country" id="select2-example-basic2" class="form-control" style="width: 100%">
-                            <option value="风速等级表" label="风速等级表">风速等级表</option>
-                            <option value="降水量等级表" label="降水量等级表">降水量等级表</option>
-                        </select>
+                        <div class="input-daterange input-group" id="range-datepicker">
+                            <input type="text" class="input-sm form-control" name="start"/>
+                            <span class="input-group-addon x-primary">to</span>
+                            <input type="text" class="input-sm form-control" name="end"/>
+                        </div>
                     </div>
                     <button class="btn btn-wide btn-darker-1">查询</button>
                 </div>
-
                 <div class="row">
                     <div class="col-sm-12">
-                        <h4 class="section-subtitle">风速等级表</h4>
+                        <h4 class="section-subtitle"><b>系统自动记录</b></h4>
                         <div class="panel">
                             <div class="panel-content">
                                 <div class="table-responsive">
@@ -358,33 +354,39 @@
                                            cellspacing="0" width="100%">
                                         <thead>
                                         <tr>
-                                            <th>等级</th>
-                                            <th>范围</th>
-                                            <th>名称</th>
-                                            <th>陆地地面物象</th>
+                                            <th>站点名</th>
+                                            <th>发生异常时间</th>
+                                            <th>站点异常情况</th>
                                             <th>操作</th>
                                         </tr>
                                         </thead>
                                         <tbody>
                                         <tr>
-                                            <td>0级</td>
-                                            <td>0.0-0.2 米/秒</td>
-                                            <td>无风</td>
-                                            <td>静，烟直上</td>
-                                            <td>
+                                            <td>气象站</td>
+                                            <td>2019-10-23 17:30:40</td>
+                                            <td>断电</td>
+                                            <th>
                                                 <button class="btn btn-primary btn-sm">编辑</button>
                                                 <button class="btn btn-danger btn-sm">删除</button>
-                                            </td>
+                                            </th>
                                         </tr>
                                         <tr>
-                                            <td>1级</td>
-                                            <td>0.3-1.5 米/秒</td>
-                                            <td>软风</td>
-                                            <td>烟示风向</td>
-                                            <td>
+                                            <td>环境站</td>
+                                            <td>2019-10-23 17:30:40</td>
+                                            <td>无信号</td>
+                                            <th>
                                                 <button class="btn btn-primary btn-sm">编辑</button>
                                                 <button class="btn btn-danger btn-sm">删除</button>
-                                            </td>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <td>气象站</td>
+                                            <td>2019-10-23 17:30:40</td>
+                                            <td>无网络</td>
+                                            <th>
+                                                <button class="btn btn-primary btn-sm">编辑</button>
+                                                <button class="btn btn-danger btn-sm">删除</button>
+                                            </th>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -394,9 +396,10 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-9"></div>
+                    <div class="col-sm-6 col-sm-offset-2"></div>
                     <button class="btn btn-wide btn-darker-1">导出Excel文档</button>
                 </div>
+
 
             </div>
         </div>
@@ -477,14 +480,6 @@
 <script src="vendor/data-table/media/js/dataTables.bootstrap.min.js"></script>
 <script src="javascripts/examples/tables/data-tables.js"></script>
 <script src="javascripts/examples/ui-elements/buttons.js"></script>
-<script src="vendor/bootstrap_max-lenght/bootstrap-maxlength.js"></script>
-<script src="vendor/select2/js/select2.min.js"></script>
-<script src="vendor/input-masked/inputmask.bundle.min.js"></script>
-<script src="vendor/input-masked/phone-codes/phone.js"></script>
-<script src="vendor/bootstrap_date-picker/js/bootstrap-datepicker.min.js"></script>
-<script src="vendor/bootstrap_time-picker/js/bootstrap-timepicker.js"></script>
-<script src="vendor/bootstrap_color-picker/js/bootstrap-colorpicker.min.js"></script>
-<script src="javascripts/examples/forms/advanced.js"></script>
 
 </body>
 
