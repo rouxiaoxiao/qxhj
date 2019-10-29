@@ -16,6 +16,11 @@
     <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="stylesheets/css/style.css">
     <link rel="stylesheet" href="vendor/data-table/media/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/select2/css/select2.min.css">
+    <link rel="stylesheet" href="vendor/select2/css/select2-bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap_date-picker/css/bootstrap-datepicker3.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap_time-picker/css/timepicker.css">
+    <link rel="stylesheet" href="vendor/bootstrap_color-picker/css/bootstrap-colorpicker.min.css">
 </head>
 
 <body>
@@ -289,11 +294,15 @@
                                 <ul class="nav child-nav level-1">
                                     <li><a href="维护保养记录管理.html">维护保养记录管理</a></li>
                                     <li><a href="维护保养计划管理.html">维护保养计划管理</a></li>
-                                    <li><a href="设备断电记录.html">设备断电记录</a></li>
+                                    <li><a href="断电记录.html">断电记录</a></li>
                                 </ul>
                             </li>
-                            <li class="fa"><a href="报警管理.html"><i class="fa fa-bomb " aria-hidden="true"></i></i>
-                                <span>报警管理</span></a>
+                            <li class="has-child-item close-item">
+                                <a><i class="fa fa-bomb" aria-hidden="true"></i><span>报警管理</span></a>
+                                <ul class="nav child-nav level-1">
+                                    <li><a href="数据异常报警.html">数据异常报警</a></li>
+                                    <li><a href="极端天气报警.html">极端天气报警</a></li>
+                                </ul>
                             </li>
                             <li class="fa"><a href="工作建议管理.html"><i class="fa fa-heart " aria-hidden="true"></i></i>
                                 <span>工作建议管理</span></a>
@@ -316,37 +325,15 @@
             <div class="content-header">
                 <div class="leftside-content-header">
                     <ul class="breadcrumbs">
-                        <li><i class="fa fa-cubes" aria-hidden="true"></i><a href="#">数据管理</a></li>
-                        <li><a>实时数据</a></li>
+                        <li><i class="fa fa-wrench" aria-hidden="true"></i><a href="#">设备管理</a></li>
+                        <li><a>维护保养计划管理</a></li>
                     </ul>
                 </div>
             </div>
             <div class="row animated fadeInUp">
                 <div class="row">
-                    <label class="col-sm-1 control-label">时间段</label>
-                    <div class="col-sm-5">
-                        <div class="input-daterange input-group" id="range-datepicker">
-                            <input type="text" class="input-sm form-control" name="start"/>
-                            <span class="input-group-addon x-primary">to</span>
-                            <input type="text" class="input-sm form-control" name="end"/>
-                        </div>
-                    </div>
-                    <label for="select2-example-basic2" class="col-sm-1 control-label">指标项</label>
-                    <div class="col-sm-5">
-                        <select name="country" id="select2-example-basic2" class="form-control" style="width: 100%">
-                            <option value="MIN" label="SO2">SO2</option>
-                            <option value="HOUR" label="NO">NO</option>
-                            <option value="DAY" label="NO2">NO2</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-5"></div>
-                    <button class="btn btn-wide btn-darker-1">查询</button>
-                </div>
-                <div class="row">
                     <div class="col-sm-12">
-                        <h4 class="section-subtitle">实时数据</h4>
+                        <h4 class="section-subtitle">维护保养计划</h4>
                         <div class="panel">
                             <div class="panel-content">
                                 <div class="table-responsive">
@@ -354,118 +341,30 @@
                                            cellspacing="0" width="100%">
                                         <thead>
                                         <tr>
-                                            <th>序号</th>
-                                            <th>数据时间</th>
-                                            <th>指标项</th>
-                                            <th>检测值</th>
-                                            <th>区站号</th>
-                                            <th>标记</th>
+                                            <th>站点</th>
+                                            <th>维护时间</th>
+                                            <th>相关责任人</th>
+                                            <th>操作</th>
                                         </tr>
                                         </thead>
                                         <tbody>
                                         <tr>
-                                            <td>001</td>
-                                            <td>2019-09-15 06:22:00</td>
-                                            <td>SO2</td>
-                                            <td>0.23</td>
-                                            <td>00001</td>
-                                            <td>H</td>
+                                            <td>气象站</td>
+                                            <td>每月1日、15日</td>
+                                            <td>王五</td>
+                                            <th>
+                                                <button class="btn btn-primary btn-sm">查看详情</button>
+                                                <button class="btn btn-danger btn-sm">删除</button>
+                                            </th>
                                         </tr>
                                         <tr>
-                                            <td>002</td>
-                                            <td>2019-09-15 06:22:00</td>
-                                            <td>NO</td>
-                                            <td>0.30</td>
-                                            <td>00001</td>
-                                            <td>H</td>
-                                        </tr>
-                                        <tr>
-                                            <td>003</td>
-                                            <td>2019-09-15 06:22:00</td>
-                                            <td>NO</td>
-                                            <td>0.22</td>
-                                            <td>00001</td>
-                                            <td>H</td>
-                                        </tr>
-                                        <tr>
-                                            <td>004</td>
-                                            <td>2019-09-15 06:22:00</td>
-                                            <td>SO2</td>
-                                            <td>0.36</td>
-                                            <td>00001</td>
-                                            <td>H</td>
-                                        </tr>
-                                        <tr>
-                                            <td>005</td>
-                                            <td>2019-09-15 06:22:15</td>
-                                            <td>SO2</td>
-                                            <td>0.43</td>
-                                            <td>00001</td>
-                                            <td>H</td>
-                                        </tr>
-                                        <tr>
-                                            <td>006</td>
-                                            <td>2019-09-15 06:22:00</td>
-                                            <td>NO</td>
-                                            <td>0.19</td>
-                                            <td>00001</td>
-                                            <td>H</td>
-                                        </tr>
-                                        <tr>
-                                            <td>007</td>
-                                            <td>2019-09-15 06:22:15</td>
-                                            <td>SO2</td>
-                                            <td>0.66</td>
-                                            <td>00001</td>
-                                            <td>D</td>
-                                        </tr>
-                                        <tr>
-                                            <td>008</td>
-                                            <td>2019-09-15 06:22:00</td>
-                                            <td>O3</td>
-                                            <td>0.64</td>
-                                            <td>00001</td>
-                                            <td>BB</td>
-                                        </tr>
-                                        <tr>
-                                            <td>009</td>
-                                            <td>2019-09-15 06:22:30</td>
-                                            <td>O3</td>
-                                            <td>0.59</td>
-                                            <td>00001</td>
-                                            <td>H</td>
-                                        </tr>
-                                        <tr>
-                                            <td>010</td>
-                                            <td>2019-09-15 06:22:45</td>
-                                            <td>NO</td>
-                                            <td>0.41</td>
-                                            <td>00001</td>
-                                            <td>BB</td>
-                                        </tr>
-                                        <tr>
-                                            <td>011</td>
-                                            <td>2019-09-15 06:22:00</td>
-                                            <td>O3</td>
-                                            <td>0.35</td>
-                                            <td>00001</td>
-                                            <td>H</td>
-                                        </tr>
-                                        <tr>
-                                            <td>012</td>
-                                            <td>2019-09-15 06:22:00</td>
-                                            <td>O3</td>
-                                            <td>0.30</td>
-                                            <td>00001</td>
-                                            <td>BB</td>
-                                        </tr>
-                                        <tr>
-                                            <td>013</td>
-                                            <td>2019-09-15 06:22:45</td>
-                                            <td>O3</td>
-                                            <td>0.40</td>
-                                            <td>00001</td>
-                                            <td>H</td>
+                                            <td>环境站</td>
+                                            <td>每月1日、15日</td>
+                                            <td>张三</td>
+                                            <th>
+                                                <button class="btn btn-primary btn-sm">查看详情</button>
+                                                <button class="btn btn-danger btn-sm">删除</button>
+                                            </th>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -473,10 +372,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-9"></div>
-                    <button class="btn btn-wide btn-darker-1">导出Excel文档</button>
                 </div>
 
             </div>
@@ -558,6 +453,14 @@
 <script src="vendor/data-table/media/js/dataTables.bootstrap.min.js"></script>
 <script src="javascripts/examples/tables/data-tables.js"></script>
 <script src="javascripts/examples/ui-elements/buttons.js"></script>
+<script src="vendor/bootstrap_max-lenght/bootstrap-maxlength.js"></script>
+<script src="vendor/select2/js/select2.min.js"></script>
+<script src="vendor/input-masked/inputmask.bundle.min.js"></script>
+<script src="vendor/input-masked/phone-codes/phone.js"></script>
+<script src="vendor/bootstrap_date-picker/js/bootstrap-datepicker.min.js"></script>
+<script src="vendor/bootstrap_time-picker/js/bootstrap-timepicker.js"></script>
+<script src="vendor/bootstrap_color-picker/js/bootstrap-colorpicker.min.js"></script>
+<script src="javascripts/examples/forms/advanced.js"></script>
 
 </body>
 
