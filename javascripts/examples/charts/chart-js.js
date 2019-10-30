@@ -10,7 +10,13 @@ var airBar = document.getElementById("air-chart");
 //气象站数据
 var weather = document.getElementById("weather-chart");
 //风向数据
-var windDirection = document.getElementById("windDirection");
+var windDirection = document.getElementById("windDirection-chart");
+//风速风向
+var windSpeed = document.getElementById("windSpeed-chart");
+//降水量
+var precipitation = document.getElementById("precipitation-chart");
+//空气温度
+var temperature = document.getElementById("temperature-chart");
 
 var options = {
     scales: {
@@ -357,7 +363,7 @@ var dataWindDirection = {
     labels: ["北", "东北", "东", "东南", "南", "西南", "西", "西北"],
     datasets: [
         {
-            label: "Data 1",
+            label: "频次",
             backgroundColor: "rgba(55, 209, 119, 0.45)",
             borderColor: "rgba(55, 209, 119, 1)",
             pointBackgroundColor: "rgba(55, 209, 119, 1)",
@@ -373,6 +379,153 @@ if (windDirection != null) {
     var radarChar = new Chart(windDirection, {
         type: 'radar',
         data: dataWindDirection,
+        //不显示图例
+        options: {legend: {display: false}}
+    });
+}
+
+
+//降水量等级对应颜色
+function getPrecipitationColor(data) {
+    var colorList = [];
+    for (var i = 0; i < data.length; i++) {
+        if (0 < data[i] && data[i] <= 1) {
+            colorList.push("rgba(210,244,251,1)");
+        } else if (1 < data[i] && data[i] <= 2) {
+            colorList.push("rgba(143,232,239,1)");
+        } else if (2 < data[i] && data[i] <= 4) {
+            colorList.push("rgba(104,205,234,1)");
+        } else if (4 < data[i] && data[i] <= 6) {
+            colorList.push("rgba(69,171,232,1)");
+        } else if (6 < data[i] && data[i] <= 8) {
+            colorList.push("rgba(78,109,249,1)");
+        } else if (8 < data[i] && data[i] <= 10) {
+            colorList.push("rgba(148,116,237,1)");
+        } else if (10 < data[i] && data[i] <= 20) {
+            colorList.push("rgba(102,51,240,1)");
+        } else if (20 < data[i] && data[i] <= 50) {
+            colorList.push("rgba(78,3,150,1)");
+        } else {
+            colorList.push("rgba(1,1,1,1)");
+        }
+    }
+    return colorList;
+}
+
+
+//降水量
+var precipitationData = [2, 15, 20, 5, 23, 3, 24, 9, 5, 7, 9, 3, 2, 3, 24, 6, 5, 7, 0, 3, 2, 6, 10, 23, 6];
+var dataPrecipitation = {
+    labels: ["10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10"],
+    datasets: [
+        {
+            label: "降水量",
+            fill: true,
+            backgroundColor: getPrecipitationColor(precipitationData),
+            borderColor: "rgba(55, 209, 119, 0.45)",
+            data: precipitationData
+        }
+    ],
+    options: {
+        scales: {
+            yAxes: [{
+                stacked: true
+            }]
+        }
+
+    }
+};
+
+if (precipitation != null) {
+    var barChar = new Chart(precipitation, {
+            type: 'bar',
+            data: dataPrecipitation,
+            //不显示图例
+            options: {legend: {display: false}}
+            // options: options
+
+        })
+    ;
+}
+
+
+//空气温度等级展示颜色
+function getTemperatureColor(data) {
+    var colorList = [];
+    for (var i = 0; i < data.length; i++) {
+        if (data[i] <= -30) {
+            colorList.push("#1b34ff");
+        } else if (-30 < data[i] && data[i] <= -25) {
+            colorList.push("#3d97ff");
+        } else if (-25 < data[i] && data[i] <= -20) {
+            colorList.push("#4ebcff");
+        } else if (-20 < data[i] && data[i] <= -15) {
+            colorList.push("#98feff");
+        } else if (-15 < data[i] && data[i] <= -10) {
+            colorList.push("#afe3ff");
+        } else if (-10 < data[i] && data[i] <= -5) {
+            colorList.push("#c9ebff");
+        } else if (-5 < data[i] && data[i] <= 0) {
+            colorList.push("#dceeff");
+        } else if (0 < data[i] && data[i] <= 5) {
+            colorList.push("#eaf8ff");
+        } else if (5 < data[i] && data[i] <= 10) {
+            colorList.push("#fffee2");
+        } else if (10 < data[i] && data[i] <= 15) {
+            colorList.push("#ffe9c8");
+        } else if (15 < data[i] && data[i] <= 20) {
+            colorList.push("#ffdbbc");
+        } else if (20 < data[i] && data[i] <= 25) {
+            colorList.push("#ffb96b");
+        } else if (25 < data[i] && data[i] <= 30) {
+            colorList.push("#ffa25d");
+        } else if (30 < data[i] && data[i] <= 35) {
+            colorList.push("#ff8f4d");
+        } else if (35 < data[i] && data[i] <= 40) {
+            colorList.push("#ff7d4c");
+        } else if (40 < data[i] && data[i] <= 45) {
+            colorList.push("#ff4925");
+        } else if (45 < data[i] && data[i] <= 50) {
+            colorList.push("#cc6c2f");
+        } else {
+            colorList.push("#7f441e");
+        }
+    }
+    return colorList;
+}
+var temperatureData = [28, 32, 29, 30, 27, 28, 29, 30, 32, 30, 28, 30, 32, 33, 35, 29, 28, 27, 26, 24, 22, 21, 20, 20, 18];
+var dataTemperature = {
+    labels: ["10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10"],
+    datasets: [
+        {
+            label: "空气温度",
+            fill: false,
+            backgroundColor: "#ffffff",
+            borderColor: "#010101",
+            borderCapStyle: 'butt',
+            borderDash: [],
+            borderDashOffset: 0.0,
+            borderJoinStyle: 'miter',
+            borderWidth: 1,
+            pointBorderColor: getTemperatureColor(temperatureData),
+            pointBackgroundColor: getTemperatureColor(temperatureData),
+            pointBorderWidth: 1,
+            pointHoverRadius: 5,
+            pointHoverBackgroundColor: "343d3e",
+            pointHoverBorderColor: "rgba(220,220,220,1)",
+            pointHoverBorderWidth: 2,
+            //数据点大小
+            pointRadius: 5,
+            pointHitRadius: 10,
+            data: temperatureData,
+            spanGaps: false
+        }
+    ]
+};
+if (temperature != null) {
+    var lineChart = new Chart(temperature, {
+        type: 'line',
+        data: dataTemperature,
         //不显示图例
         options: {legend: {display: false}}
     });
