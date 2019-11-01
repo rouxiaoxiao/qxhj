@@ -6,7 +6,7 @@ var pie = document.getElementById("pie-chart");
 var polar = document.getElementById("polar-chart");
 var radar = document.getElementById("radar-chart");
 //环境站数据
-var airBar = document.getElementById("air-chart");
+var air = document.getElementById("air-chart");
 //气象站数据
 var weather = document.getElementById("weather-chart");
 //风向数据
@@ -196,14 +196,14 @@ var dataAir = {
     }
 };
 
-if (airBar != null) {
-    var barChar = new Chart(airBar, {
-        type: 'bar',
-        data: dataAir,
-        options: options
-
-    });
-}
+// if (airBar != null) {
+//     var barChar = new Chart(airBar, {
+//         type: 'bar',
+//         data: dataAir,
+//         options: options
+//
+//     });
+// }
 
 var dataWeather = {
     labels: ["2019-09-15 06:22:00", "2019-09-15 06:22:15", "2019-09-15 06:22:30", "2019-09-15 06:22:45", "2019-09-15 06:23:00", "2019-09-15 06:23:15", "2019-09-15 06:23:30", "2019-09-15 06:23:45", "2019-09-15 06:24:00", "2019-09-15 06:24:15"],
@@ -414,9 +414,9 @@ function getPrecipitationColor(data) {
 
 
 //降水量
-var precipitationData = [2, 15, 20, 5, 23, 3, 24, 9, 5, 7, 9, 3, 2, 3, 24, 6, 5, 7, 0, 3, 2, 6, 10, 23, 6];
+var precipitationData = [2, 15, 20, 5, 23, 3, 24, 9, 5, 7, 9, 3, 2, 3, 24, 6, 5, 7, 0, 3, 2, 6, 10, 23];
 var dataPrecipitation = {
-    labels: ["10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10"],
+    labels: ["10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "00", "01", "02", "03", "04", "05", "06", "07", "08", "09"],
     datasets: [
         {
             label: "降水量",
@@ -493,9 +493,9 @@ function getTemperatureColor(data) {
     }
     return colorList;
 }
-var temperatureData = [28, 32, 29, 30, 27, 28, 29, 30, 32, 30, 28, 30, 32, 33, 35, 29, 28, 27, 26, 24, 22, 21, 20, 20, 18];
+var temperatureData = [28, 32, 29, 30, 27, 28, 29, 30, 32, 30, 28, 30, 32, 33, 35, 29, 28, 27, 26, 24, 22, 21, 20, 20];
 var dataTemperature = {
-    labels: ["10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10"],
+    labels: ["10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "00", "01", "02", "03", "04", "05", "06", "07", "08", "09"],
     datasets: [
         {
             label: "空气温度",
@@ -526,6 +526,263 @@ if (temperature != null) {
     var lineChart = new Chart(temperature, {
         type: 'line',
         data: dataTemperature,
+        //不显示图例
+        options: {legend: {display: false}}
+    });
+}
+
+//环境站数据
+var airData1 = [0.12, 0.13, 0.11, 0.17, 0.08, 0.09, 0.06, 0.09, 0.03, 0.02, 0.12, 0.13, 0.11, 0.13, 0.08, 0.09, 0.06, 0.09, 0.03, 0.36, 0.06, 0.09, 0.03, 0.02];
+var airData2 = [0.02, 0.13, 0.17, 0.13, 0.26, 0.09, 0.06, 0.31, 0.03, 0.02, 0.15, 0.13, 0.11, 0.18, 0.08, 0.09, 0.06, 0.09, 0.03, 0.02, 0.06, 0.09, 0.03, 0.31];
+var airData3 = [0.16, 0.67, 0.11, 0.13, 0.08, 0.25, 0.16, 0.09, 0.26, 0.21, 0.12, 0.42, 0.14, 0.13, 0.18, 0.25, 0.26, 0.27, 0.21, 0.15, 0.06, 0.12, 0.03, 0.02];
+var airData4 = [0.12, 0.13, 0.26, 0.15, 0.18, 0.09, 0.31, 0.09, 0.03, 0.02, 0.04, 0.13, 0.11, 0.13, 0.08, 0.09, 0.06, 0.09, 0.03, 0.02, 0.06, 0.15, 0.13, 0.15];
+var airData5 = [0.02, 0.34, 0.11, 0.13, 0.08, 0.23, 0.13, 0.36, 0.21, 0.22, 0.12, 0.14, 0.13, 0.14, 0.38, 0.09, 0.16, 0.24, 0.23, 0.36, 0.06, 0.16, 0.11, 0.12];
+var airData6 = [0.12, 0.13, 0.31, 0.12, 0.16, 0.09, 0.06, 0.09, 0.03, 0.02, 0.24, 0.13, 0.11, 0.13, 0.08, 0.27, 0.06, 0.09, 0.03, 0.02, 0.06, 0.17, 0.16, 0.22];
+var airData7 = [0.22, 0.28, 0.11, 0.13, 0.08, 0.21, 0.26, 0.26, 0.22, 0.09, 0.12, 0.15, 0.18, 0.17, 0.27, 0.23, 0.17, 0.23, 0.22, 0.02, 0.06, 0.09, 0.11, 0.02];
+var dataAir = {
+    labels: ["10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "00", "01", "02", "03", "04", "05", "06", "07", "08", "09"],
+    datasets: [
+        {
+            label: "SO2",
+            fill: false,
+            backgroundColor: "#8bd1ff",
+            borderColor: "#8bd1ff",
+            borderCapStyle: 'butt',
+            borderDash: [],
+            borderDashOffset: 0.0,
+            borderJoinStyle: 'miter',
+            borderWidth: 1,
+            pointBorderColor: "#8bd1ff",
+            pointBackgroundColor: "#8bd1ff",
+            pointBorderWidth: 1,
+            pointHoverRadius: 5,
+            pointHoverBackgroundColor: "343d3e",
+            pointHoverBorderColor: "rgba(220,220,220,1)",
+            pointHoverBorderWidth: 2,
+            pointHitRadius: 10,
+            data: airData1,
+            spanGaps: false
+        },
+        {
+            label: "NO",
+            fill: false,
+            backgroundColor: "#d6fffd",
+            borderColor: "#d6fffd",
+            borderCapStyle: 'butt',
+            borderDash: [],
+            borderDashOffset: 0.0,
+            borderJoinStyle: 'miter',
+            borderWidth: 1,
+            pointBorderColor: "#d6fffd",
+            pointBackgroundColor: "#d6fffd",
+            pointBorderWidth: 1,
+            pointHoverRadius: 5,
+            pointHoverBackgroundColor: "343d3e",
+            pointHoverBorderColor: "rgba(220,220,220,1)",
+            pointHoverBorderWidth: 2,
+            pointHitRadius: 10,
+            data: airData2,
+            spanGaps: false
+        },
+        {
+            label: "NO2",
+            fill: false,
+            backgroundColor: "#d6fffd",
+            borderColor: "#d6fffd",
+            borderCapStyle: 'butt',
+            borderDash: [],
+            borderDashOffset: 0.0,
+            borderJoinStyle: 'miter',
+            borderWidth: 1,
+            pointBorderColor: "#d6fffd",
+            pointBackgroundColor: "#d6fffd",
+            pointBorderWidth: 1,
+            pointHoverRadius: 5,
+            pointHoverBackgroundColor: "343d3e",
+            pointHoverBorderColor: "rgba(220,220,220,1)",
+            pointHoverBorderWidth: 2,
+            pointHitRadius: 10,
+            data: airData3,
+            spanGaps: false
+        },
+        {
+            label: "O3",
+            fill: false,
+            backgroundColor: "#a358ff",
+            borderColor: "#a358ff",
+            borderCapStyle: 'butt',
+            borderDash: [],
+            borderDashOffset: 0.0,
+            borderJoinStyle: 'miter',
+            borderWidth: 1,
+            pointBorderColor: "#a358ff",
+            pointBackgroundColor: "#a358ff",
+            pointBorderWidth: 1,
+            pointHoverRadius: 5,
+            pointHoverBackgroundColor: "343d3e",
+            pointHoverBorderColor: "rgba(220,220,220,1)",
+            pointHoverBorderWidth: 2,
+            pointHitRadius: 10,
+            data: airData4,
+            spanGaps: false
+        },
+        {
+            label: "PM2.5",
+            fill: false,
+            backgroundColor: "#231eff",
+            borderColor: "#231eff",
+            borderCapStyle: 'butt',
+            borderDash: [],
+            borderDashOffset: 0.0,
+            borderJoinStyle: 'miter',
+            borderWidth: 1,
+            pointBorderColor: "#231eff",
+            pointBackgroundColor: "#231eff",
+            pointBorderWidth: 1,
+            pointHoverRadius: 5,
+            pointHoverBackgroundColor: "343d3e",
+            pointHoverBorderColor: "rgba(220,220,220,1)",
+            pointHoverBorderWidth: 2,
+            pointHitRadius: 10,
+            data: airData5,
+            spanGaps: false
+        },
+        {
+            label: "PM10",
+            fill: false,
+            backgroundColor: "#8addff",
+            borderColor: "#8addff",
+            borderCapStyle: 'butt',
+            borderDash: [],
+            borderDashOffset: 0.0,
+            borderJoinStyle: 'miter',
+            borderWidth: 1,
+            pointBorderColor: "#8addff",
+            pointBackgroundColor: "#8addff",
+            pointBorderWidth: 1,
+            pointHoverRadius: 5,
+            pointHoverBackgroundColor: "343d3e",
+            pointHoverBorderColor: "rgba(220,220,220,1)",
+            pointHoverBorderWidth: 2,
+            pointHitRadius: 10,
+            data: airData6,
+            spanGaps: false
+        },
+        {
+            label: "NOx",
+            fill: false,
+            backgroundColor: "#83fffe",
+            borderColor: "#83fffe",
+            borderCapStyle: 'butt',
+            borderDash: [],
+            borderDashOffset: 0.0,
+            borderJoinStyle: 'miter',
+            borderWidth: 1,
+            pointBorderColor: "#83fffe",
+            pointBackgroundColor: "#83fffe",
+            pointBorderWidth: 1,
+            pointHoverRadius: 5,
+            pointHoverBackgroundColor: "343d3e",
+            pointHoverBorderColor: "rgba(220,220,220,1)",
+            pointHoverBorderWidth: 2,
+            pointHitRadius: 10,
+            data: airData7,
+            spanGaps: false
+        }
+    ]
+};
+if (air != null) {
+    var lineChart = new Chart(air, {
+        type: 'line',
+        data: dataAir
+    });
+}
+
+
+//chartjs风速风向图
+//箭头小图标
+var img=new Image();
+img.src="images/arrow.png";
+var img_e = new Image();
+img_e.src = "images/arrow_east.png";
+var img_s = new Image();
+img_s.src = "images/arrow_south.png";
+var img_w = new Image();
+img_w.src = "images/arrow_west.png";
+var img_n = new Image();
+img_n.src = "images/arrow_north.png";
+var img_en = new Image();
+img_en.src = "images/arrow_en.png";
+var img_es = new Image();
+img_es.src = "images/arrow_es.png";
+var img_wn = new Image();
+img_wn.src = "images/arrow_wn.png";
+var img_ws = new Image();
+img_ws.src = "images/arrow_ws.png";
+
+
+function getWindDirectionImages(data) {
+    var imgList = [];
+    for (var i = 0; i < data.length; i++) {
+        if (data[i] == "东") {
+            imgList.push(img_e);
+        } else if (data[i] == "南") {
+            imgList.push(img_s);
+        } else if (data[i] == "西") {
+            imgList.push(img_w);
+        } else if (data[i] == "北") {
+            imgList.push(img_n);
+        } else if (data[i] == "东南") {
+            imgList.push(img_es);
+        } else if (data[i] == "西南") {
+            imgList.push(img_ws);
+        } else if (data[i] == "东北") {
+            imgList.push(img_en);
+        } else if (data[i] == "西北") {
+            imgList.push(img_wn);
+        } else {
+            imgList.push("circle");
+        }
+    }
+    return imgList;
+}
+
+var windSpeedData = [28, 32, 29, 30, 27, 28, 29, 30, 32, 30, 28, 30, 32, 33, 35, 29, 28, 27, 26, 24, 22, 21, 20, 20];
+var windDirectionData = ['东', '东南', '南', '西北', '东', '东南', '南', '西北', '东', '东南', '南', '西北', '东', '东南', '南', '西北', '东', '东南', '南', '西北', '东', '东南', '南', '西北'];
+var dataWindSpeed = {
+    labels: ["10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "00", "01", "02", "03", "04", "05", "06", "07", "08", "09"],
+    datasets: [
+        {
+            label: "风速",
+            fill: false,
+            backgroundColor: "#ffffff",
+            borderColor: "#010101",
+            borderCapStyle: 'butt',
+            borderDash: [],
+            borderDashOffset: 0.0,
+            borderJoinStyle: 'miter',
+            borderWidth: 1,
+            pointBorderColor: "#3d97ff",
+            pointBackgroundColor: "#3d97ff",
+            pointBorderWidth: 1,
+            pointHoverRadius: 5,
+            pointHoverBackgroundColor: "343d3e",
+            pointHoverBorderColor: "rgba(220,220,220,1)",
+            pointHoverBorderWidth: 2,
+            //数据点大小
+            pointRadius: 5,
+            pointHitRadius: 10,
+            //数据点形状
+            pointStyle: getWindDirectionImages(windDirectionData),
+            data: windSpeedData,
+            spanGaps: false
+        }
+    ]
+};
+if (windSpeed != null) {
+    var windSpeedChart = new Chart(windSpeed, {
+        type: 'line',
+        data: dataWindSpeed,
         //不显示图例
         options: {legend: {display: false}}
     });
