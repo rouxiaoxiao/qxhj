@@ -15,12 +15,6 @@
     <link rel="stylesheet" href="vendor/toastr/toastr.min.css">
     <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="stylesheets/css/style.css">
-    <link rel="stylesheet" href="vendor/select2/css/select2.min.css">
-    <link rel="stylesheet" href="vendor/select2/css/select2-bootstrap.min.css">
-    <link rel="stylesheet" href="vendor/bootstrap_date-picker/css/bootstrap-datepicker3.min.css">
-    <link rel="stylesheet" href="vendor/bootstrap_time-picker/css/timepicker.css">
-    <link rel="stylesheet" href="vendor/bootstrap_color-picker/css/bootstrap-colorpicker.min.css">
-    <link rel="stylesheet" href="stylesheets/css/style.css">
 </head>
 
 <body>
@@ -40,6 +34,9 @@
         <div class="rightside-header">
             <div class="header-middle"></div>
             <div class="header-section hidden-xs" id="notice-headerbox">
+                <div class="notice" id="help-notice">
+                    <p><a href="系统帮助文档.html"><i class="fa fa-leaf" style="color:white" aria-hidden="true"></i></a></p>
+                </div>
                 <div class="notice" id="help-notice">
                     <p><a href="系统帮助文档.html"><i class="fa fa-leaf" style="color:white" aria-hidden="true"></i></a></p>
                 </div>
@@ -151,10 +148,10 @@
                 <div class="nano-content">
                     <nav>
                         <ul class="nav" id="main-nav">
-                            <li><a href="index.html"><i class="fa fa-home"
-                                                        aria-hidden="true"></i><span>首页</span></a>
+                            <li class="active-item"><a href="index.html"><i class="fa fa-home"
+                                                                            aria-hidden="true"></i><span>首页</span></a>
                             </li>
-                            <li class="has-child-item open-item">
+                            <li class="has-child-item close-item">
                                 <a><i class="fa fa-cubes" aria-hidden="true"></i><span>数据管理</span></a>
                                 <ul class="nav child-nav level-1">
                                     <li><a href="实时数据.html">实时数据</a></li>
@@ -212,165 +209,77 @@
             <div class="content-header">
                 <div class="leftside-content-header">
                     <ul class="breadcrumbs">
-                        <li><i class="fa fa-cubes" aria-hidden="true"></i><a href="#">数据管理</a></li>
-                        <li><a>历史数据</a></li>
+                        <li><i class="fa fa-home" aria-hidden="true"></i><a href="#">首页</a></li>
                     </ul>
                 </div>
             </div>
             <div class="row animated fadeInUp">
-                <div class="row">
-                    <div class="form-group">
-                        <label for="indicatorItem" class="col-sm-2 control-label">指标项</label>
-                        <div class="col-sm-4">
-                            <select name="country" id="indicatorItem" class="form-control" style="width: 100%">
-                                <option value="风速风向" label="风速风向">风速风向</option>
-                                <option value="风向玫瑰图" label="风向玫瑰图">风向玫瑰图</option>
-                                <option value="降水量" label="降水量">降水量</option>
-                                <option value="空气温度" label="空气温度">空气温度</option>
-                                <option value="相对湿度" label="相对湿度">相对湿度</option>
-                                <option value="气压" label="气压">气压</option>
-                                <option value="总辐射" label="总辐射">总辐射</option>
-                                <option value="AQI" label="AQI">AQI</option>
-                                <option value="空气污染物" label="空气污染物">空气污染物</option>
-                                <option value="臭氧8小时" label="臭氧8小时">臭氧8小时</option>
-                            </select>
-                        </div>
-                        <label for="timeline" class="col-sm-2 control-label">统计时间</label>
-                        <div class="col-sm-4">
-                            <select name="country" id="timeline" class="form-control" style="width: 100%">
-                                <option value="小时" label="小时">小时</option>
-                                <option value="日" label="日">日</option>
-                                <option value="月" label="月">月</option>
-                                <option value="年" label="年">年</option>
-                            </select>
-                        </div>
-
+                <div class="row"><h1>&nbsp&nbsp系统帮助文档</h1></div>
+            </div>
+        </div>
+        <div class="right-sidebar">
+            <div class="right-sidebar-toggle" data-toggle-class="right-sidebar-opened" data-target="html">
+                <i class="fa fa-cog fa-spin" aria-hidden="true"></i>
+            </div>
+            <div id="right-nav" class="nano">
+                <div class="nano-content">
+                    <div class="template-settings">
+                        <h4 class="text-center">Template Settings</h4>
+                        <ul class="toggle-settings pv-xlg">
+                            <li>
+                                <h6 class="text">Header fixed</h6>
+                                <label class="switch">
+                                    <input id="header-fixed" type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <h6 class="text">Left sidebar fixed</h6>
+                                <label class="switch">
+                                    <input id="left-sidebar-fixed" type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <h6 class="text">Left sidebar collapsed</h6>
+                                <label class="switch">
+                                    <input id="left-sidebar-collapsed" type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <h6 class="text">Content header fixed</h6>
+                                <label class="switch">
+                                    <input id="content-header-fixed" type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </li>
+                        </ul>
+                        <h4 class="text-center">Template Colors</h4>
+                        <ul class="toggle-colors">
+                            <li>
+                                <a href="index.html" class="on-click"> <img alt="Helsinki-green"
+                                                                            src="images/helsinki-green.png"/></a>
+                            </li>
+                            <li>
+                                <a href="../helsinki-light/index.html" class="on-click"> <img alt="Helsinki-light"
+                                                                                              src="images/helsinki-light.png"/></a>
+                            </li>
+                            <li>
+                                <a href="../helsinki-blue/index.html" class="on-click"> <img alt="Helsinki-blue"
+                                                                                             src="images/helsinki-blue.png"/></a>
+                            </li>
+                            <li>
+                                <a href="../helsinki-red/index.html" class="on-click"> <img alt="Helsinki-red"
+                                                                                            src="images/helsinki-red.png"/></a>
+                            </li>
+                        </ul>
                     </div>
-
-                </div>
-                <div class="row">
-                    <div class="col-sm-5"></div>
-                    <button class="btn btn-wide btn-darker-1">查询</button>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <h4 class="section-subtitle"><b>风速风向</b> 历史数据</h4>
-                        <div class="panel">
-                            <div class="panel-content">
-                                <canvas id="windSpeed-chart" width="400" height="120"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <h4 class="section-subtitle"><b>空气温度</b> 历史数据</h4>
-                        <div class="panel">
-                            <div class="panel-content">
-                                <canvas id="temperature-chart" width="400" height="120"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12 col-md-12">
-                        <h4 class="section-subtitle"><b>降水量</b> 历史数据</h4>
-                        <div class="panel">
-                            <div class="panel-content">
-                                <canvas id="precipitation-chart" width="400" height="120"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12 col-md-12">
-                        <h4 class="section-subtitle"><b>空气污染物</b> 历史数据</h4>
-                        <div class="panel">
-                            <div class="panel-content">
-                                <canvas id="air-chart" width="400" height="120"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <h4 class="section-subtitle">风向玫瑰图</h4>
-                        <div class="panel">
-                            <div class="panel-content">
-                                <canvas id="windDirection-chart" width="400" height="260"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-9"></div>
-                    <button class="btn btn-wide btn-darker-1">导出Excel文档</button>
                 </div>
             </div>
         </div>
+        <a href="#" class="scroll-to-top"><i class="fa fa-angle-double-up"></i></a>
     </div>
-    <div class="right-sidebar">
-        <div class="right-sidebar-toggle" data-toggle-class="right-sidebar-opened" data-target="html">
-            <i class="fa fa-cog fa-spin" aria-hidden="true"></i>
-        </div>
-        <div id="right-nav" class="nano">
-            <div class="nano-content">
-                <div class="template-settings">
-                    <h4 class="text-center">Template Settings</h4>
-                    <ul class="toggle-settings pv-xlg">
-                        <li>
-                            <h6 class="text">Header fixed</h6>
-                            <label class="switch">
-                                <input id="header-fixed" type="checkbox" checked>
-                                <span class="slider round"></span>
-                            </label>
-                        </li>
-                        <li>
-                            <h6 class="text">Left sidebar fixed</h6>
-                            <label class="switch">
-                                <input id="left-sidebar-fixed" type="checkbox" checked>
-                                <span class="slider round"></span>
-                            </label>
-                        </li>
-                        <li>
-                            <h6 class="text">Left sidebar collapsed</h6>
-                            <label class="switch">
-                                <input id="left-sidebar-collapsed" type="checkbox">
-                                <span class="slider round"></span>
-                            </label>
-                        </li>
-                        <li>
-                            <h6 class="text">Content header fixed</h6>
-                            <label class="switch">
-                                <input id="content-header-fixed" type="checkbox" checked>
-                                <span class="slider round"></span>
-                            </label>
-                        </li>
-                    </ul>
-                    <h4 class="text-center">Template Colors</h4>
-                    <ul class="toggle-colors">
-                        <li>
-                            <a href="index.html" class="on-click"> <img alt="Helsinki-green"
-                                                                        src="images/helsinki-green.png"/></a>
-                        </li>
-                        <li>
-                            <a href="../helsinki-light/index.html" class="on-click"> <img alt="Helsinki-light"
-                                                                                          src="images/helsinki-light.png"/></a>
-                        </li>
-                        <li>
-                            <a href="../helsinki-blue/index.html" class="on-click"> <img alt="Helsinki-blue"
-                                                                                         src="images/helsinki-blue.png"/></a>
-                        </li>
-                        <li>
-                            <a href="../helsinki-red/index.html" class="on-click"> <img alt="Helsinki-red"
-                                                                                        src="images/helsinki-red.png"/></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <a href="#" class="scroll-to-top"><i class="fa fa-angle-double-up"></i></a>
 </div>
 </div>
 <script src="javascripts/jquery.min.js"></script>
@@ -380,18 +289,7 @@
 <script src="javascripts/template-init.min.js"></script>
 <script src="vendor/toastr/toastr.min.js"></script>
 <script src="vendor/chart-js/chart.min.js"></script>
-<script src="javascripts/examples/charts/chart-js.js"></script>
 <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-<script src="vendor/bootstrap_max-lenght/bootstrap-maxlength.js"></script>
-<script src="vendor/select2/js/select2.min.js"></script>
-<script src="vendor/input-masked/inputmask.bundle.min.js"></script>
-<script src="vendor/input-masked/phone-codes/phone.js"></script>
-<script src="vendor/bootstrap_date-picker/js/bootstrap-datepicker.min.js"></script>
-<script src="vendor/bootstrap_time-picker/js/bootstrap-timepicker.js"></script>
-<script src="vendor/bootstrap_color-picker/js/bootstrap-colorpicker.min.js"></script>
-<script src="javascripts/examples/forms/advanced.js"></script>
-<script type="text/javascript" src="javascripts/ichart.1.2.min.js"></script>
-<script src="javascripts/examples/charts/chart-js.js"></script>
 </body>
 
 </html>
