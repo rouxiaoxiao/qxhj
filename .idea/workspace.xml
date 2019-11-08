@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66852b44-298a-45d7-85b0-2f747d7b4a24" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/css/style-old.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/css/style_new.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/css/style.css" afterPath="$PROJECT_DIR$/stylesheets/css/style.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,18 +16,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="检测报告管理.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/检测报告管理.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1365">
-              <caret line="39" column="22" lean-forward="false" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
-              <folding>
-                <element signature="n#style#0;n#i#0;n#a#0;n#p#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="系统帮助文档.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/系统帮助文档.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -42,8 +31,18 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stylesheets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12985">
-              <caret line="371" column="0" lean-forward="false" selection-start-line="371" selection-start-column="0" selection-end-line="371" selection-end-column="0" />
+            <state relative-caret-position="123">
+              <caret line="504" column="17" lean-forward="true" selection-start-line="504" selection-start-column="17" selection-end-line="504" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style_new.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/stylesheets/css/style_new.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="2058" column="28" lean-forward="true" selection-start-line="2058" selection-start-column="28" selection-end-line="2058" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -150,13 +149,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>\&lt;td\&gt;\n                                                \&lt;button</find>
-      <find>\&lt;td\&gt;\n\&lt;button</find>
-      <find>air-chart</find>
-      <find>line-chart</find>
-      <find>eaf</find>
-      <find>风向玫瑰</find>
-      <find>风向</find>
       <find>Line</find>
       <find>draw</find>
       <find>L</find>
@@ -169,7 +161,6 @@
       <find>fa-plus</find>
       <find>notice</find>
       <find>fa fa-bell-o</find>
-      <find>#004E90</find>
       <find>#d2322d</find>
       <find>rgba(255, 255, 255, 0.24)</find>
       <find>#2390b0</find>
@@ -180,6 +171,14 @@
       <find>#ddd</find>
       <find>===============</find>
       <find>S*/</find>
+      <find>#004E90</find>
+      <find>s</find>
+      <find>styl</find>
+      <find>style.cs</find>
+      <find>style.css</find>
+      <find>004E90</find>
+      <find>006ac3</find>
+      <find>003867</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -189,6 +188,10 @@
       <replace>断电记录</replace>
       <replace>张可</replace>
       <replace>资料信息部</replace>
+      <replace>style.css</replace>
+      <replace>126F03</replace>
+      <replace>237815</replace>
+      <replace>083202</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -237,6 +240,7 @@
         <option value="$PROJECT_DIR$/维护保养计划管理.html" />
         <option value="$PROJECT_DIR$/维护保养记录管理.html" />
         <option value="$PROJECT_DIR$/系统帮助文档.html" />
+        <option value="$PROJECT_DIR$/stylesheets/css/style.css" />
       </list>
     </option>
   </component>
@@ -777,15 +781,15 @@
       <workItem from="1572828891519" duration="2887000" />
       <workItem from="1572915377439" duration="1860000" />
       <workItem from="1573032035769" duration="274000" />
-      <workItem from="1573094654994" duration="7040000" />
+      <workItem from="1573094654994" duration="9374000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164846000" />
+    <option name="totallyTimeSpent" value="167180000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1042" extended-state="7" />
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -799,10 +803,10 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20546319" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3551069" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14038877" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18304536" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="BPMNPalette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897863" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -830,13 +834,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ui-elements_panels.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18305">
-          <caret line="523" column="0" lean-forward="false" selection-start-line="523" selection-start-column="0" selection-end-line="538" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tables_data-tables.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="455">
@@ -1179,10 +1176,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/css/style_new.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="2058" column="28" lean-forward="true" selection-start-line="2058" selection-start-column="28" selection-end-line="2058" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12985">
-          <caret line="371" column="0" lean-forward="false" selection-start-line="371" selection-start-column="0" selection-end-line="371" selection-end-column="0" />
+        <state relative-caret-position="123">
+          <caret line="504" column="17" lean-forward="true" selection-start-line="504" selection-start-column="17" selection-end-line="504" selection-end-column="17" />
           <folding />
         </state>
       </provider>
