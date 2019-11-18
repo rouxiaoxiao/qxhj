@@ -2,27 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66852b44-298a-45d7-85b0-2f747d7b4a24" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/数据字典维护.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/实时数据.html" afterPath="$PROJECT_DIR$/基础数据.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/工作建议管理.html" afterPath="$PROJECT_DIR$/工作建议设置.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/文献资料管理.html" afterPath="$PROJECT_DIR$/文献管理.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/检测报告管理.html" afterPath="$PROJECT_DIR$/不定期监测管理.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/charts_chart-js.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/charts_morris.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/forms_advanced.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/forms_elements.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/forms_layouts.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/forms_validation.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/helpers_background-border.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/helpers_margin-padding.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/index-old.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages_error-404-content.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages_error-404.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages_error-500.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages_faq.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages_forgot-password.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages_lock-screen.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages_sign-in.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages_user-profile.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tables_basic.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tables_data-tables.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tables_responsive.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ui-elements_accordions.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ui-elements_alerts.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ui-elements_animations-appear.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ui-elements_buttons.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ui-elements_modals.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ui-elements_notifications-pnotify.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ui-elements_notifications-toastr.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ui-elements_panels.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ui-elements_tabs.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ui-elements_typography.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/widgets_boxes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/widgets_lists.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/widgets_posts.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/widgets_timelines.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/历史数据.html" afterPath="$PROJECT_DIR$/历史数据.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/异常数据.html" afterPath="$PROJECT_DIR$/异常数据.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/操作日志.html" afterPath="$PROJECT_DIR$/操作日志.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/数据异常报警.html" afterPath="$PROJECT_DIR$/数据异常报警.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/数据正常阈值管理.html" afterPath="$PROJECT_DIR$/数据正常阈值管理.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/断电记录.html" afterPath="$PROJECT_DIR$/断电记录.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/极端天气报警.html" afterPath="$PROJECT_DIR$/极端天气报警.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/极端天气阈值管理.html" afterPath="$PROJECT_DIR$/极端天气阈值管理.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/系统帮助文档.html" afterPath="$PROJECT_DIR$/系统帮助文档.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/系统自动记录.html" afterPath="$PROJECT_DIR$/系统自动记录.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/级别管理.html" afterPath="$PROJECT_DIR$/级别管理.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/统计分析.html" afterPath="$PROJECT_DIR$/统计分析.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/维护保养计划管理.html" afterPath="$PROJECT_DIR$/维护保养计划管理.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/维护保养记录管理.html" afterPath="$PROJECT_DIR$/维护保养记录管理.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,7 +53,7 @@
       <file leaf-file-name="系统自动记录.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/系统自动记录.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
+            <state relative-caret-position="6370">
               <caret line="182" column="77" lean-forward="false" selection-start-line="182" selection-start-column="77" selection-end-line="182" selection-end-column="77" />
               <folding />
             </state>
@@ -47,7 +63,7 @@
       <file leaf-file-name="级别管理.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/级别管理.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
+            <state relative-caret-position="7560">
               <caret line="216" column="71" lean-forward="false" selection-start-line="216" selection-start-column="71" selection-end-line="216" selection-end-column="71" />
               <folding />
             </state>
@@ -57,7 +73,7 @@
       <file leaf-file-name="统计分析.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/统计分析.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
+            <state relative-caret-position="6545">
               <caret line="187" column="77" lean-forward="false" selection-start-line="187" selection-start-column="77" selection-end-line="187" selection-end-column="77" />
               <folding />
             </state>
@@ -67,7 +83,7 @@
       <file leaf-file-name="维护保养计划管理.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/维护保养计划管理.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
+            <state relative-caret-position="6545">
               <caret line="187" column="77" lean-forward="false" selection-start-line="187" selection-start-column="77" selection-end-line="187" selection-end-column="77" />
               <folding />
             </state>
@@ -77,7 +93,7 @@
       <file leaf-file-name="维护保养记录管理.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/维护保养记录管理.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
+            <state relative-caret-position="6510">
               <caret line="186" column="55" lean-forward="false" selection-start-line="186" selection-start-column="49" selection-end-line="186" selection-end-column="55" />
               <folding />
             </state>
@@ -87,21 +103,9 @@
       <file leaf-file-name="工作建议设置.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/工作建议设置.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1264">
+            <state relative-caret-position="6230">
               <caret line="178" column="34" lean-forward="false" selection-start-line="178" selection-start-column="34" selection-end-line="178" selection-end-column="34" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="279" column="47" lean-forward="false" selection-start-line="279" selection-start-column="47" selection-end-line="279" selection-end-column="47" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -109,8 +113,8 @@
       <file leaf-file-name="数据字典维护.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/数据字典维护.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="216" column="33" lean-forward="true" selection-start-line="216" selection-start-column="33" selection-end-line="216" selection-end-column="33" />
+            <state relative-caret-position="-1120">
+              <caret line="218" column="34" lean-forward="false" selection-start-line="218" selection-start-column="34" selection-end-line="218" selection-end-column="34" />
               <folding>
                 <element signature="n#style#0;n#select#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -121,7 +125,7 @@
       <file leaf-file-name="异常数据.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/异常数据.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
+            <state relative-caret-position="6300">
               <caret line="180" column="77" lean-forward="false" selection-start-line="180" selection-start-column="77" selection-end-line="180" selection-end-column="77" />
               <folding />
             </state>
@@ -131,7 +135,7 @@
       <file leaf-file-name="系统帮助文档.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/系统帮助文档.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
+            <state relative-caret-position="6335">
               <caret line="181" column="77" lean-forward="false" selection-start-line="181" selection-start-column="77" selection-end-line="181" selection-end-column="77" />
               <folding />
             </state>
@@ -282,8 +286,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -298,7 +300,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -780,16 +784,16 @@
       <workItem from="1573529355871" duration="6445000" />
       <workItem from="1573551693142" duration="594000" />
       <workItem from="1573779236809" duration="276000" />
-      <workItem from="1574043887077" duration="3981000" />
+      <workItem from="1574043887077" duration="4040000" />
+      <workItem from="1574055827255" duration="841000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190726000" />
+    <option name="totallyTimeSpent" value="191626000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -799,27 +803,27 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991362" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15201901" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2375297" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11447084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17656587" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="BPMNPalette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897863" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897863" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -986,7 +990,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17010">
           <caret line="486" column="26" lean-forward="false" selection-start-line="486" selection-start-column="26" selection-end-line="486" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -999,7 +1002,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17010">
           <caret line="486" column="25" lean-forward="false" selection-start-line="440" selection-start-column="20" selection-end-line="496" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1007,7 +1009,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="35">
           <caret line="353" column="0" lean-forward="false" selection-start-line="352" selection-start-column="0" selection-end-line="353" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1015,7 +1016,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="182" column="77" lean-forward="false" selection-start-line="182" selection-start-column="77" selection-end-line="182" selection-end-column="77" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1023,7 +1023,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
           <caret line="187" column="77" lean-forward="false" selection-start-line="187" selection-start-column="77" selection-end-line="187" selection-end-column="77" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1031,7 +1030,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="385">
           <caret line="182" column="77" lean-forward="false" selection-start-line="182" selection-start-column="77" selection-end-line="182" selection-end-column="77" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1039,7 +1037,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
           <caret line="182" column="77" lean-forward="false" selection-start-line="182" selection-start-column="77" selection-end-line="182" selection-end-column="77" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1047,7 +1044,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
           <caret line="182" column="77" lean-forward="false" selection-start-line="182" selection-start-column="77" selection-end-line="182" selection-end-column="77" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1055,7 +1051,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
           <caret line="182" column="77" lean-forward="false" selection-start-line="182" selection-start-column="77" selection-end-line="182" selection-end-column="77" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1063,7 +1058,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
           <caret line="182" column="77" lean-forward="false" selection-start-line="182" selection-start-column="77" selection-end-line="182" selection-end-column="77" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1071,7 +1065,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
           <caret line="182" column="77" lean-forward="false" selection-start-line="182" selection-start-column="77" selection-end-line="182" selection-end-column="77" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1079,7 +1072,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
           <caret line="182" column="77" lean-forward="false" selection-start-line="182" selection-start-column="77" selection-end-line="182" selection-end-column="77" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1087,29 +1079,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
           <caret line="182" column="77" lean-forward="false" selection-start-line="182" selection-start-column="77" selection-end-line="182" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/系统帮助文档.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="181" column="77" lean-forward="false" selection-start-line="181" selection-start-column="77" selection-end-line="181" selection-end-column="77" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/系统自动记录.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
+        <state relative-caret-position="6370">
           <caret line="182" column="77" lean-forward="false" selection-start-line="182" selection-start-column="77" selection-end-line="182" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/级别管理.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7560">
+          <caret line="216" column="71" lean-forward="false" selection-start-line="216" selection-start-column="71" selection-end-line="216" selection-end-column="71" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/统计分析.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
+        <state relative-caret-position="6545">
           <caret line="187" column="77" lean-forward="false" selection-start-line="187" selection-start-column="77" selection-end-line="187" selection-end-column="77" />
           <folding />
         </state>
@@ -1117,7 +1108,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/维护保养计划管理.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
+        <state relative-caret-position="6545">
           <caret line="187" column="77" lean-forward="false" selection-start-line="187" selection-start-column="77" selection-end-line="187" selection-end-column="77" />
           <folding />
         </state>
@@ -1125,23 +1116,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/维护保养记录管理.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
+        <state relative-caret-position="6510">
           <caret line="186" column="55" lean-forward="false" selection-start-line="186" selection-start-column="49" selection-end-line="186" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/异常数据.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="180" column="77" lean-forward="false" selection-start-line="180" selection-start-column="77" selection-end-line="180" selection-end-column="77" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/工作建议设置.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1264">
+        <state relative-caret-position="6230">
           <caret line="178" column="34" lean-forward="false" selection-start-line="178" selection-start-column="34" selection-end-line="178" selection-end-column="34" />
           <folding />
         </state>
@@ -1149,7 +1132,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
+        <state relative-caret-position="9275">
           <caret line="279" column="47" lean-forward="false" selection-start-line="279" selection-start-column="47" selection-end-line="279" selection-end-column="47" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -1157,18 +1140,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/级别管理.html">
+    <entry file="file://$PROJECT_DIR$/异常数据.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="216" column="71" lean-forward="false" selection-start-line="216" selection-start-column="71" selection-end-line="216" selection-end-column="71" />
+        <state relative-caret-position="6300">
+          <caret line="180" column="77" lean-forward="false" selection-start-line="180" selection-start-column="77" selection-end-line="180" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/系统帮助文档.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6335">
+          <caret line="181" column="77" lean-forward="false" selection-start-line="181" selection-start-column="77" selection-end-line="181" selection-end-column="77" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/数据字典维护.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="216" column="33" lean-forward="true" selection-start-line="216" selection-start-column="33" selection-end-line="216" selection-end-column="33" />
+        <state relative-caret-position="-1120">
+          <caret line="218" column="34" lean-forward="false" selection-start-line="218" selection-start-column="34" selection-end-line="218" selection-end-column="34" />
           <folding>
             <element signature="n#style#0;n#select#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
