@@ -149,18 +149,17 @@
                             <li class="has-child-item close-item">
                                 <a><i class="fa fa-cubes" aria-hidden="true"></i><span>数据管理</span></a>
                                 <ul class="nav child-nav level-1">
-                                    <li><a href="实时数据.html">实时数据</a></li>
+                                    <li><a href="基础数据.html">基础数据</a></li>
                                     <li><a href="历史数据.html">历史数据</a></li>
                                     <li><a href="统计分析.html">统计分析</a></li>
                                     <li><a href="异常数据.html">异常数据</a></li>
                                 </ul>
                             </li>
-                            <li class="has-child-item close-item">
-                                <a><i class="fa fa-book" aria-hidden="true"></i><span>资料管理</span></a>
-                                <ul class="nav child-nav level-1">
-                                    <li><a href="检测报告管理.html">检测报告管理</a></li>
-                                    <li><a href="文献资料管理.html">文献资料管理</a></li>
-                                </ul>
+                            <li class="fa"><a href="文献管理.html"><i class="fa fa-book " aria-hidden="true"></i></i>
+                                <span>文献管理</span></a>
+                            </li>
+                            <li class="fa"><a href="不定期监测管理.html"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></i>
+                                <span>不定期监测管理</span></a>
                             </li>
                             <li class="has-child-item close-item">
                                 <a><i class="fa fa-wrench" aria-hidden="true"></i><span>设备管理</span></a>
@@ -177,12 +176,11 @@
                                     <li><a href="极端天气报警.html">极端天气报警</a></li>
                                 </ul>
                             </li>
-                            <li class="fa active-item"><a href="工作建议管理.html"><i class="fa fa-heart " aria-hidden="true"></i></i>
-                                <span>工作建议管理</span></a>
-                            </li>
                             <li class="has-child-item close-item">
                                 <a><i class="fa fa-cog " aria-hidden="true"></i><span>系统管理</span></a>
                                 <ul class="nav child-nav level-1">
+                                    <li><a href="工作建议设置.html">工作建议设置</a></li>
+                                    <li><a href="数据字典维护.html">数据字典维护</a></li>
                                     <li><a href="数据正常阈值管理.html">数据正常阈值管理</a></li>
                                     <li><a href="极端天气阈值管理.html">极端天气阈值管理</a></li>
                                     <li class="has-child-item close-item">
@@ -204,14 +202,15 @@
             <div class="content-header">
                 <div class="leftside-content-header">
                     <ul class="breadcrumbs">
-                        <li><i class="fa fa-heart" aria-hidden="true"></i><a href="#">工作建议管理</a></li>
+                        <li><i class="fa fa-book" aria-hidden="true"></i><a href="#">资源管理</a></li>
+                        <li><a>不定期监测管理</a></li>
                     </ul>
                 </div>
             </div>
             <div class="row animated fadeInUp">
                 <div class="row">
                     <div class="col-sm-12">
-                        <h4 class="section-subtitle"><b>工作建议</b></h4>
+                        <h4 class="section-subtitle"><b>检测报告</b></h4>
                         <div class="panel">
                             <div class="panel-content">
                                 <div class="table-responsive">
@@ -219,35 +218,59 @@
                                            cellspacing="0" width="100%">
                                         <thead>
                                         <tr>
-                                            <th>指标项</th>
-                                            <th>指标项对应值</th>
-                                            <th>工作建议内容</th>
+                                            <th>监测类型</th>
+                                            <th>监测项目名称</th>
+                                            <th>监测时间</th>
+                                            <th>监测实施单位</th>
+                                            <th>监测实施人</th>
+                                            <th>项目负责人</th>
+                                            <th>项目简要描述</th>
+                                            <th>关键字</th>
+                                            <th>报告文件</th>
                                             <th>操作</th>
                                         </tr>
                                         </thead>
                                         <tbody>
                                         <tr>
-                                            <td>温度</td>
-                                            <td>>40</td>
-                                            <td>天气炎热，减少外出</td>
+                                            <td>降水成分分析</td>
+                                            <td>xxx项目</td>
+                                            <td>2019-09-15 06:22:00</td>
+                                            <td>xxx单位</td>
+                                            <td>张三</td>
+                                            <td>李四</td>
+                                            <td>该项目以xx为目标，实施了xxxxxxxxxxxx</td>
+                                            <td>降水成分</td>
+                                            <th>降水报告文件.pdf</th>
                                             <th>
                                                 <button class="btn btn-primary btn-sm">编辑</button>
                                                 <button class="btn btn-danger btn-sm">删除</button>
                                             </th>
                                         </tr>
                                         <tr>
-                                            <td>温度</td>
-                                            <td>>40</td>
-                                            <td>天气炎热，减少外出</td>
+                                            <td>大气污染物成分分析</td>
+                                            <td>xxx项目</td>
+                                            <td>2019-09-16 06:22:00</td>
+                                            <td>xxx单位</td>
+                                            <td>张三</td>
+                                            <td>李四</td>
+                                            <td>该项目以xx为目标，实施了xxxxxxxxxxxx</td>
+                                            <td>大气</td>
+                                            <th>大气报告文件.pdf</th>
                                             <th>
                                                 <button class="btn btn-primary btn-sm">编辑</button>
                                                 <button class="btn btn-danger btn-sm">删除</button>
                                             </th>
                                         </tr>
                                         <tr>
-                                            <td>温度</td>
-                                            <td>>40</td>
-                                            <td>天气炎热，减少外出</td>
+                                            <td>土壤成分及含水率分析</td>
+                                            <td>xxx项目</td>
+                                            <td>2019-09-15 06:22:00</td>
+                                            <td>xxx单位</td>
+                                            <td>张三</td>
+                                            <td>李四</td>
+                                            <td>该项目以xx为目标，实施了xxxxxxxxxxxx</td>
+                                            <td>土壤成分</td>
+                                            <th>土壤报告文件.pdf</th>
                                             <th>
                                                 <button class="btn btn-primary btn-sm">编辑</button>
                                                 <button class="btn btn-danger btn-sm">删除</button>
@@ -261,7 +284,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-6 col-sm-offset-2"><button class="btn btn-wide btn-darker-1" data-toggle="modal" data-target="#myModal">添加工作建议</button></div>
+                    <div class="col-sm-6 col-sm-offset-2"><button class="btn btn-wide btn-darker-1" data-toggle="modal" data-target="#myModal">上传检测报告</button></div>
                     <button class="btn btn-wide btn-darker-1">导出Excel文档</button>
                 </div>
 
@@ -271,6 +294,45 @@
         <a href="#" class="scroll-to-top"><i class="fa fa-angle-double-up"></i></a>
     </div>
 </div>
+
+
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    上传检测报告
+                </h4>
+            </div>
+            <form id="form_data">
+                <div class="modal-body">
+                    监测类型: <input type="text" id="user_id" name="user_id"/><br/>
+                    监测项目名称: <input type="text" id="user_name" name="user_name"/><br/>
+                    监测时间: <input type="text" id="time" name="time"/><br/>
+                    监测实施单位: <input type="text" id="company" name="company"/><br/>
+                    监测实施人: <input type="text" id="implementer" name="implementer"/><br/>
+                    项目负责人: <input type="text" id="principal" name="principal"/><br/>
+                    项目简要描述: <input type="text" id="aspect" name="aspect"/><br/>
+                    关键字: <input type="text" id="keyword" name="keyword"/><br/>
+                    <input type="hidden" id="act" value="add" name="act"/>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                    </button>
+                    <button type="button" onclick="add_info()" class="btn btn-primary">
+                        提交更改
+                    </button>
+                </div>
+            </form>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+
 <script src="javascripts/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 <script src="vendor/nano-scroller/nano-scroller.js"></script>
@@ -284,6 +346,8 @@
 <script src="vendor/data-table/media/js/dataTables.bootstrap.min.js"></script>
 <script src="javascripts/examples/tables/data-tables.js"></script>
 <script src="javascripts/examples/ui-elements/buttons.js"></script>
+<script src="vendor/jquery-validation/jquery.validate.min.js"></script>
+<script src="javascripts/examples/forms/validation.js"></script>
 
 </body>
 
