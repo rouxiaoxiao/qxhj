@@ -2,43 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66852b44-298a-45d7-85b0-2f747d7b4a24" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/charts_chart-js.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/charts_morris.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/forms_advanced.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/forms_elements.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/forms_layouts.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/forms_validation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/helpers_background-border.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/helpers_margin-padding.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index-old.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages_error-404-content.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages_error-404.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages_error-500.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages_faq.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages_forgot-password.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages_lock-screen.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages_sign-in.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages_user-profile.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tables_basic.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tables_data-tables.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tables_responsive.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ui-elements_accordions.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ui-elements_alerts.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ui-elements_animations-appear.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ui-elements_buttons.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ui-elements_modals.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ui-elements_notifications-pnotify.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ui-elements_notifications-toastr.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ui-elements_panels.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ui-elements_tabs.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ui-elements_typography.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/widgets_boxes.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/widgets_lists.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/widgets_posts.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/widgets_timelines.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/数据字典维护.html" afterPath="$PROJECT_DIR$/数据字典维护.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -113,11 +78,19 @@
       <file leaf-file-name="数据字典维护.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/数据字典维护.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1120">
-              <caret line="218" column="34" lean-forward="false" selection-start-line="218" selection-start-column="34" selection-end-line="218" selection-end-column="34" />
-              <folding>
-                <element signature="n#style#0;n#select#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="315">
+              <caret line="232" column="22" lean-forward="false" selection-start-line="232" selection-start-column="22" selection-end-line="232" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="文献管理.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/文献管理.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6195">
+              <caret line="177" column="13" lean-forward="false" selection-start-line="177" selection-start-column="13" selection-end-line="177" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -286,6 +259,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -300,9 +276,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -785,12 +758,13 @@
       <workItem from="1573551693142" duration="594000" />
       <workItem from="1573779236809" duration="276000" />
       <workItem from="1574043887077" duration="4040000" />
-      <workItem from="1574055827255" duration="841000" />
+      <workItem from="1574055827255" duration="3206000" />
+      <workItem from="1574297507714" duration="152000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="191626000" />
+    <option name="totallyTimeSpent" value="194143000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -806,10 +780,10 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2375297" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2505938" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17656587" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12365011" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="BPMNPalette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -838,20 +812,8 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/设备管理.html" />
-    <entry file="file://$PROJECT_DIR$/forms_layouts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14770">
-          <caret line="422" column="0" lean-forward="false" selection-start-line="422" selection-start-column="0" selection-end-line="459" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui-elements_notifications-toastr.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="454" column="0" lean-forward="false" selection-start-line="454" selection-start-column="0" selection-end-line="473" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/forms_layouts.html" />
+    <entry file="file://$PROJECT_DIR$/ui-elements_notifications-toastr.html" />
     <entry file="file://$PROJECT_DIR$/系统日志.html" />
     <entry file="file://$PROJECT_DIR$/vendor/morris/morris.min.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -938,13 +900,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/charts_chart-js.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="154" column="34" lean-forward="false" selection-start-line="154" selection-start-column="28" selection-end-line="154" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/charts_chart-js.html" />
     <entry file="file://$PROJECT_DIR$/stylesheets/css/style-old.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -986,25 +942,13 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ui-elements_notifications-pnotify.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17010">
-          <caret line="486" column="26" lean-forward="false" selection-start-line="486" selection-start-column="26" selection-end-line="486" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ui-elements_notifications-pnotify.html" />
     <entry file="file://$PROJECT_DIR$/images/header-logo.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/forms_validation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17010">
-          <caret line="486" column="25" lean-forward="false" selection-start-line="440" selection-start-column="20" selection-end-line="496" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/forms_validation.html" />
     <entry file="file://$PROJECT_DIR$/stylesheets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="35">
@@ -1048,13 +992,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/数据正常阈值管理.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="182" column="77" lean-forward="false" selection-start-line="182" selection-start-column="77" selection-end-line="182" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/文献管理.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
           <caret line="182" column="77" lean-forward="false" selection-start-line="182" selection-start-column="77" selection-end-line="182" selection-end-column="77" />
@@ -1134,9 +1071,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9275">
           <caret line="279" column="47" lean-forward="false" selection-start-line="279" selection-start-column="47" selection-end-line="279" selection-end-column="47" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1156,13 +1090,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/文献管理.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6195">
+          <caret line="177" column="13" lean-forward="false" selection-start-line="177" selection-start-column="13" selection-end-line="177" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/数据字典维护.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1120">
-          <caret line="218" column="34" lean-forward="false" selection-start-line="218" selection-start-column="34" selection-end-line="218" selection-end-column="34" />
-          <folding>
-            <element signature="n#style#0;n#select#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="315">
+          <caret line="232" column="22" lean-forward="false" selection-start-line="232" selection-start-column="22" selection-end-line="232" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
