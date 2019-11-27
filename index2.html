@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="vendor/toastr/toastr.min.css">
     <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="stylesheets/css/style.css">
-    <link rel="stylesheet" href="vendor/data-table/media/css/dataTables.bootstrap.min.css">
 </head>
 
 <body>
@@ -34,10 +33,10 @@
                 <div class="nano-content">
                     <nav>
                         <ul class="nav" id="main-nav">
-                            <li><a href="index.html"><i class="fa fa-home"
-                                                        aria-hidden="true"></i><span>首页</span></a>
+                            <li class="active-item"><a href="index.html"><i class="fa fa-home"
+                                                                            aria-hidden="true"></i><span>首页</span></a>
                             </li>
-                            <li class="has-child-item open-item">
+                            <li class="has-child-item close-item">
                                 <a><i class="fa fa-cubes" aria-hidden="true"></i><span>数据管理</span></a>
                                 <ul class="nav child-nav level-1">
                                     <li><a href="基础数据.html">基础数据</a></li>
@@ -49,7 +48,8 @@
                             <li class="fa"><a href="文献管理.html"><i class="fa fa-book " aria-hidden="true"></i></i>
                                 <span>文献管理</span></a>
                             </li>
-                            <li class="fa"><a href="不定期监测管理.html"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></i>
+                            <li class="fa"><a href="不定期监测管理.html"><i class="fa fa-pencil-square-o "
+                                                                     aria-hidden="true"></i></i>
                                 <span>不定期监测管理</span></a>
                             </li>
                             <li class="has-child-item close-item">
@@ -93,156 +93,169 @@
             <div class="content-header">
                 <div class="leftside-content-header">
                     <ul class="breadcrumbs">
-                        <li><i class="fa fa-cubes" aria-hidden="true"></i><a href="#">数据管理</a></li>
-                        <li><a>基础数据</a></li>
+                        <li><i class="fa fa-home" aria-hidden="true"></i><a href="#">首页</a></li>
                     </ul>
                 </div>
             </div>
             <div class="row animated fadeInUp">
                 <div class="row">
-                    <label class="col-sm-1 control-label">时间段</label>
-                    <div class="col-sm-5">
-                        <div class="input-daterange input-group" id="range-datepicker">
-                            <input type="text" class="input-sm form-control" name="start"/>
-                            <span class="input-group-addon x-primary">to</span>
-                            <input type="text" class="input-sm form-control" name="end"/>
+                    <div class="col-sm-12 col-md-3">
+                        <p class="section-text">温情提示：今日高温，请减少外出活动</p>
+                        <div class="panel widgetbox wbox-2 bg-scale-0">
+                            <a href="#">
+                                <div class="panel-content">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <span class="icon fa fa-thermometer-3 color-darker-1"></span>
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <h4 class="subtitle color-darker-1">温度</h4>
+                                            <h1 class="title color-primary">34℃</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="panel widgetbox wbox-2 bg-lighter-2 color-light">
+                            <a href="#">
+                                <div class="panel-content">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <span class="icon fa fa-tint color-darker-2"></span>
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <h4 class="subtitle color-darker-2">湿度</h4>
+                                            <h1 class="title color-w">50％</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="panel widgetbox wbox-2 bg-scale-0">
+                            <a href="#">
+                                <div class="panel-content">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <span class="icon fa fa-flag color-darker-1"></span>
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <h4 class="subtitle color-darker-1">风速</h4>
+                                            <h1 class="title color-primary">2级</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="panel widgetbox wbox-2 bg-lighter-2 color-light">
+                            <a href="#">
+                                <div class="panel-content">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <span class="icon fa fa-umbrella color-darker-2"></span>
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <h4 class="subtitle color-darker-2">雨量</h4>
+                                            <h1 class="title color-w">3级</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <img alt="animation image" id="img-1" class="img-animated" src=images/zishu_60.png />
+                            <em class="aqi">58</em>
+                            <i class="aqi">优</i>
                         </div>
                     </div>
-                    <label for="select2-example-basic2" class="col-sm-1 control-label">指标项</label>
-                    <div class="col-sm-5">
-                        <select name="country" id="select2-example-basic2" class="form-control" style="width: 100%">
-                            <option value="MIN" label="SO2">SO2</option>
-                            <option value="HOUR" label="NO">NO</option>
-                            <option value="DAY" label="NO2">NO2</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-5"></div>
-                    <button class="btn btn-wide btn-darker-1">查询</button>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h4 class="section-subtitle">基础数据</h4>
+                    <div class="col-sm-12 col-md-9">
+                        <h4 class="section-subtitle"><b>气象数据</b></h4>
                         <div class="panel">
                             <div class="panel-content">
                                 <div class="table-responsive">
-                                    <table id="basic-table" class="data-table table table-striped nowrap table-hover"
-                                           cellspacing="0" width="100%">
+                                    <table class="table table-striped table-hover">
                                         <thead>
                                         <tr>
-                                            <th>序号</th>
-                                            <th>数据时间</th>
-                                            <th>指标项</th>
-                                            <th>检测值</th>
-                                            <th>区站号</th>
-                                            <th>标记</th>
+                                            <th>指标名称</th>
+                                            <th>指标数值</th>
                                         </tr>
                                         </thead>
                                         <tbody>
                                         <tr>
-                                            <td>001</td>
-                                            <td>2019-09-15 06:22:00</td>
-                                            <td>SO2</td>
-                                            <td>0.23</td>
-                                            <td>00001</td>
-                                            <td>H</td>
+                                            <td>监测时间</td>
+                                            <td>2019-01-01 01:00:00</td>
                                         </tr>
                                         <tr>
-                                            <td>002</td>
-                                            <td>2019-09-15 06:22:00</td>
+                                            <td>空气温度</td>
+                                            <td>34℃</td>
+                                        </tr>
+                                        <tr>
+                                            <td>相对湿度</td>
+                                            <td>50%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>降水量</td>
+                                            <td>1.0mm</td>
+                                        </tr>
+                                        <tr>
+                                            <td>总辐射辐照度</td>
+                                            <td>368W/m<sup>2</sup></td>
+                                        </tr>
+                                        <tr>
+                                            <td>风速</td>
+                                            <td>0.2m/s</td>
+                                        </tr>
+                                        <tr>
+                                            <td>风向</td>
+                                            <td>234°西南风</td>
+                                        </tr>
+                                        <tr>
+                                            <td>本站气压</td>
+                                            <td>1015.0Mpa</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="section-subtitle"><b>环境数据</b></h4>
+                        <div class="panel">
+                            <div class="panel-content">
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-hover">
+                                        <thead>
+                                        <tr>
+                                            <th>指标名称</th>
+                                            <th>指标数值</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>监测时间</td>
+                                            <td>2019-01-01 01:00:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SO<sub>2</sub></td>
+                                            <td>24 mg/m<sup>3</sup></td>
+                                        </tr>
+                                        <tr>
                                             <td>NO</td>
-                                            <td>0.30</td>
-                                            <td>00001</td>
-                                            <td>H</td>
+                                            <td>24mg/m<sup>3</sup></td>
                                         </tr>
                                         <tr>
-                                            <td>003</td>
-                                            <td>2019-09-15 06:22:00</td>
-                                            <td>NO</td>
-                                            <td>0.22</td>
-                                            <td>00001</td>
-                                            <td>H</td>
+                                            <td>PM2.5</td>
+                                            <td>24 mg/m<sup>3</sup></td>
                                         </tr>
                                         <tr>
-                                            <td>004</td>
-                                            <td>2019-09-15 06:22:00</td>
-                                            <td>SO2</td>
-                                            <td>0.36</td>
-                                            <td>00001</td>
-                                            <td>H</td>
+                                            <td>O<sub>3</sub></td>
+                                            <td>24 mg/m<sup>3</sup></td>
                                         </tr>
                                         <tr>
-                                            <td>005</td>
-                                            <td>2019-09-15 06:22:15</td>
-                                            <td>SO2</td>
-                                            <td>0.43</td>
-                                            <td>00001</td>
-                                            <td>H</td>
+                                            <td>NO<sub>x</sub></td>
+                                            <td>24 mg/m<sup>3</sup></td>
                                         </tr>
                                         <tr>
-                                            <td>006</td>
-                                            <td>2019-09-15 06:22:00</td>
-                                            <td>NO</td>
-                                            <td>0.19</td>
-                                            <td>00001</td>
-                                            <td>H</td>
-                                        </tr>
-                                        <tr>
-                                            <td>007</td>
-                                            <td>2019-09-15 06:22:15</td>
-                                            <td>SO2</td>
-                                            <td>0.66</td>
-                                            <td>00001</td>
-                                            <td>D</td>
-                                        </tr>
-                                        <tr>
-                                            <td>008</td>
-                                            <td>2019-09-15 06:22:00</td>
-                                            <td>O3</td>
-                                            <td>0.64</td>
-                                            <td>00001</td>
-                                            <td>BB</td>
-                                        </tr>
-                                        <tr>
-                                            <td>009</td>
-                                            <td>2019-09-15 06:22:30</td>
-                                            <td>O3</td>
-                                            <td>0.59</td>
-                                            <td>00001</td>
-                                            <td>H</td>
-                                        </tr>
-                                        <tr>
-                                            <td>010</td>
-                                            <td>2019-09-15 06:22:45</td>
-                                            <td>NO</td>
-                                            <td>0.41</td>
-                                            <td>00001</td>
-                                            <td>BB</td>
-                                        </tr>
-                                        <tr>
-                                            <td>011</td>
-                                            <td>2019-09-15 06:22:00</td>
-                                            <td>O3</td>
-                                            <td>0.35</td>
-                                            <td>00001</td>
-                                            <td>H</td>
-                                        </tr>
-                                        <tr>
-                                            <td>012</td>
-                                            <td>2019-09-15 06:22:00</td>
-                                            <td>O3</td>
-                                            <td>0.30</td>
-                                            <td>00001</td>
-                                            <td>BB</td>
-                                        </tr>
-                                        <tr>
-                                            <td>013</td>
-                                            <td>2019-09-15 06:22:45</td>
-                                            <td>O3</td>
-                                            <td>0.40</td>
-                                            <td>00001</td>
-                                            <td>H</td>
+                                            <td>PM10</td>
+                                            <td>24 mg/m<sup>3</sup></td>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -251,15 +264,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-9"></div>
-                    <button class="btn btn-wide btn-darker-1">导出Excel文档</button>
-                </div>
-
             </div>
         </div>
         <a href="#" class="scroll-to-top"><i class="fa fa-angle-double-up"></i></a>
     </div>
+</div>
 </div>
 <script src="javascripts/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -268,12 +277,8 @@
 <script src="javascripts/template-init.min.js"></script>
 <script src="vendor/toastr/toastr.min.js"></script>
 <script src="vendor/chart-js/chart.min.js"></script>
-<script src="javascripts/examples/charts/chart-js.js"></script>
 <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-<script src="vendor/data-table/media/js/jquery.dataTables.min.js"></script>
-<script src="vendor/data-table/media/js/dataTables.bootstrap.min.js"></script>
-<script src="javascripts/examples/tables/data-tables.js"></script>
-<script src="javascripts/examples/ui-elements/buttons.js"></script>
+<script src="javascripts/examples/dashboard.js"></script>
 <script src="javascripts/common.js"></script>
 </body>
 
