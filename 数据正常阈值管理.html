@@ -20,7 +20,60 @@
 
 <body>
 <div class="wrap">
-    <div id="page-header"></div>
+    <div class="page-header">
+        <div class="leftside-header">
+            <div class="logo">
+                <a href="index.html" class="on-click">
+                    <img alt="logo" src="images/header-logo.png"/>
+                </a>
+            </div>
+            <div id="menu-toggle" class="visible-xs toggle-left-sidebar" data-toggle-class="left-sidebar-open"
+                 data-target="html">
+                <i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+            </div>
+        </div>
+        <div class="rightside-header">
+            <div class="header-middle"></div>
+            <div class="header-section hidden-xs" id="notice-headerbox">
+                <div class="notice" id="help-notice">
+                    <p><a href="系统帮助文档.html"><i class="fa fa-leaf" style="color:white" aria-hidden="true"></i></a></p>
+                </div>
+                <div class="notice" id="abnormal-notice">
+                    <p><a href="异常通知.html"><i class="fa fa-exclamation-triangle" style="color:red"
+                                              aria-hidden="true"></i></a></p>
+                </div>
+                <div class="header-separator"></div>
+            </div>
+            <div class="header-section" id="user-headerbox">
+                <div class="user-header-wrap">
+                    <div class="user-photo">
+                        <img src="images/user-avatar.jpg" alt="张可"/>
+                    </div>
+                    <div class="user-info">
+                        <span class="user-name">张可</span>
+                        <span class="user-profile">资料信息部</span>
+                    </div>
+                    <i class="fa fa-minus icon-close" aria-hidden="true"></i>
+                </div>
+                <div class="user-options dropdown-box">
+                    <div class="drop-content basic">
+                        <ul>
+                            <li><a href="pages_user-profile.html"><i class="fa fa-user" aria-hidden="true"></i> Profile</a>
+                            </li>
+                            <li><a href="pages_lock-screen.html"><i class="fa fa-lock" aria-hidden="true"></i> Lock
+                                Screen</a></li>
+                            <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i> Configurations</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-separator"></div>
+            <div class="header-section">
+                <a href="pages_sign-in.html"><i class="fa fa-sign-out log-out" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+
     <div class="page-body">
         <div class="left-sidebar">
             <div class="left-sidebar-header">

@@ -806,7 +806,7 @@ html.right-sidebar-opened .right-sidebar {
   transition-timing-function: ease-out;
 }
 .left-sidebar .left-sidebar-header .left-sidebar-toggle {
-  position: absolute;
+  /*position: absolute;*/
   top: 0;
   right: 0;
   width: 60px;
