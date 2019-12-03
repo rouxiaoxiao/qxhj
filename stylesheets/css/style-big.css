@@ -27,9 +27,9 @@ body {
 }
 
 body {
-    /* background: #202020; */
+    background: #202020;
     margin: 0;
-    /* color: white; */
+    color: #404040;
     font-family: "Open Sans", Arial, sans-serif;
     line-height: 22px;
     overflow-x: hidden;
@@ -92,9 +92,9 @@ a:focus {
     display: block;
     position: relative;
     vertical-align: top;
-    margin-left: 276px;
-    margin-right: 20px;
+    margin-left: 256px;
     padding: 30px;
+    background: #ececec;
     min-height: 100vh;
 }
 
@@ -202,16 +202,15 @@ html.right-sidebar-opened .right-sidebar {
     }
 
     html.fixed .content {
-        margin-top: 60px;
-        background: #f7f7f7;
+        margin-top: 40px;
     }
 
     html.fixed .content-header {
         position: fixed;
         z-index: 1010;
-        top: 70px;
-        left: 276px;
-        right: 20px;
+        top: 50px;
+        left: 256px;
+        right: 0;
         margin: 0;
         -webkit-transition-property: left;
         -moz-transition-property: left;
@@ -230,9 +229,9 @@ html.right-sidebar-opened .right-sidebar {
     html.fixed .left-sidebar {
         position: fixed;
         bottom: 0;
-        left: 20px;
+        left: 0;
         padding-bottom: 50px;
-        top: 70px;
+        top: 50px;
     }
 
     html.fixed .left-sidebar .nano-content {
@@ -356,7 +355,7 @@ html.right-sidebar-opened .right-sidebar {
 
 .page-header .leftside-header .logo img {
     width: 100%;
-    /*?????????????padding*/
+    /*取消上边栏的padding*/
     /*padding: 5px 4px;*/
     margin-left: -4px;
 }
@@ -3052,7 +3051,6 @@ label.error {
 /*================================================*/
 html body {
     min-height: 100vh;
-    background: #ececec;
 }
 
 html.accounts .page-body {
@@ -3073,7 +3071,6 @@ html.accounts .logo img {
     width: 50%;
     min-width: 140px;
 }
-
 html.accounts .box {
     background: #ffffff;
     border-radius: 5px;
@@ -4263,6 +4260,7 @@ ul.user-contact-info li:last-child {
     color: #85d0e7 !important;
 }
 
+
 .color-lighter-1 {
     color: #939c56 !important;
 }
@@ -5188,7 +5186,9 @@ html.left-sidebar-collapsed .c-hamburger--htla span::after {
 
 /*# sourceMappingURL=style.css.map */
 
-/*aqi?????*/
+
+
+/*aqi字体*/
 em.aqi {
     font-size: 40px;
     color: #f7da64;
@@ -5217,15 +5217,4 @@ i.aqi {
     top: -56px;
     width: 96%;
     display: block
-}
-
-.patch {
-    height: 20px;
-    position: fixed;
-    top: 50px;
-    left: 276px;
-    right: 20px;
-    margin: 0;
-    z-index: 1010;
-    background-color: #ececec;
 }
