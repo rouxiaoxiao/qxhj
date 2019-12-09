@@ -92,25 +92,26 @@
                             <li class="has-child-item close-item">
                                 <a><i class="fa fa-cubes" aria-hidden="true"></i><span>数据管理</span></a>
                                 <ul class="nav child-nav level-1">
-                                    <li><a href="基础数据.html">基础数据</a></li>
-                                    <li><a href="历史数据.html">历史数据</a></li>
                                     <li><a href="统计分析.html">统计分析</a></li>
+                                    <li><a href="基础数据.html">基础数据</a></li>
                                     <li><a href="异常数据.html">异常数据</a></li>
                                 </ul>
                             </li>
-                            <li class="fa"><a href="文献管理.html"><i class="fa fa-book " aria-hidden="true"></i></i>
-                                <span>文献管理</span></a>
-                            </li>
-                            <li class="fa"><a href="不定期监测管理.html"><i class="fa fa-pencil-square-o "
-                                                                     aria-hidden="true"></i></i>
-                                <span>不定期监测管理</span></a>
+                            <li class="has-child-item open-item">
+                                <a><i class="fa fa-book" aria-hidden="true"></i><span>文档管理</span></a>
+                                <ul class="nav child-nav level-1">
+                                    <li><a href="研究文献.html">研究文献</a></li>
+                                    <li><a href="监测报告.html">监测报告</a></li>
+                                    <li><a href="相关文件.html">相关文件</a></li>
+                                </ul>
                             </li>
                             <li class="has-child-item close-item">
                                 <a><i class="fa fa-wrench" aria-hidden="true"></i><span>设备管理</span></a>
                                 <ul class="nav child-nav level-1">
                                     <li><a href="维护保养记录管理.html">维护保养记录管理</a></li>
                                     <li><a href="维护保养计划管理.html">维护保养计划管理</a></li>
-                                    <li><a href="断电记录.html">断电记录</a></li>
+                                    <li><a href="设备异常管理.html">设备异常管理</a></li>
+                                    <li><a href="设备信息管理.html">设备信息管理</a></li>
                                 </ul>
                             </li>
                             <li class="has-child-item close-item">
@@ -147,74 +148,15 @@
             <div class="content-header">
                 <div class="leftside-content-header">
                     <ul class="breadcrumbs">
-                        <li><i class="fa fa-book" aria-hidden="true"></i><a href="#">文献管理</a></li>
+                        <li><i class="fa fa-book" aria-hidden="true"></i><a href="#">文档管理</a></li>
+                        <li><a>相关文件</a></li>
                     </ul>
                 </div>
             </div>
             <div class="row animated fadeInUp">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="panel">
-                            <div class="panel-content">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <form id="messagebox-validation" class="">
-                                            <div class="row">
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label for="username2" class=" control-label">文件标题</label>
-                                                        <input type="text" class="form-control" id="username2"
-                                                               name="username">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="email2" class=" control-label">文件类型</label>
-                                                        <input type="email" class="form-control" id="email2"
-                                                               name="email">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="password2" class=" control-label">作者或编者</label>
-                                                        <input type="password" class="form-control" id="password2"
-                                                               name="password">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="password2" class=" control-label">其他相关责任人</label>
-                                                        <input type="password" class="form-control" id="password3"
-                                                               name="password">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label for="username2" class=" control-label">出版时间</label>
-                                                        <input type="text" class="form-control" id="username3"
-                                                               name="username">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="username2" class=" control-label">摘要</label>
-                                                        <input type="text" class="form-control" id="username4"
-                                                               name="username">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="username2" class=" control-label">关键字</label>
-                                                        <input type="text" class="form-control" id="username5"
-                                                               name="username">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-offset-5 form-group">
-                                                    <button type="submit" class="btn btn-primary">查询</button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h4 class="section-subtitle"><b>文献资料</b></h4>
+                        <h4 class="section-subtitle"><b>相关文件</b></h4>
                         <div class="panel">
                             <div class="panel-content">
                                 <div class="table-responsive">
@@ -223,88 +165,43 @@
                                         <thead>
                                         <tr>
                                             <th>文件标题</th>
-                                            <th>文献类型</th>
-                                            <th>作者或编者</th>
-                                            <th>其他相关责任人</th>
-                                            <th>出版时间</th>
-                                            <th>摘要</th>
-                                            <th>关键字</th>
+                                            <th>上传时间</th>
+                                            <th>上传者</th>
                                             <th>文件附件</th>
                                             <th>操作</th>
                                         </tr>
                                         </thead>
                                         <tbody>
                                         <tr>
-                                            <td>xxxx</td>
-                                            <td>xxx类型</td>
-                                            <td>张三</td>
-                                            <td>李四</td>
+                                            <td>xxxx合同</td>
                                             <td>2019-09-16</td>
-                                            <td>摘要摘要xxxx</td>
-                                            <td>关键字；关键字</td>
-                                            <th>文献1.pdf</th>
+                                            <td>张三</td>
+                                            <td>文件1.pdf</td>
                                             <th>
                                                 <button class="btn btn-primary btn-sm">编辑</button>
                                                 <button class="btn btn-danger btn-sm">删除</button>
                                             </th>
                                         </tr>
                                         <tr>
-                                            <td>xxxx</td>
-                                            <td>xxx类型</td>
-                                            <td>张三</td>
-                                            <td>李四</td>
+                                            <td>xxxx合同</td>
                                             <td>2019-09-16</td>
-                                            <td>摘要摘要xxxx</td>
-                                            <td>关键字；关键字</td>
-                                            <th>文献1.pdf</th>
+                                            <td>张三</td>
+                                            <td>文件1.pdf</td>
                                             <th>
                                                 <button class="btn btn-primary btn-sm">编辑</button>
                                                 <button class="btn btn-danger btn-sm">删除</button>
                                             </th>
                                         </tr>
                                         <tr>
-                                            <td>xxxx</td>
-                                            <td>xxx类型</td>
-                                            <td>张三</td>
-                                            <td>李四</td>
+                                            <td>xxxx合同</td>
                                             <td>2019-09-16</td>
-                                            <td>摘要摘要xxxx</td>
-                                            <td>关键字；关键字</td>
-                                            <th>文献1.pdf</th>
+                                            <td>张三</td>
+                                            <td>文件1.pdf</td>
                                             <th>
                                                 <button class="btn btn-primary btn-sm">编辑</button>
                                                 <button class="btn btn-danger btn-sm">删除</button>
                                             </th>
                                         </tr>
-                                        <tr>
-                                            <td>xxxx</td>
-                                            <td>xxx类型</td>
-                                            <td>张三</td>
-                                            <td>李四</td>
-                                            <td>2019-09-16</td>
-                                            <td>摘要摘要xxxx</td>
-                                            <td>关键字；关键字</td>
-                                            <th>文献1.pdf</th>
-                                            <th>
-                                                <button class="btn btn-primary btn-sm">编辑</button>
-                                                <button class="btn btn-danger btn-sm">删除</button>
-                                            </th>
-                                        </tr>
-                                        <tr>
-                                            <td>xxxx</td>
-                                            <td>xxx类型</td>
-                                            <td>张三</td>
-                                            <td>李四</td>
-                                            <td>2019-09-16</td>
-                                            <td>摘要摘要xxxx</td>
-                                            <td>关键字；关键字</td>
-                                            <th>文献1.pdf</th>
-                                            <th>
-                                                <button class="btn btn-primary btn-sm">编辑</button>
-                                                <button class="btn btn-danger btn-sm">删除</button>
-                                            </th>
-                                        </tr>
-
                                         </tbody>
                                     </table>
                                 </div>
@@ -313,10 +210,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-6 col-sm-offset-2">
-                        <button class="btn btn-wide btn-darker-1" data-toggle="modal" data-target="#myModal">上传文献资料
-                        </button>
-                    </div>
+                    <div class="col-sm-6 col-sm-offset-2"><button class="btn btn-wide btn-darker-1" data-toggle="modal" data-target="#myModal">上传相关文件</button></div>
                     <button class="btn btn-wide btn-darker-1">导出Excel文档</button>
                 </div>
 
@@ -326,6 +220,45 @@
         <a href="#" class="scroll-to-top"><i class="fa fa-angle-double-up"></i></a>
     </div>
 </div>
+
+
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    上传相关文件
+                </h4>
+            </div>
+            <form id="form_data">
+                <div class="modal-body">
+                    监测类型: <input type="text" id="user_id" name="user_id"/><br/>
+                    监测项目名称: <input type="text" id="user_name" name="user_name"/><br/>
+                    监测时间: <input type="text" id="time" name="time"/><br/>
+                    监测实施单位: <input type="text" id="company" name="company"/><br/>
+                    监测实施人: <input type="text" id="implementer" name="implementer"/><br/>
+                    项目负责人: <input type="text" id="principal" name="principal"/><br/>
+                    项目简要描述: <input type="text" id="aspect" name="aspect"/><br/>
+                    关键字: <input type="text" id="keyword" name="keyword"/><br/>
+                    <input type="hidden" id="act" value="add" name="act"/>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                    </button>
+                    <button type="button" onclick="add_info()" class="btn btn-primary">
+                        提交更改
+                    </button>
+                </div>
+            </form>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+
 <script src="javascripts/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 <script src="vendor/nano-scroller/nano-scroller.js"></script>
@@ -339,7 +272,8 @@
 <script src="vendor/data-table/media/js/dataTables.bootstrap.min.js"></script>
 <script src="javascripts/examples/tables/data-tables.js"></script>
 <script src="javascripts/examples/ui-elements/buttons.js"></script>
-<script src="javascripts/examples/ui-elements/notifications-toastr.js"></script>
+<script src="vendor/jquery-validation/jquery.validate.min.js"></script>
+<script src="javascripts/examples/forms/validation.js"></script>
 <script src="javascripts/common.js"></script>
 </body>
 

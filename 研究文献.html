@@ -16,11 +16,6 @@
     <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="stylesheets/css/style.css">
     <link rel="stylesheet" href="vendor/data-table/media/css/dataTables.bootstrap.min.css">
-    <link rel="stylesheet" href="vendor/select2/css/select2.min.css">
-    <link rel="stylesheet" href="vendor/select2/css/select2-bootstrap.min.css">
-    <link rel="stylesheet" href="vendor/bootstrap_date-picker/css/bootstrap-datepicker3.min.css">
-    <link rel="stylesheet" href="vendor/bootstrap_time-picker/css/timepicker.css">
-    <link rel="stylesheet" href="vendor/bootstrap_color-picker/css/bootstrap-colorpicker.min.css">
 </head>
 
 <body>
@@ -102,7 +97,7 @@
                                     <li><a href="异常数据.html">异常数据</a></li>
                                 </ul>
                             </li>
-                            <li class="has-child-item close-item">
+                            <li class="has-child-item open-item">
                                 <a><i class="fa fa-book" aria-hidden="true"></i><span>文档管理</span></a>
                                 <ul class="nav child-nav level-1">
                                     <li><a href="研究文献.html">研究文献</a></li>
@@ -126,7 +121,7 @@
                                     <li><a href="极端天气报警.html">极端天气报警</a></li>
                                 </ul>
                             </li>
-                            <li class="has-child-item open-item">
+                            <li class="has-child-item close-item">
                                 <a><i class="fa fa-cog " aria-hidden="true"></i><span>系统管理</span></a>
                                 <ul class="nav child-nav level-1">
                                     <li><a href="工作建议设置.html">工作建议设置</a></li>
@@ -153,25 +148,75 @@
             <div class="content-header">
                 <div class="leftside-content-header">
                     <ul class="breadcrumbs">
-                        <li><i class="fa fa-cog" aria-hidden="true"></i><a href="#">系统管理</a></li>
-                        <li><a>数据字典维护</a></li>
+                        <li><i class="fa fa-book" aria-hidden="true"></i><a href="#">文档管理</a></li>
+                        <li><a>研究文献</a></li>
                     </ul>
                 </div>
             </div>
             <div class="row animated fadeInUp">
                 <div class="row">
-                    <label for="select2-example-basic2" class="col-sm-2 control-label">基表名称</label>
-                    <div class="col-sm-4">
-                        <select name="country" id="select2-example-basic2" class="form-control" style="width: 100%">
-                            <option value="单位" label="单位">单位</option>
-                            <option value="统计方式" label="统计方式">统计方式</option>
-                        </select>
+                    <div class="col-sm-12">
+                        <div class="panel">
+                            <div class="panel-content">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <form id="messagebox-validation" class="">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label for="username2" class=" control-label">文件标题</label>
+                                                        <input type="text" class="form-control" id="username2"
+                                                               name="username">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="email2" class=" control-label">文件类型</label>
+                                                        <input type="email" class="form-control" id="email2"
+                                                               name="email">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="password2" class=" control-label">作者或编者</label>
+                                                        <input type="password" class="form-control" id="password2"
+                                                               name="password">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="password2" class=" control-label">其他相关责任人</label>
+                                                        <input type="password" class="form-control" id="password3"
+                                                               name="password">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label for="username2" class=" control-label">出版时间</label>
+                                                        <input type="text" class="form-control" id="username3"
+                                                               name="username">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="username2" class=" control-label">摘要</label>
+                                                        <input type="text" class="form-control" id="username4"
+                                                               name="username">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="username2" class=" control-label">关键字</label>
+                                                        <input type="text" class="form-control" id="username5"
+                                                               name="username">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-offset-5 form-group">
+                                                    <button type="submit" class="btn btn-primary">查询</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <button class="btn btn-wide btn-darker-1">查询</button>
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <h4 class="section-subtitle">数据字典</h4>
+                        <h4 class="section-subtitle"><b>文献资料</b></h4>
                         <div class="panel">
                             <div class="panel-content">
                                 <div class="table-responsive">
@@ -179,31 +224,89 @@
                                            cellspacing="0" width="100%">
                                         <thead>
                                         <tr>
-                                            <th>编码</th>
-                                            <th>名称</th>
-                                            <th>状态</th>
+                                            <th>文件标题</th>
+                                            <th>文献类型</th>
+                                            <th>作者或编者</th>
+                                            <th>其他相关责任人</th>
+                                            <th>出版时间</th>
+                                            <th>摘要</th>
+                                            <th>关键字</th>
+                                            <th>文件附件</th>
                                             <th>操作</th>
                                         </tr>
                                         </thead>
                                         <tbody>
                                         <tr>
-                                            <td>xx</td>
-                                            <td>xx</td>
-                                            <td>在用</td>
-                                            <td>
+                                            <td>xxxx</td>
+                                            <td>xxx类型</td>
+                                            <td>张三</td>
+                                            <td>李四</td>
+                                            <td>2019-09-16</td>
+                                            <td>摘要摘要xxxx</td>
+                                            <td>关键字；关键字</td>
+                                            <th>文献1.pdf</th>
+                                            <th>
                                                 <button class="btn btn-primary btn-sm">编辑</button>
                                                 <button class="btn btn-danger btn-sm">删除</button>
-                                            </td>
+                                            </th>
                                         </tr>
                                         <tr>
-                                            <td>xx</td>
-                                            <td>xx</td>
-                                            <td>注销</td>
-                                            <td>
+                                            <td>xxxx</td>
+                                            <td>xxx类型</td>
+                                            <td>张三</td>
+                                            <td>李四</td>
+                                            <td>2019-09-16</td>
+                                            <td>摘要摘要xxxx</td>
+                                            <td>关键字；关键字</td>
+                                            <th>文献1.pdf</th>
+                                            <th>
                                                 <button class="btn btn-primary btn-sm">编辑</button>
                                                 <button class="btn btn-danger btn-sm">删除</button>
-                                            </td>
+                                            </th>
                                         </tr>
+                                        <tr>
+                                            <td>xxxx</td>
+                                            <td>xxx类型</td>
+                                            <td>张三</td>
+                                            <td>李四</td>
+                                            <td>2019-09-16</td>
+                                            <td>摘要摘要xxxx</td>
+                                            <td>关键字；关键字</td>
+                                            <th>文献1.pdf</th>
+                                            <th>
+                                                <button class="btn btn-primary btn-sm">编辑</button>
+                                                <button class="btn btn-danger btn-sm">删除</button>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <td>xxxx</td>
+                                            <td>xxx类型</td>
+                                            <td>张三</td>
+                                            <td>李四</td>
+                                            <td>2019-09-16</td>
+                                            <td>摘要摘要xxxx</td>
+                                            <td>关键字；关键字</td>
+                                            <th>文献1.pdf</th>
+                                            <th>
+                                                <button class="btn btn-primary btn-sm">编辑</button>
+                                                <button class="btn btn-danger btn-sm">删除</button>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <td>xxxx</td>
+                                            <td>xxx类型</td>
+                                            <td>张三</td>
+                                            <td>李四</td>
+                                            <td>2019-09-16</td>
+                                            <td>摘要摘要xxxx</td>
+                                            <td>关键字；关键字</td>
+                                            <th>文献1.pdf</th>
+                                            <th>
+                                                <button class="btn btn-primary btn-sm">编辑</button>
+                                                <button class="btn btn-danger btn-sm">删除</button>
+                                            </th>
+                                        </tr>
+
                                         </tbody>
                                     </table>
                                 </div>
@@ -212,9 +315,13 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-9"></div>
+                    <div class="col-sm-6 col-sm-offset-2">
+                        <button class="btn btn-wide btn-darker-1" data-toggle="modal" data-target="#myModal">上传文献资料
+                        </button>
+                    </div>
                     <button class="btn btn-wide btn-darker-1">导出Excel文档</button>
                 </div>
+
 
             </div>
         </div>
@@ -234,14 +341,7 @@
 <script src="vendor/data-table/media/js/dataTables.bootstrap.min.js"></script>
 <script src="javascripts/examples/tables/data-tables.js"></script>
 <script src="javascripts/examples/ui-elements/buttons.js"></script>
-<script src="vendor/bootstrap_max-lenght/bootstrap-maxlength.js"></script>
-<script src="vendor/select2/js/select2.min.js"></script>
-<script src="vendor/input-masked/inputmask.bundle.min.js"></script>
-<script src="vendor/input-masked/phone-codes/phone.js"></script>
-<script src="vendor/bootstrap_date-picker/js/bootstrap-datepicker.min.js"></script>
-<script src="vendor/bootstrap_time-picker/js/bootstrap-timepicker.js"></script>
-<script src="vendor/bootstrap_color-picker/js/bootstrap-colorpicker.min.js"></script>
-<script src="javascripts/examples/forms/advanced.js"></script>
+<script src="javascripts/examples/ui-elements/notifications-toastr.js"></script>
 <script src="javascripts/common.js"></script>
 </body>
 

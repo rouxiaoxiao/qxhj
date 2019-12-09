@@ -16,6 +16,11 @@
     <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="stylesheets/css/style.css">
     <link rel="stylesheet" href="vendor/data-table/media/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/select2/css/select2.min.css">
+    <link rel="stylesheet" href="vendor/select2/css/select2-bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap_date-picker/css/bootstrap-datepicker3.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap_time-picker/css/timepicker.css">
+    <link rel="stylesheet" href="vendor/bootstrap_color-picker/css/bootstrap-colorpicker.min.css">
 </head>
 
 <body>
@@ -92,24 +97,26 @@
                             <li class="has-child-item close-item">
                                 <a><i class="fa fa-cubes" aria-hidden="true"></i><span>数据管理</span></a>
                                 <ul class="nav child-nav level-1">
-                                    <li><a href="基础数据.html">基础数据</a></li>
-                                    <li><a href="历史数据.html">历史数据</a></li>
                                     <li><a href="统计分析.html">统计分析</a></li>
+                                    <li><a href="基础数据.html">基础数据</a></li>
                                     <li><a href="异常数据.html">异常数据</a></li>
                                 </ul>
                             </li>
-                            <li class="fa"><a href="文献管理.html"><i class="fa fa-book " aria-hidden="true"></i></i>
-                                <span>文献管理</span></a>
-                            </li>
-                            <li class="fa"><a href="不定期监测管理.html"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></i>
-                                <span>不定期监测管理</span></a>
+                            <li class="has-child-item close-item">
+                                <a><i class="fa fa-book" aria-hidden="true"></i><span>文档管理</span></a>
+                                <ul class="nav child-nav level-1">
+                                    <li><a href="研究文献.html">研究文献</a></li>
+                                    <li><a href="监测报告.html">监测报告</a></li>
+                                    <li><a href="相关文件.html">相关文件</a></li>
+                                </ul>
                             </li>
                             <li class="has-child-item open-item">
                                 <a><i class="fa fa-wrench" aria-hidden="true"></i><span>设备管理</span></a>
                                 <ul class="nav child-nav level-1">
                                     <li><a href="维护保养记录管理.html">维护保养记录管理</a></li>
                                     <li><a href="维护保养计划管理.html">维护保养计划管理</a></li>
-                                    <li><a href="断电记录.html">断电记录</a></li>
+                                    <li><a href="设备异常管理.html">设备异常管理</a></li>
+                                    <li><a href="设备信息管理.html">设备信息管理</a></li>
                                 </ul>
                             </li>
                             <li class="has-child-item close-item">
@@ -147,7 +154,7 @@
                 <div class="leftside-content-header">
                     <ul class="breadcrumbs">
                         <li><i class="fa fa-wrench" aria-hidden="true"></i><a href="#">设备管理</a></li>
-                        <li><a>断电记录</a></li>
+                        <li><a>设备信息管理</a></li>
                     </ul>
                 </div>
             </div>
@@ -170,10 +177,9 @@
                     </div>
                     <button class="btn btn-wide btn-darker-1">查询</button>
                 </div>
-
                 <div class="row">
                     <div class="col-sm-12">
-                        <h4 class="section-subtitle"><b>气象站 断电记录</b></h4>
+                        <h4 class="section-subtitle"><b>气象站 维护保养记录</b></h4>
                         <div class="panel">
                             <div class="panel-content">
                                 <div class="table-responsive">
@@ -181,43 +187,21 @@
                                            cellspacing="0" width="100%">
                                         <thead>
                                         <tr>
-                                            <th>断电时间</th>
-                                            <th>恢复时间</th>
-                                            <th>断电原因</th>
-                                            <th>操作人</th>
+                                            <th>设备型号</th>
+                                            <th>生产日期</th>
+                                            <th>操作系统</th>
                                             <th>操作</th>
                                         </tr>
                                         </thead>
                                         <tbody>
                                         <tr>
-                                            <td>2019-09-15 06:20:00</td>
-                                            <td>2019-09-15 16:22:00</td>
-                                            <td>线路问题</td>
-                                            <td>露露</td>
-                                            <th>
-                                                <button class="btn btn-primary btn-sm">编辑</button>
+                                            <td>Dell</td>
+                                            <td>2019</td>
+                                            <td>win10</td>
+                                            <td>
+                                                <button class="btn btn-primary btn-sm">查看详情</button>
                                                 <button class="btn btn-danger btn-sm">删除</button>
-                                            </th>
-                                        </tr>
-                                        <tr>
-                                            <td>2019-09-15 06:20:00</td>
-                                            <td>2019-09-15 16:22:00</td>
-                                            <td>线路问题</td>
-                                            <td>凉凉</td>
-                                            <th>
-                                                <button class="btn btn-primary btn-sm">编辑</button>
-                                                <button class="btn btn-danger btn-sm">删除</button>
-                                            </th>
-                                        </tr>
-                                        <tr>
-                                            <td>2019-09-15 06:20:00</td>
-                                            <td>2019-09-15 16:22:00</td>
-                                            <td>操作失误</td>
-                                            <td>陪陪</td>
-                                            <th>
-                                                <button class="btn btn-primary btn-sm">编辑</button>
-                                                <button class="btn btn-danger btn-sm">删除</button>
-                                            </th>
+                                            </td>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -229,7 +213,7 @@
                 <div class="row">
                     <div class="col-sm-6 col-sm-offset-2">
                         <button class="btn btn-wide btn-darker-1" data-toggle="modal" data-target="#addUserModal">
-                            添加断电记录
+                            添加维护保养记录
                         </button>
                     </div>
                     <button class="btn btn-wide btn-darker-1">导出Excel文档</button>
@@ -240,6 +224,81 @@
         <a href="#" class="scroll-to-top"><i class="fa fa-angle-double-up"></i></a>
     </div>
 </div>
+
+<!-- 模态框示例（Modal） -->
+
+<form method="post" action="" class="form-horizontal" role="form" id="form_data" onsubmit="return check_form()"
+      style="margin: 20px;">
+    <div class="modal fade" id="addUserModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        维护保养记录
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <h5 class="col-sm-6 col-sm-offset-3">点位周围环境变化情况和安全隐患</h5>
+                            <div class="col-sm-3 form-group" id="toastTypeGroup1">
+                                <div class="radio radio-custom radio-success pt-sm">
+                                    <input type="radio" id="type-success1" name="toasts" value="success" checked/>
+                                    <label for="type-success1">正常</label>
+                                </div>
+                                <div class="radio radio-custom radio-danger pt-sm">
+                                    <input type="radio" id="type-danger1" name="toasts" value="error"/>
+                                    <label for="type-danger1">异常</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <h5 class="col-sm-6 col-sm-offset-3">点位周围道路，供电线路、通讯线路、给排水设施完好或损坏状况</h5>
+                            <div class="col-sm-3 form-group" id="toastTypeGroup2">
+                                <div class="radio radio-custom radio-success pt-sm">
+                                    <input type="radio" id="type-success2" name="toasts" value="success" checked/>
+                                    <label for="type-success2">正常</label>
+                                </div>
+                                <div class="radio radio-custom radio-danger pt-sm">
+                                    <input type="radio" id="type-danger2" name="toasts" value="error"/>
+                                    <label for="type-danger2">异常</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <h5 class="col-sm-6 col-sm-offset-3">站房外围的防护栏、隔离带有无损坏情况</h5>
+                            <div class="col-sm-3 form-group" id="toastTypeGroup3">
+                                <div class="radio radio-custom radio-success pt-sm">
+                                    <input type="radio" id="type-success3" name="toasts" value="success" checked/>
+                                    <label for="type-success3">正常</label>
+                                </div>
+                                <div class="radio radio-custom radio-danger pt-sm">
+                                    <input type="radio" id="type-danger3" name="toasts" value="error"/>
+                                    <label for="type-danger3">异常</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                        提交
+                    </button>
+                    <span id="tip"> </span>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+</form>
+
+
 <script src="javascripts/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 <script src="vendor/nano-scroller/nano-scroller.js"></script>
@@ -253,6 +312,14 @@
 <script src="vendor/data-table/media/js/dataTables.bootstrap.min.js"></script>
 <script src="javascripts/examples/tables/data-tables.js"></script>
 <script src="javascripts/examples/ui-elements/buttons.js"></script>
+<script src="vendor/bootstrap_max-lenght/bootstrap-maxlength.js"></script>
+<script src="vendor/select2/js/select2.min.js"></script>
+<script src="vendor/input-masked/inputmask.bundle.min.js"></script>
+<script src="vendor/input-masked/phone-codes/phone.js"></script>
+<script src="vendor/bootstrap_date-picker/js/bootstrap-datepicker.min.js"></script>
+<script src="vendor/bootstrap_time-picker/js/bootstrap-timepicker.js"></script>
+<script src="vendor/bootstrap_color-picker/js/bootstrap-colorpicker.min.js"></script>
+<script src="javascripts/examples/forms/advanced.js"></script>
 <script src="javascripts/common.js"></script>
 </body>
 

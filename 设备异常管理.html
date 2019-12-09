@@ -16,11 +16,6 @@
     <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="stylesheets/css/style.css">
     <link rel="stylesheet" href="vendor/data-table/media/css/dataTables.bootstrap.min.css">
-    <link rel="stylesheet" href="vendor/select2/css/select2.min.css">
-    <link rel="stylesheet" href="vendor/select2/css/select2-bootstrap.min.css">
-    <link rel="stylesheet" href="vendor/bootstrap_date-picker/css/bootstrap-datepicker3.min.css">
-    <link rel="stylesheet" href="vendor/bootstrap_time-picker/css/timepicker.css">
-    <link rel="stylesheet" href="vendor/bootstrap_color-picker/css/bootstrap-colorpicker.min.css">
 </head>
 
 <body>
@@ -110,7 +105,7 @@
                                     <li><a href="相关文件.html">相关文件</a></li>
                                 </ul>
                             </li>
-                            <li class="has-child-item close-item">
+                            <li class="has-child-item open-item">
                                 <a><i class="fa fa-wrench" aria-hidden="true"></i><span>设备管理</span></a>
                                 <ul class="nav child-nav level-1">
                                     <li><a href="维护保养记录管理.html">维护保养记录管理</a></li>
@@ -126,7 +121,7 @@
                                     <li><a href="极端天气报警.html">极端天气报警</a></li>
                                 </ul>
                             </li>
-                            <li class="has-child-item open-item">
+                            <li class="has-child-item close-item">
                                 <a><i class="fa fa-cog " aria-hidden="true"></i><span>系统管理</span></a>
                                 <ul class="nav child-nav level-1">
                                     <li><a href="工作建议设置.html">工作建议设置</a></li>
@@ -153,25 +148,34 @@
             <div class="content-header">
                 <div class="leftside-content-header">
                     <ul class="breadcrumbs">
-                        <li><i class="fa fa-cog" aria-hidden="true"></i><a href="#">系统管理</a></li>
-                        <li><a>数据字典维护</a></li>
+                        <li><i class="fa fa-wrench" aria-hidden="true"></i><a href="#">设备管理</a></li>
+                        <li><a>设备异常管理</a></li>
                     </ul>
                 </div>
             </div>
             <div class="row animated fadeInUp">
                 <div class="row">
-                    <label for="select2-example-basic2" class="col-sm-2 control-label">基表名称</label>
+                    <label for="select2-example-basic2" class="col-sm-1 control-label">站点</label>
                     <div class="col-sm-4">
                         <select name="country" id="select2-example-basic2" class="form-control" style="width: 100%">
-                            <option value="单位" label="单位">单位</option>
-                            <option value="统计方式" label="统计方式">统计方式</option>
+                            <option value="气象站" label="气象站">气象站</option>
+                            <option value="环境站" label="环境站">环境站</option>
                         </select>
+                    </div>
+                    <label class="col-sm-1 control-label">时间段</label>
+                    <div class="col-sm-4">
+                        <div class="input-daterange input-group" id="range-datepicker">
+                            <input type="text" class="input-sm form-control" name="start"/>
+                            <span class="input-group-addon x-primary">to</span>
+                            <input type="text" class="input-sm form-control" name="end"/>
+                        </div>
                     </div>
                     <button class="btn btn-wide btn-darker-1">查询</button>
                 </div>
+
                 <div class="row">
                     <div class="col-sm-12">
-                        <h4 class="section-subtitle">数据字典</h4>
+                        <h4 class="section-subtitle"><b>气象站 设备异常管理</b></h4>
                         <div class="panel">
                             <div class="panel-content">
                                 <div class="table-responsive">
@@ -179,30 +183,43 @@
                                            cellspacing="0" width="100%">
                                         <thead>
                                         <tr>
-                                            <th>编码</th>
-                                            <th>名称</th>
-                                            <th>状态</th>
+                                            <th>断电时间</th>
+                                            <th>恢复时间</th>
+                                            <th>断电原因</th>
+                                            <th>操作人</th>
                                             <th>操作</th>
                                         </tr>
                                         </thead>
                                         <tbody>
                                         <tr>
-                                            <td>xx</td>
-                                            <td>xx</td>
-                                            <td>在用</td>
-                                            <td>
+                                            <td>2019-09-15 06:20:00</td>
+                                            <td>2019-09-15 16:22:00</td>
+                                            <td>线路问题</td>
+                                            <td>露露</td>
+                                            <th>
                                                 <button class="btn btn-primary btn-sm">编辑</button>
                                                 <button class="btn btn-danger btn-sm">删除</button>
-                                            </td>
+                                            </th>
                                         </tr>
                                         <tr>
-                                            <td>xx</td>
-                                            <td>xx</td>
-                                            <td>注销</td>
-                                            <td>
+                                            <td>2019-09-15 06:20:00</td>
+                                            <td>2019-09-15 16:22:00</td>
+                                            <td>线路问题</td>
+                                            <td>凉凉</td>
+                                            <th>
                                                 <button class="btn btn-primary btn-sm">编辑</button>
                                                 <button class="btn btn-danger btn-sm">删除</button>
-                                            </td>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <td>2019-09-15 06:20:00</td>
+                                            <td>2019-09-15 16:22:00</td>
+                                            <td>操作失误</td>
+                                            <td>陪陪</td>
+                                            <th>
+                                                <button class="btn btn-primary btn-sm">编辑</button>
+                                                <button class="btn btn-danger btn-sm">删除</button>
+                                            </th>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -212,7 +229,11 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-9"></div>
+                    <div class="col-sm-6 col-sm-offset-2">
+                        <button class="btn btn-wide btn-darker-1" data-toggle="modal" data-target="#addUserModal">
+                            添加设备异常管理
+                        </button>
+                    </div>
                     <button class="btn btn-wide btn-darker-1">导出Excel文档</button>
                 </div>
 
