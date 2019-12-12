@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="vendor/toastr/toastr.min.css">
     <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="stylesheets/css/style.css">
-    <link rel="stylesheet" href="vendor/data-table/media/css/dataTables.bootstrap.min.css">
 </head>
 
 <body>
@@ -86,8 +85,8 @@
                 <div class="nano-content">
                     <nav>
                         <ul class="nav" id="main-nav">
-                            <li><a href="index.html"><i class="fa fa-home"
-                                                        aria-hidden="true"></i><span>首页</span></a>
+                            <li class="active-item"><a href="index.html"><i class="fa fa-home"
+                                                                            aria-hidden="true"></i><span>首页</span></a>
                             </li>
                             <li class="has-child-item close-item">
                                 <a><i class="fa fa-cubes" aria-hidden="true"></i><span>数据管理</span></a>
@@ -114,7 +113,7 @@
                                     <li><a href="设备信息管理.html">设备信息管理</a></li>
                                 </ul>
                             </li>
-                            <li class="has-child-item open-item">
+                            <li class="has-child-item close-item">
                                 <a><i class="fa fa-bomb" aria-hidden="true"></i><span>报警管理</span></a>
                                 <ul class="nav child-nav level-1">
                                     <li><a href="数据异常报警.html">数据异常报警</a></li>
@@ -148,64 +147,17 @@
             <div class="content-header">
                 <div class="leftside-content-header">
                     <ul class="breadcrumbs">
-                        <li><i class="fa fa-bomb" aria-hidden="true"></i><a href="#">报警管理</a></li>
-                        <li><a>极端天气报警</a></li>
+                        <li><i class="fa fa-home" aria-hidden="true"></i><a href="#">首页</a></li>
                     </ul>
                 </div>
             </div>
             <div class="row animated fadeInUp">
-                <div class="row">
-                    <label class="col-sm-1 control-label">时间段</label>
-                    <div class="col-sm-4">
-                        <div class="input-daterange input-group" id="range-datepicker">
-                            <input type="text" class="input-sm form-control" name="start"/>
-                            <span class="input-group-addon x-primary">to</span>
-                            <input type="text" class="input-sm form-control" name="end"/>
-                        </div>
-                    </div>
-                    <button class="btn btn-wide btn-darker-1">查询</button>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h4 class="section-subtitle"><b>数据异常报警记录</b></h4>
-                        <div class="panel">
-                            <div class="panel-content">
-                                <div class="table-responsive">
-                                    <table id="basic-table" class="data-table table table-striped nowrap table-hover"
-                                           cellspacing="0" width="100%">
-                                        <thead>
-                                        <tr>
-                                            <th>报警时间</th>
-                                            <th>报警指标</th>
-                                            <th>报警指标值</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr>
-                                            <td>2019-10-29 00:00:30</td>
-                                            <td>温度</td>
-                                            <td>40</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2019-10-29 00:00:30</td>
-                                            <td>雨量</td>
-                                            <td>400</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2019-10-31 00:00:30</td>
-                                            <td>温度</td>
-                                            <td>41</td>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div class="row"><h1>&nbsp&nbsp异常通知</h1></div>
             </div>
         </div>
         <a href="#" class="scroll-to-top"><i class="fa fa-angle-double-up"></i></a>
     </div>
+</div>
 </div>
 <script src="javascripts/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -214,14 +166,7 @@
 <script src="javascripts/template-init.min.js"></script>
 <script src="vendor/toastr/toastr.min.js"></script>
 <script src="vendor/chart-js/chart.min.js"></script>
-<script src="javascripts/examples/charts/chart-js.js"></script>
 <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-<script src="vendor/data-table/media/js/jquery.dataTables.min.js"></script>
-<script src="vendor/data-table/media/js/dataTables.bootstrap.min.js"></script>
-<script src="javascripts/examples/tables/data-tables.js"></script>
-<script src="javascripts/examples/ui-elements/buttons.js"></script>
-<script src="vendor/jquery-validation/jquery.validate.min.js"></script>
-<script src="javascripts/examples/forms/validation.js"></script>
 <script src="javascripts/common.js"></script>
 </body>
 

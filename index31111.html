@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en" class="fixed">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>故宫世界文化遗产检测平台</title>
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/animate.css/animate.css">
+    <link rel="stylesheet" href="vendor/toastr/toastr.min.css">
+    <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="stylesheets/css/style.css">
+</head>
+
+<body>
+<div class="wrap">
+    <div id="page-header"></div>
+    <div class="page-body">
+        <div class="left-sidebar">
+            <div class="left-sidebar-header">
+                <div class="left-sidebar-title"></div>
+                <div class="left-sidebar-toggle c-hamburger c-hamburger--htla hidden-xs"
+                     data-toggle-class="left-sidebar-collapsed" data-target="html">
+                    <span></span>
+                </div>
+            </div>
+            <div id="left-nav" class="nano">
+                <div class="nano-content">
+                    <nav>
+                        <ul class="nav" id="main-nav">
+                            <li class="active-item"><a href="index.html"><i class="fa fa-home"
+                                                                            aria-hidden="true"></i><span>首页</span></a>
+                            </li>
+                            <li class="has-child-item close-item">
+                                <a><i class="fa fa-cubes" aria-hidden="true"></i><span>数据管理</span></a>
+                                <ul class="nav child-nav level-1">
+                                    <li><a href="统计分析.html">统计分析</a></li>
+                                    <li><a href="基础数据.html">基础数据</a></li>
+                                    <li><a href="异常数据.html">异常数据</a></li>
+                                </ul>
+                            </li>
+                            <li class="fa"><a href="文献管理.html"><i class="fa fa-book " aria-hidden="true"></i></i>
+                                <span>文献管理</span></a>
+                            </li>
+                            <li class="fa"><a href="不定期监测管理.html"><i class="fa fa-pencil-square-o "
+                                                                     aria-hidden="true"></i></i>
+                                <span>不定期监测管理</span></a>
+                            </li>
+                            <li class="has-child-item close-item">
+                                <a><i class="fa fa-wrench" aria-hidden="true"></i><span>设备管理</span></a>
+                                <ul class="nav child-nav level-1">
+                                    <li><a href="维护保养记录管理.html">维护保养记录管理</a></li>
+                                    <li><a href="维护保养计划管理.html">维护保养计划管理</a></li>
+                                    <li><a href="设备异常管理.html">设备异常管理</a></li>
+                                    <li><a href="设备信息管理.html">设备信息管理</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-child-item close-item">
+                                <a><i class="fa fa-bomb" aria-hidden="true"></i><span>报警管理</span></a>
+                                <ul class="nav child-nav level-1">
+                                    <li><a href="数据异常报警.html">数据异常报警</a></li>
+                                    <li><a href="极端天气报警.html">极端天气报警</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-child-item close-item">
+                                <a><i class="fa fa-cog " aria-hidden="true"></i><span>系统管理</span></a>
+                                <ul class="nav child-nav level-1">
+                                    <li><a href="工作建议设置.html">工作建议设置</a></li>
+                                    <li><a href="数据字典维护.html">数据字典维护</a></li>
+                                    <li><a href="数据正常阈值管理.html">数据正常阈值管理</a></li>
+                                    <li><a href="极端天气阈值管理.html">极端天气阈值管理</a></li>
+                                    <li class="has-child-item close-item">
+                                        <a>系统日志</a>
+                                        <ul class="nav child-nav level-2 ">
+                                            <li><a href="操作日志.html">操作日志</a></li>
+                                            <li><a href="系统自动记录.html">系统自动记录</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="级别管理.html">级别管理</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="patch"></div>
+            <div class="content-header">
+                <div class="leftside-content-header">
+                    <ul class="breadcrumbs">
+                        <li><i class="fa fa-home" aria-hidden="true"></i><a href="#">首页</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row animated fadeInUp">
+                <div class="row">
+                    <div class="col-sm-12 col-md-9">
+                        <p class="section-text">温情提示：今日高温，请减少外出活动</p>
+                        <h4 class="section-subtitle"><b>气象数据</b></h4>
+                        <div class="panel">
+                            <div class="panel-content">
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-hover">
+                                        <thead>
+                                        <tr>
+                                            <th>指标名称</th>
+                                            <th>指标数值</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>监测时间</td>
+                                            <td>2019-01-01 01:00:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>空气温度</td>
+                                            <td>34℃</td>
+                                        </tr>
+                                        <tr>
+                                            <td>相对湿度</td>
+                                            <td>50%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>降水量</td>
+                                            <td>1.0mm</td>
+                                        </tr>
+                                        <tr>
+                                            <td>总辐射辐照度</td>
+                                            <td>368W/m<sup>2</sup></td>
+                                        </tr>
+                                        <tr>
+                                            <td>风速</td>
+                                            <td>0.2m/s</td>
+                                        </tr>
+                                        <tr>
+                                            <td>风向</td>
+                                            <td>234°西南风</td>
+                                        </tr>
+                                        <tr>
+                                            <td>本站气压</td>
+                                            <td>1015.0Mpa</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="section-subtitle"><b>环境数据</b></h4>
+                        <div class="panel">
+                            <div class="panel-content">
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-hover">
+                                        <thead>
+                                        <tr>
+                                            <th>指标名称</th>
+                                            <th>指标数值</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>监测时间</td>
+                                            <td>2019-01-01 01:00:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SO<sub>2</sub></td>
+                                            <td>24 mg/m<sup>3</sup></td>
+                                        </tr>
+                                        <tr>
+                                            <td>NO</td>
+                                            <td>24mg/m<sup>3</sup></td>
+                                        </tr>
+                                        <tr>
+                                            <td>PM2.5</td>
+                                            <td>24 mg/m<sup>3</sup></td>
+                                        </tr>
+                                        <tr>
+                                            <td>O<sub>3</sub></td>
+                                            <td>24 mg/m<sup>3</sup></td>
+                                        </tr>
+                                        <tr>
+                                            <td>NO<sub>x</sub></td>
+                                            <td>24 mg/m<sup>3</sup></td>
+                                        </tr>
+                                        <tr>
+                                            <td>PM10</td>
+                                            <td>24 mg/m<sup>3</sup></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3">
+
+                        <div class="panel widgetbox wbox-2 bg-scale-0">
+                            <a href="#">
+                                <div class="panel-content">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <span class="icon fa fa-thermometer-3 color-darker-1"></span>
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <h4 class="subtitle color-darker-1">温度</h4>
+                                            <h1 class="title color-primary">34℃</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="panel widgetbox wbox-2 bg-lighter-2 color-light">
+                            <a href="#">
+                                <div class="panel-content">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <span class="icon fa fa-tint color-darker-2"></span>
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <h4 class="subtitle color-darker-2">湿度</h4>
+                                            <h1 class="title color-w">50％</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="panel widgetbox wbox-2 bg-scale-0">
+                            <a href="#">
+                                <div class="panel-content">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <span class="icon fa fa-flag color-darker-1"></span>
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <h4 class="subtitle color-darker-1">风速</h4>
+                                            <h1 class="title color-primary">2级</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="panel widgetbox wbox-2 bg-lighter-2 color-light">
+                            <a href="#">
+                                <div class="panel-content">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <span class="icon fa fa-umbrella color-darker-2"></span>
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <h4 class="subtitle color-darker-2">雨量</h4>
+                                            <h1 class="title color-w">3级</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <img alt="animation image" id="img-1" class="img-animated" src=images/zishu_60.png />
+                            <em class="aqi">58</em>
+                            <i class="aqi">优</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="scroll-to-top"><i class="fa fa-angle-double-up"></i></a>
+    </div>
+</div>
+</div>
+<script src="javascripts/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="vendor/nano-scroller/nano-scroller.js"></script>
+<script src="javascripts/template-script.min.js"></script>
+<script src="javascripts/template-init.min.js"></script>
+<script src="vendor/toastr/toastr.min.js"></script>
+<script src="vendor/chart-js/chart.min.js"></script>
+<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="javascripts/examples/dashboard.js"></script>
+<script src="javascripts/common.js"></script>
+</body>
+
+</html>
